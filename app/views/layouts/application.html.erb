@@ -21,7 +21,7 @@
           </section>
 
           <section class="middle tab-bar-section">
-            <h1 class="title">Cookorama.net</h1>
+            <h1 class="title"><%= content_for?(:title) ? yield(:title) : (link_to "Cookorama.net", root_path) %></h1>
           </section>
 
           <section class="right-small">
@@ -31,44 +31,26 @@
 
         <aside class="left-off-canvas-menu">
           <ul class="off-canvas-list">
-                                                              <li><label>Cookorama</label></li>
-
-                                                              <%= render inline: left_menu %>
+            <li><label>Cookorama</label></li>
+            <%= render inline: left_menu %>
           </ul>
         </aside>
 
         <aside class="right-off-canvas-menu">
           <ul class="off-canvas-list">
-                                                              <li><label>Users</label></li>
-                                                              <li><a href="#">Hari Seldon</a></li>
-                                                              <li class="has-submenu"><a href="#">R. Giskard Reventlov</a>
-                                                                  <ul class="right-submenu">
-                                                                      <li class="back"><a href="#">Back</a></li>
-                                                                      <li><label>Level 1</label></li>
-                                                                      <li><a href="#">Link 1</a></li>
-                                                                      <li class="has-submenu"><a href="#">Link 2 w/ submenu</a>
-                                                                          <ul class="right-submenu">
-                                                                              <li class="back"><a href="#">Back</a></li>
-                                                                              <li><label>Level 2</label></li>
-                                                                              <li><a href="#">...</a></li>
-                                                                          </ul>
-                                                                      </li>
-                                                                      <li><a href="#">...</a></li>
-                                                                  </ul>
-                                                              </li>
-                                                              <li><a href="#">...</a></li>
+            <% if content_for? :right_menu %>
+              <%= yield :right_menu %>
+            <% end %>
           </ul>
         </aside>
 
         <section class="main-section">
           <%= yield %>
-          <a href="#" class="back-to-top">Вгору</a>
         </section>
 
         <a class="exit-off-canvas"></a>
 
       </div>
     </div>
-    <!-- <a href="#0" class="cd-top">Вгору</a> -->
   </body>
 </html>

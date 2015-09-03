@@ -1,3 +1,38 @@
 // Place all the styles related to the receipts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.topic {
+  .tags,.top-tags{
+    background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons-sprite.png) no-repeat scroll -68px -128px;
+    padding-left:18px;
+    margin-bottom:10px;
+    clear:both
+  }
+  .tags {
+    li,.top-tags li{
+      display:inline;
+      color:#8c8774;
+      font-size:14px
+    }
+
+    li a,.top-tags li a{
+      color:#8c8774
+    }
+
+    li a:hover,.top-tags li a:hover{
+      text-decoration:none
+    }
+  }
+
+  .tags.top-tags{
+    background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons-sprite.png) no-repeat scroll -193px 5px;
+    padding-left:21px;
+    margin-bottom:13px;
+    margin-bottom:9px
+  }
+
+  .tags.top-tags li a{
+    color:#5f829f
+  }
+}

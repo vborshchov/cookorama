@@ -25,12 +25,16 @@ body,html{
     height:100%;
 }
 
-.off-canvas-wrap .main-section
-{
+.off-canvas-wrap .main-section {
   height: 100%; overflow:scroll;
 }
 
 /* remove scroll bars in Safari */
 .off-canvas-wrap .main-section:-webkit-scrollbar {
     display: none;
+}
+
+.bottom {
+  height: 4em;
+  width: 100%;
 }

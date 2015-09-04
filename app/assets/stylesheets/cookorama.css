@@ -1,0 +1,8223 @@
+.rating-top{
+	color:#000
+}
+
+.best-item{
+	overflow:hidden;
+	padding:0 3px
+}
+
+.best-item .comments-counter{
+	text-decoration:none;
+	color:#BF1700
+}
+
+.best-item .best-item-r{
+	overflow:hidden;
+	display:table-cell;
+	height:40px;
+	vertical-align:middle
+}
+
+.best-item .best-item-l{
+	float:left;
+	margin:0 8px 0 0
+}
+
+.best-item .best-item-l a{
+	display:block;
+	padding:2px;
+	background:#fff;
+	border:1px solid #ddd2c8
+}
+
+.best-item .best-item-l a img{
+	display:block
+}
+
+/*#top-slider{
+	padding:2px;
+	border:1px solid #f1efeb;
+	border-bottom-color:#d6cdc3;
+	border-top-color:#fff;
+	margin:0 0 20px;
+	background:#fff;
+	-webkit-box-shadow:0 1px 1px 0 rgba(163,145,123,.2);
+	-moz-box-shadow:0 1px 1px 0 rgba(163,145,123,.2);
+	box-shadow:0 1px 1px 0 rgba(163,145,123,.2)
+}
+
+#top-slider .tabs-content{
+	overflow:hidden;
+	height:239px;
+	position:relative
+}
+
+#top-slider .tabs .tab-block a{
+	text-decoration:none;
+	color:#837762
+}
+
+#top-slider .tabs .tab-block.active a{
+	color:#b32511
+}
+
+#top-slider .tabs li{
+	cursor:pointer
+}
+
+#top-slider .tab{
+	position:absolute;
+	height:239px;
+	width:100%;
+	background-size:cover!important
+}
+
+#top-slider .tab img{
+	width:100%;
+	min-height:239px;
+	display:none
+}
+
+#top-slider .tab .opt{
+	position:absolute;
+	left:0;
+	bottom:10px;
+	padding:0 0 0 10px;
+	height:33px;
+	background:url(http://static.cookorama.net/plugins/blocks/templates/skin/cookorama/images/tab-line.png) 100% 0 repeat-x;
+	z-index:10;
+	overflow:hidden
+}
+
+#top-slider .tab .opt a.user{
+	font-weight:700;
+	color:#629b00;
+	text-decoration:none;
+	background:url(http://static.cookorama.net/plugins/blocks/templates/skin/cookorama/images/icons-sprite.png) no-repeat scroll 0 -200px;
+	padding-left:14px;
+	float:left;
+	margin:7px 15px 0 0
+}
+
+#top-slider .tab .opt a.comment{
+	font-size:13px;
+	color:#be1700;
+	padding-left:18px;
+	background:url(http://static.cookorama.net/plugins/blocks/templates/skin/cookorama/images/icons-sprite.png) -21px -179px no-repeat;
+	text-decoration:none;
+	float:left;
+	margin:7px 15px 0 0
+}
+
+#top-slider .top-slider-inside{
+	border:1px solid #dacfc4;
+	overflow:hidden
+}
+
+#top-slider .tabs{
+	float:right;
+	-webkit-box-shadow:0 0 3px 1px rgba(81,75,63,0.3);
+	-moz-box-shadow:0 0 3px 1px rgba(81,75,63,0.3);
+	box-shadow:0 0 3px 1px rgba(96,83,60,0.3);
+	z-index:10;
+	border-left:1px solid #cfcbc7;
+	height:239px!important;
+	width:158px;
+	position:relative
+}
+
+#top-slider .tabs li{
+	border-top:1px solid #dacfc4;
+	height:79px!important
+}
+
+#top-slider .tabs li:first-child{
+	border-top:none
+}
+
+#top-slider .tabs li.active .item a{
+	background:url(http://static.cookorama.net/plugins/blocks/templates/skin/cookorama/images/tab-bg.png) 0 0 no-repeat;
+	padding-left:30px;
+	margin-left:-15px;
+	color:#b32511
+}
+
+#top-slider .tabs li .item a{
+	font-size:13px;
+	color:#837762;
+	text-decoration:none;
+	padding:0 15px;
+	height:79px!important;
+	width:130px;
+	display:block;
+	background:url(http://static.cookorama.net/plugins/blocks/templates/skin/cookorama/images/tab-bg.png) -20px 0 no-repeat
+}
+
+#top-slider .tabs li span{
+	display:table-cell;
+	vertical-align:middle;
+	height:79px;
+	text-shadow:0 1px 0 #fff
+}
+
+*+ html #top-slider .tabs li .item{
+	position:relative
+}
+
+*+ html #top-slider .tabs li span{
+	display:block;
+	height:auto!important;
+	position:absolute;
+	left:0;
+	top:50%
+}
+
+#top-slider .tabs li span em{
+	font-style:normal
+}
+
+*+ html #top-slider .tabs li span em{
+	position:relative;
+	display:block;
+	top:-50%;
+	left:0;
+	padding:0 15px
+}*/
+
+#mask{
+	height:239px;
+	overflow:hidden;
+	position:relative
+}
+
+#slider-box{
+	position:absolute
+}
+
+.block.best-users .block-content li{
+	width:100%;
+	padding:6px 9px;
+	margin:0 0 0 -9px;
+	border-bottom:1px solid #e5e0de;
+	overflow:hidden;
+	font-size:11px;
+	line-height:24px
+}
+
+.block.best-users .block-content li:first-child{
+	padding:0 9px
+}
+
+.block.best-users .block-content li .avatar{
+	vertical-align:middle;
+	margin:0 5px
+}
+
+.block.best-users .block-content li .user-rating,.block.best-users .block-content li .user-rating-title{
+	float:right;
+	width:55px;
+	text-align:right;
+	margin-right:5px
+}
+
+.block.best-users .block-content li .user-skills,.block.best-users .block-content li .user-skills-title{
+	float:right;
+	width:50px;
+	text-align:right
+}
+
+.block.best-users .block-content li .user-rating-title,.block.best-users .block-content li .user-skills-title{
+	font-size:11px;
+	color:#6b6252
+}
+
+.block.best-users .bottom{
+	font-size:11px;
+	margin:8px 0 0;
+	text-align:right;
+	padding:0 5px 0 0
+}
+
+.write a.button{
+	display:block;
+	width:124px;
+	height:32px;
+	background:url(http://static.cookorama.net/plugins/blocks/templates/skin/cookorama/images/add-recipe.png) 0 0 no-repeat;
+	font-size:13px!important;
+	white-space:nowrap;
+	font-weight:700;
+	text-transform:uppercase;
+	color:#884300;
+	text-decoration:none;
+	text-shadow:0 1px 0 #fae15c;
+	line-height:33px;
+	padding:0 0 0 34px;
+	margin:0 auto 20px;
+	letter-spacing:0;
+	text-align:left;
+	border:none;
+	font-family:FontinSansCRBold,Arial,sans-serif
+}
+
+.block.about-block{
+	color:#6b6252
+}
+
+.block.about-block a.join{
+	background:url(http://static.cookorama.net/plugins/blocks/templates/skin/cookorama/images/profile-button.png) 0 0 repeat-x;
+	height:29px;
+	line-height:30px;
+	display:inline-block;
+	padding:0 10px;
+	font-size:15px;
+	font-weight:700;
+	color:#629b00;
+	text-shadow:0 1px 0 #fff;
+	text-decoration:none;
+	border:1px solid #d8cfcb;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	border-radius:10px;
+	-webkit-box-shadow:0 1px 1px 0 #f3f1f0;
+	-moz-box-shadow:0 1px 1px 0 #f3f1f0;
+	box-shadow:0 1px 1px 0 #f3f1f0
+}
+
+.block.about-block .readers{
+	display:block;
+	font-size:15px;
+	font-weight:700;
+	margin:10px 0
+}
+
+.block.about-block h2 .rss{
+	margin:0 0 0 5px;
+	vertical-align:middle;
+	display:inline-block;
+	width:12px;
+	height:12px;
+	text-indent:-9999px;
+	background:url(http://static.cookorama.net/plugins/blocks/templates/skin/cookorama/images/rss-ico.png) 0 0 no-repeat
+}
+
+.block.androip-app{
+	padding-top:0;
+	padding-bottom:0;
+	background:none;
+	border:none;
+	-webkit-box-shadow:none;
+	-moz-box-shadow:none;
+	box-shadow:none
+}
+
+.topic .action li.translate a{
+	background:url(http://static.cookorama.net/plugins/l10n/templates/skin/default/images/translate.jpg) no-repeat 0 1px;
+	padding-left:15px;
+	margin-left:10px;
+	text-decoration:none;
+	font-size:11px;
+	color:#51B038
+}
+
+.block-lang{
+	height:25px
+}
+
+.block-lang li{
+	float:left
+}
+
+#openid_block > table{
+	border-spacing:0
+}
+
+.block.search-filter{
+	border-color:transparent;
+	box-shadow:none;
+	background:transparent
+}
+
+.search-filter .filter-list{
+	margin-top:18px
+}
+
+.search-filter .filter-list a{
+	display:inline-block;
+	margin-bottom:11px;
+	text-decoration:none;
+	color:#608099
+}
+
+.search-filter .filter-list ul{
+	margin:0 0 9px 21px
+}
+
+.search-filter .filter-list span{
+	color:#608099;
+	border-bottom:dashed 1px #608099
+}
+
+.search-filter .filter-list .count{
+	border:none;
+	color:#8C8885
+}
+
+.search-filter .filter-list > li > span{
+	display:inline-block;
+	border:none;
+	margin-bottom:11px
+}
+
+.search-filter .filter-list > li > span span{
+	color:#6A665A;
+	border:none
+}
+
+.block-filter-selected li{
+	margin-bottom:2px
+}
+
+.block-filter-selected label{
+	color:#656155
+}
+
+.block-filter-selected .remove{
+	display:inline-block;
+	position:relative;
+	width:12px;
+	height:12px;
+	background:url(http://static.cookorama.net/plugins/l10n/templates/skin/default/images/delete.gif) no-repeat;
+	vertical-align:middle
+}
+
+.search-filter span input{
+	display:none;
+	position:absolute;
+	cursor:pointer
+}
+
+li.selected > ul{
+	display:none
+}
+
+span.remove{
+	cursor:pointer
+}
+
+.block-filter-selected .cleer-filter{
+	display:inline-block;
+	margin:11px 0 36px 10px;
+	text-decoration:none
+}
+
+.block-filter-selected .cleer-filter span{
+	color:#608099;
+	border-bottom:dashed 1px #608099
+}
+
+.block-filter-selected .cleer-filter .remove{
+	border:none
+}
+
+ul.selected-item{
+	margin-left:10px
+}
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{
+	padding:0;
+	margin:0
+}
+
+ul,ol{
+	list-style:none
+}
+
+img{
+	border:none
+}
+
+html,body{
+	height:100%
+}
+
+body{
+	font:13px/18px Arial,Tahoma,Helvetica,sans-serif;
+	color:#333;
+	background:#fff
+}
+
+h1,h2,h3,h4,h5,h6{
+	font:18px FontinSansCRBold,'helvetica neue',arial;
+	color:#6c6353
+}
+
+h1{
+	font-size:29px;
+	line-height:27px;
+	margin-bottom:20px
+}
+
+h2{
+	font-size:19px;
+	line-height:18px;
+	margin-bottom:7px
+}
+
+h3{
+	font-size:18px;
+	line-height:22px;
+	margin-bottom:5px
+}
+
+h4{
+	font-size:18px;
+	line-height:22px;
+	margin-bottom:5px
+}
+
+h5{
+	font-size:18px;
+	line-height:22px;
+	margin-bottom:5px
+}
+
+h6{
+	font-size:18px;
+	line-height:22px;
+	margin-bottom:5px
+}
+
+a{
+	color:#629b00
+}
+
+a:hover{
+	color:#629b00;
+	text-decoration:none
+}
+
+a:active{
+	color:#bf1700;
+	text-decoration:none
+}
+
+.voting a{
+	outline:none
+}
+
+.mask{
+	z-index:999;
+	position:fixed!important;
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/overlay.png)
+}
+
+h1 span{
+	color:#629b00
+}
+
+.topic > span:first-child{
+	display:block
+}
+
+.topic > span:first-child h1{
+	color:#629b00;
+	display:inline-block
+}
+
+strong{
+	font-weight:400
+}
+
+#container{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/s-bg-top.gif) 0 108px repeat-x
+}
+
+#container_wrapper{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/s-bg-bottom.gif) 0 100% repeat-x;
+	position:relative
+}
+
+#container_wrapper #top-line{
+	position:absolute;
+	width:100%;
+	left:0;
+	height:20px;
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/top-line.png) 0 0 repeat-x
+}
+
+#header{
+	height:75px;
+	border-bottom:1px solid #fff;
+	clear:both;
+	min-width:940px;
+	padding:32px 3% 0;
+	zoom:1;
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/header-bg.gif) bottom center repeat-x
+}
+
+#header .header-inside{
+	max-width:1440px;
+	margin:0 auto
+}
+
+#nav{
+	clear:both;
+	background:#e8e8e8
+}
+
+#wrapper{
+	overflow:hidden;
+	zoom:1;
+	padding:0 3% 30px;
+	min-height:230px;
+	min-width:940px;
+	max-width:1440px;
+	margin:0 auto;
+	clear:both;
+	margin-top:25px
+}
+
+#footer .footer-inside{
+	max-width:1440px;
+	margin:0 auto
+}
+
+#footer{
+	clear:both;
+	color:#6c6353;
+	border-top:1px solid #e4dfdd;
+	overflow:hidden;
+	font-size:12px;
+	padding-bottom:40px
+}
+
+#footer.lite{
+	padding-top:25px
+}
+
+#left-sidebar{
+	width:17%;
+	float:left;
+	margin-right:1%
+}
+
+#sidebar{
+	float:right;
+	min-width:240px;
+	width:25.5%;
+	margin-left:2%;
+	max-width:350px
+}
+
+#sidebar .block-nav{
+	background:#fff
+}
+
+#block_facebook_menu{
+	position:relative;
+	bottom:3px;
+	margin-bottom:10px
+}
+
+.rubber-right{
+	padding:2px 2px 0 0
+}
+
+#content{
+	background:none;
+	padding-top:0;
+	padding-bottom:20px;
+	zoom:1;
+	overflow:hidden;
+	padding-left:13px
+}
+
+#footer .footer-inside{
+	border-top:1px solid #fff;
+	padding:17px 4% 30px;
+	min-width:940px
+}
+
+.menu-line{
+	float:left;
+	padding:0 0 0 20px
+}
+
+.lang-menu{
+	clear:both
+}
+
+.lang-menu li{
+	float:left;
+	margin:0 23px 0 0;
+	font-size:11px
+}
+
+.lang-menu li .ico{
+	width:16px;
+	height:11px;
+	line-height:11px;
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/lang.png) 0 0 no-repeat;
+	display:inline-block;
+	vertical-align:middle;
+	margin:0 5px 0 0
+}
+
+.lang-menu li .uk .ico{
+	background-position:0 0
+}
+
+.lang-menu li .ru .ico{
+	background-position:0 -11px
+}
+
+.lang-menu li .en .ico{
+	background-position:0 -22px
+}
+
+.lang-menu li.current a{
+	color:#837762;
+	text-decoration:none
+}
+
+.white-back{
+	margin:0 20px 30px;
+	padding-bottom:15px;
+	padding-left:20px
+}
+
+.white-back #content{
+	clear:none;
+	padding-top:0
+}
+
+.page-talk{
+	padding-left:3px!important;
+	margin-right:50px!important
+}
+
+label{
+	margin-bottom:2px;
+	color:#8c8774;
+	font-size:13px
+}
+
+form p{
+	margin-bottom:20px
+}
+
+form .note{
+	float:right;
+	font-size:11px
+}
+
+form .buttons{
+	overflow:hidden
+}
+
+form .buttons input[type="submit"]{
+	margin-left:0
+}
+
+form .right{
+	float:right;
+	font-size:18px;
+	font-family:Arial;
+	color:#333;
+	padding:5px
+}
+
+form .panel_form{
+	display:block;
+	overflow:hidden;
+	width:99.3%;
+	height:24px
+}
+
+form .panel_form select{
+	width:73px;
+	height:20px;
+	margin:2px;
+	float:left;
+	font-size:12px;
+	margin-right:8px
+}
+
+form .panel_form a.button{
+	display:inline-block;
+	float:left;
+	line-height:12px;
+	padding:0;
+	margin:2px 2px 0 0
+}
+
+div .group{
+	border:none!important;
+	padding:0!important
+}
+
+input[type="text"]{
+	border:1px solid #c8bdb0;
+	border-top-color:#a3917b;
+	-webkit-border-radius:2px;
+	-moz-border-radius:2px;
+	border-radius:2px;
+	padding:2px 0;
+	margin:0
+}
+
+#topic_title{
+	padding:7px;
+	font-size:15px
+}
+
+textarea{
+	width:97.7%;
+	padding:4px 1%;
+	height:200px;
+	margin-bottom:5px;
+	font-family:Arial;
+	font-size:14px;
+	border:1px solid #c8bdb0;
+	border-top-color:#a3917b;
+	-webkit-border-radius:2px;
+	-moz-border-radius:2px;
+	border-radius:2px
+}
+
+textarea.small{
+	width:300px;
+	height:70px;
+	margin-bottom:5px
+}
+
+select{
+	width:100%;
+	padding:2px;
+	border:1px solid #c8bdb0;
+	border-top-color:#a3917b;
+	font-family:Arial,sans-serif;
+	-webkit-border-radius:2px;
+	-moz-border-radius:2px;
+	border-radius:2px;
+	margin:0
+}
+
+input{
+	font-family:Arial
+}
+
+.w50{
+	width:50px
+}
+
+.w70{
+	width:70px
+}
+
+.w100{
+	width:100px
+}
+
+.w200{
+	width:200px
+}
+
+.w300{
+	width:300px
+}
+
+.w100p{
+	width:99%
+}
+
+.radio{
+	position:relative;
+	top:2px
+}
+
+.checkbox{
+	position:relative;
+	top:2px;
+	margin-left:0
+}
+
+.form-tags{
+	padding:10px;
+	background:#fafafa;
+	color:#8c8774
+}
+
+.form-tags input{
+	width:99%
+}
+
+.form_note{
+	font-size:12px;
+	color:#bab8b3
+}
+
+.text-editor select{
+	padding:0
+}
+
+#header .logo{
+	float:left;
+	margin:-4px 0 0 -10px;
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/logo.png) left top no-repeat;
+	height:92px;
+	width:248px
+}
+
+#header .logo-ny{
+	float:left;
+	margin:-4px 0 0 -10px;
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/logo-ny.png) left top no-repeat;
+	height:92px;
+	width:248px
+}
+
+#header .nav-main{
+	float:left;
+	padding-top:7px;
+	position:relative;
+	margin-left:-6px
+}
+
+#header .nav-main li{
+	float:left;
+	font-size:18px;
+	font-weight:400;
+	margin-right:7px;
+	position:relative
+}
+
+#header .nav-main li a{
+	float:left;
+	text-decoration:underline;
+	line-height:29px;
+	padding:0 8px
+}
+
+#header .nav-main li a:hover{
+	text-decoration:none
+}
+
+#header .nav-main li.active a{
+	text-decoration:none;
+	color:#837762
+}
+
+#header .nav-main li.active > a{
+	border:1px solid #b1a487;
+	border-radius:5px
+}
+
+#header .profile{
+	float:right;
+	padding-top:5px
+}
+
+#header .profile a.avatar{
+	display:block;
+	width:48px;
+	height:48px;
+	float:right
+}
+
+#header .profile a.avatar img{
+	width:30px;
+	height:30px
+}
+
+#header .profile ul{
+	float:right;
+	font-size:11px;
+	padding-right:15px;
+	margin-top:-1px;
+	color:#837762
+}
+
+#header .profile ul li{
+	text-align:right;
+	line-height:17px!important
+}
+
+.profile li a{
+	color:#837762
+}
+
+#header .profile ul li a.author{
+	color:#629b00
+}
+
+#header .profile ul li a.message{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/mail-ico.png) no-repeat scroll 0 1px;
+	color:#be1700;
+	margin-right:5px;
+	padding-left:18px;
+	text-decoration:none
+}
+
+#header .profile ul li a.message-empty{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/no-mail.png) no-repeat scroll right 1px;
+	color:#ffea00;
+	margin-right:5px;
+	padding-left:18px
+}
+
+#header .profile ul li a:hover{
+	text-decoration:none;
+	color:#8c8774
+}
+
+#header .profile.guest{
+	text-align:left;
+	color:#8c8774
+}
+
+#header .log{
+	line-height:22px;
+	display:inline-block;
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/btn.png) 0 0 repeat-x;
+	border:1px solid #9b937e;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	border-radius:3px;
+	font-size:13px;
+	font-weight:700;
+	color:#4f4236;
+	text-shadow:0 1px 0 #f0e2bc;
+	text-decoration:none;
+	padding:0 9px;
+	margin:0 5px
+}
+
+#header .reg{
+	line-height:22px;
+	display:inline-block;
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/btn.png) 0 -22px repeat-x;
+	border:1px solid #458900;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	border-radius:3px;
+	font-size:13px;
+	font-weight:700;
+	color:#fff;
+	text-shadow:0 -1px 0 #478105;
+	text-decoration:none;
+	padding:0 9px;
+	margin:0 5px
+}
+
+#header .profile.guest div{
+	display:inline
+}
+
+#nav{
+	background:repeat-x scroll 0 -81px;
+	zoom:1
+}
+
+#nav .write{
+	float:left
+}
+
+#nav .write a{
+	color:#fff;
+	outline:none;
+	text-decoration:none
+}
+
+#nav .write a div{
+	padding:0 0 0 22px;
+	float:left;
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/main-buttons-sprite.png) left -48px no-repeat
+}
+
+#nav .write a div div{
+	padding:0 6px 0 0;
+	float:left;
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/main-buttons-sprite.png) right -24px no-repeat
+}
+
+#nav .write a div div div{
+	padding:3px 0 0;
+	height:21px;
+	float:left;
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/main-buttons-sprite.png) 0 top repeat-x
+}
+
+#nav .write a:hover div div div{
+	color:#ece6ca
+}
+
+#content .search{
+	margin:0 0 15px
+}
+
+#content .search table{
+	width:100%;
+	margin:0 0 2px
+}
+
+#content .search table .bt{
+	width:73px;
+	text-align:right
+}
+
+#content .search .example-line{
+	font-size:11px;
+	color:#bdb7ab;
+	margin-left:3px;
+	line-height:1
+}
+
+#content .search .example-line a{
+	border-bottom:1px dashed #bdb7ab;
+	color:#bdb7ab;
+	text-decoration:none
+}
+
+#content .search .example-line a:hover{
+	border-color:#fff
+}
+
+#content .search .text{
+	width:100%;
+	font-size:15px;
+	background:#fff;
+	border:1px solid #c8bdb0;
+	border-top-color:#a3917b;
+	padding:3px 0;
+	text-indent:5px;
+	line-height:15px;
+	-webkit-border-radius:2px;
+	-moz-border-radius:2px;
+	border-radius:2px
+}
+
+#content .search .button{
+	margin:0;
+	height:24px
+}
+
+#nav .rss{
+	float:right;
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons.png) no-repeat scroll 0 -270px;
+	display:block;
+	height:11px;
+	width:74px;
+	margin-top:51px;
+	margin-right:10px
+}
+
+#nav .rss:hover{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons.png) no-repeat scroll 0 -290px
+}
+
+#extra{
+	clear:both;
+	padding-left:60px;
+	margin-top:10px
+}
+
+#extra a{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons.png) no-repeat scroll 0 -165px;
+	color:#aaa;
+	padding-left:12px
+}
+
+.topic{
+	font-size:13px;
+	position:relative;
+	margin-bottom:40px
+}
+
+.topic h1.title{
+	font-weight:400;
+	margin:0 0 9px;
+	line-height:1em
+}
+
+.topic h1.title a{
+	font-size:24px
+}
+
+.topic h1.title a:hover{
+	color:#bf1700
+}
+
+.topic h2.title{
+	font-weight:400;
+	margin:0 0 9px;
+	line-height:1em
+}
+
+.topic h2.title a{
+	font-size:24px
+}
+
+.topic h2.title a:hover{
+	color:#bf1700
+}
+
+.topic h2{
+	font-size:19px;
+	line-height:19px;
+	margin:0 0 10px
+}
+
+.extend-info{
+	overflow:hidden;
+	margin:20px 0 30px
+}
+
+.topic-preparing-info ul li{
+	border-top:1px solid #dacfc4;
+	padding:8px 0;
+	list-style:none;
+	margin:0
+}
+
+.topic-preparing-info ul li .preparing{
+	font-size:11px;
+	color:#8c8774;
+	display:inline-block;
+	width:17px;
+	text-indent:-9999px;
+	vertical-align:middle;
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons-sprite.png) 0 0 no-repeat;
+	position:relative;
+	top:-3px
+}
+
+.topic-preparing-info ul li .preparing.time{
+	background-position:-141px -51px
+}
+
+.topic-preparing-info ul li .preparing.difficulty{
+	background-position:-115px -78px
+}
+
+.topic-preparing-info ul li .preparing.type{
+	background-position:-92px -103px
+}
+
+.topic-preparing-info ul li:first-child{
+	border:none;
+	padding-top:0
+}
+
+.extend-info .topic-preparing-info{
+	/*margin-left:283px;*/
+	padding:16px 0 0
+}
+
+.extend-info .topic-user-info{
+	float:left;
+	width:235px;
+	background:#fff;
+	line-height:16px;
+	border:1px solid #e8e2db;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	border-radius:10px;
+	padding:14px;
+	-webkit-box-shadow:0 1px 1px 0 rgba(163,145,123,.2);
+	-moz-box-shadow:0 1px 1px 0 rgba(163,145,123,.2);
+	box-shadow:0 1px 1px 0 rgba(163,145,123,.2);
+	border-bottom:1px solid #D8CEC3
+}
+
+.extend-info .topic-user-info .mail-link{
+	display:inline-block;
+	width:16px;
+	height:14px;
+	vertical-align:middle;
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/mail-ico.png) no-repeat scroll 0 1px;
+	text-indent:-9999px;
+	margin-left:3px;
+	position:relative;
+	top:-1px
+}
+
+*+ html .extend-info .topic-user-info .mail-link{
+	display:inline;
+	zoom:1
+}
+
+.extend-info .topic-user-info .user-link{
+	color:#363636;
+	text-decoration:none;
+	font-weight:700;
+	font-size:13px
+}
+
+.extend-info .user-link span{
+	color:#639700
+}
+
+.extend-info .topic-user-info .usr{
+	overflow:hidden;
+	margin:0 0 14px
+}
+
+.extend-info .topic-user-info .over{
+	overflow:hidden
+}
+
+.extend-info .user-recipes-counter{
+	font-size:15px
+}
+
+.extend-info .topic-user-info .avatar{
+	float:left;
+	margin:0 14px 0 0
+}
+
+.extend-info .voting{
+	font-size:10px;
+	position:relative;
+	line-height:16px;
+	margin-top:5px;
+	margin-left:0!important
+}
+
+.extend-info .voting .clear{
+	float:left;
+	font-size:11px;
+	color:#8c8774;
+	margin-right:7px
+}
+
+.extend-info .voting .count{
+	display:none;
+	position:absolute;
+	top:46px;
+	left:69%;
+	color:#aaa
+}
+
+.extend-info .voting .text{
+	display:none;
+	position:absolute;
+	top:46px;
+	right:33%;
+	color:#aaa
+}
+
+.extend-info .voting .plus{
+	float:left;
+	margin-right:5px
+}
+
+.topic .extend-info .voting .total{
+	float:left;
+	margin-right:5px;
+	color:#fff!important;
+	padding:0 4px;
+	line-height:16px;
+	font-size:11px;
+	background:#7cb006;
+	-webkit-border-radius:2px;
+	-moz-border-radius:2px;
+	border-radius:2px
+}
+
+.topic .extend-info .voting.positive .total{
+	color:#fff!important
+}
+
+.topic .extend-info .voting.negative .total{
+	color:#fff!important
+}
+
+.extend-info .voting .minus{
+	float:left;
+	margin-right:0
+}
+
+.extend-info .voting a.plus{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons.png) no-repeat scroll 0 -90px;
+	float:left;
+	display:block;
+	height:11px;
+	margin-top:2px;
+	text-decoration:none;
+	width:9px
+}
+
+.extend-info .voting a.plus:hover{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons.png) no-repeat scroll -40px -90px
+}
+
+.extend-info .voting a.minus{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons.png) no-repeat scroll -10px -90px;
+	float:left;
+	display:block;
+	height:11px;
+	margin-top:2px;
+	text-decoration:none;
+	width:9px
+}
+
+.extend-info .voting a.minus:hover{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons.png) no-repeat scroll -70px -90px
+}
+
+.extend-info .voting.plus a.plus{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons.png) no-repeat scroll -40px -90px
+}
+
+.extend-info .voting.minus a.minus{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons.png) no-repeat scroll -70px -90px
+}
+
+.extend-info .voting.guest a.plus{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons.png) no-repeat scroll 0 -90px;
+	cursor:default
+}
+
+.extend-info .voting.guest a.minus{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons.png) no-repeat scroll -10px -90px;
+	cursor:default
+}
+
+.extend-info .voting.positive .total{
+	background:#83a13f
+}
+
+.extend-info .voting.negative .total{
+	background:#ff3b3c
+}
+
+.extend-info .voting.voted a.plus{
+	cursor:default
+}
+
+.extend-info .voting.voted a.minus{
+	cursor:default
+}
+
+.extend-info .voting.voted.plus a.minus:hover{
+	cursor:default;
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons.png) no-repeat scroll -10px -90px
+}
+
+.extend-info .voting.voted.minus a.plus:hover{
+	cursor:default;
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons.png) no-repeat scroll 0 -90px
+}
+
+.topic h1.title span a{
+	color:#8c8774
+}
+
+.topic .action{
+	overflow:hidden;
+	margin-bottom:5px
+}
+
+.topic .action li{
+	float:left;
+	margin-right:3px
+}
+
+.topic .action li a{
+	color:#aaa;
+	outline:none
+}
+
+.topic .action li.rss a{
+	display:block;
+	height:10px;
+	width:10px;
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons.png) no-repeat scroll -70px -250px;
+	margin-top:5px
+}
+
+.topic .action li.plus a{
+	display:block;
+	height:10px;
+	width:10px;
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons.png) no-repeat scroll -30px -250px;
+	margin-top:5px
+}
+
+.topic .action li.plus a:hover{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons.png) no-repeat scroll -40px -250px
+}
+
+.topic .action li.join a{
+	display:block;
+	height:10px;
+	width:10px;
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons.png) no-repeat scroll 0 -250px;
+	margin-top:5px
+}
+
+.topic .action li.join a:hover{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons.png) no-repeat scroll -10px -250px
+}
+
+.topic .action li.join-active a{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons.png) no-repeat scroll -10px -250px
+}
+
+.topic .action li.edit a{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/pencil-small.png) no-repeat 0 0;
+	padding-left:15px;
+	margin-left:10px;
+	text-decoration:none;
+	font-size:11px;
+	color:#629B00;
+	margin-left:5px
+}
+
+.topic .action li.delete a{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/cross-small.png) no-repeat 0 -1px;
+	padding-left:15px;
+	margin-left:5px;
+	text-decoration:none;
+	font-size:11px;
+	color:#BF1700
+}
+
+.topic .action li a:hover{
+	text-decoration:underline
+}
+
+.topic .action li.translate a{
+	margin-left:0;
+	color:#629B00
+}
+
+.topic .tags,.top-tags{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons-sprite.png) no-repeat scroll -68px -128px;
+	padding-left:18px;
+	margin-bottom:10px;
+	clear:both
+}
+
+.topic .tags li,.top-tags li{
+	display:inline;
+	color:#8c8774;
+	font-size:11px
+}
+
+.topic .tags li a,.top-tags li a{
+	color:#8c8774
+}
+
+.topic .tags li a:hover,.top-tags li a:hover{
+	text-decoration:none
+}
+
+.topic .tags.top-tags{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons-sprite.png) no-repeat scroll -193px 5px;
+	padding-left:21px;
+	margin-bottom:13px;
+	margin-bottom:9px
+}
+
+.topic .tags.top-tags li a{
+	color:#5f829f
+}
+
+.topic .voting{
+	margin-left:5px;
+	padding:5px 0 0
+}
+
+.topic .voting li{
+	float:left;
+	color:#777
+}
+
+.topic .voting li.vt-block{
+	margin-right:5px;
+	font-size:11px;
+	font-weight:700
+}
+
+.topic .voting li.vt-block .vt-block-counter{
+	float:right;
+	margin:-1px 10px 0 3px;
+	height:18px;
+	line-height:18px;
+	background:#fff;
+	padding:0 6px;
+	position:relative;
+	border:1px solid #aba799;
+	cursor:pointer;
+	-webkit-border-radius:2px;
+	-moz-border-radius:2px;
+	border-radius:2px;
+	font-size:11px;
+	color:#8c8774;
+	font-weight:400
+}
+
+.topic .voting li.vt-block .vt-block-counter:before{
+	background:url(data:image/gif;
+	base64,R0lGODlhBQAHALMAAPv7+sC9srGtoMG+s+Pi3erp5uLh3Ono5a6qnf///wAAAAAAAAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAAFAAcAAAQSMMkSJjKp3AQElgdCSEk4gkMEADs=) 0 0 no-repeat;
+	content:'.';
+	text-indent:-9999px;
+	position:absolute;
+	width:5px;
+	height:7px;
+	left:-5px;
+	top:50%;
+	margin-top:-3px
+}
+
+.topic .voting li.vt-block .vt-block-counter:hover .bubble-wrap{
+	display:block
+}
+
+.topic .voting li.vt-block .vt-block-counter .bubble-wrap{
+	display:none;
+	position:absolute;
+	top:21px;
+	z-index:100;
+	min-width:240px;
+	max-width:450px;
+	left:50%;
+	margin-left:-25px
+}
+
+.topic .voting li.vt-block .vt-block-counter .bubble{
+	padding:9px;
+	border:1px solid #e8e2db;
+	-webkit-border-radius:7px;
+	-moz-border-radius:7px;
+	border-radius:7px;
+	position:relative;
+	background:#fff;
+	height:auto
+}
+
+.topic .voting li.vt-block .vt-block-counter .bubble:before{
+	content:'.';
+	text-indent:-9999px;
+	background:url(data:image/png;
+	base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAGCAYAAAD37n+BAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAHxJREFUeNpi/P//PwMyuH3hKD+Q0oJyr6kaWH9ElmdCV/z3z29DKSWtNhAGsaEGIADIBhC+df4I//XT+x0+vX9z+D8UgNggMZAcTB1Oxbg0MYIYIKulVXSbeQWEbRiwgM8f3h55eudyLTML63mGG2cPZWIzGZtNILUAAQYASrScyKRNoQgAAAAASUVORK5CYII=) 0 0 no-repeat;
+	left:18px;
+	top:-6px;
+	position:absolute;
+	display:block;
+	width:12px;
+	height:6px
+}
+
+.vt-block .vt-block-counter .bubble .user-list li{
+	display:inline;
+	white-space:nowrap;
+	margin:0 10px 0 0;
+	float:none
+}
+
+.vt-block .vt-block-counter .bubble .user-list li img{
+	vertical-align:middle;
+	margin:0 4px 0 0;
+	position:relative;
+	top:-1px;
+	width:15px;
+	height:15px
+}
+
+.vt-block .vt-block-counter .bubble .user-list li a{
+	padding:0;
+	background:none
+}
+
+.topic .voting li.vt-block a{
+	padding-left:18px;
+	padding-top:3px;
+	height:14px;
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons-sprite.png) -170px -23px no-repeat;
+	line-height:14px
+}
+
+.topic .voting li.vt-block a.voted{
+	background-position:0 0
+}
+
+.topic .voting li a{
+	text-decoration:none;
+	outline:none
+}
+
+.topic .voting li.author{
+	margin-right:3px;
+	font-weight:700;
+	font-size:11px;
+	color:#be1700;
+	text-decoration:none;
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons-sprite.png) no-repeat scroll 0 -200px;
+	padding-left:14px;
+	float:right
+}
+
+.topic .voting li.date{
+	color:#8c8774;
+	font-size:11px;
+	margin-right:20px;
+	float:right
+}
+
+.topic .voting li.link{
+	color:#8c8774;
+	font-size:11px;
+	margin-right:20px;
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/link_url.gif) center left no-repeat;
+	padding-left:15px
+}
+
+.topic .voting-border{
+	margin-bottom:30px;
+	border:1px solid #e8e2db;
+	border-radius:6px;
+	padding:0 5px 4px
+}
+
+.topic .voting li.plus{
+	margin-right:5px
+}
+
+.topic .voting li.total{
+	margin-right:5px;
+	color:#aaa
+}
+
+.topic .voting li.total a:hover,.topic .voting li.total a{
+	background:#fff;
+	color:#aaa
+}
+
+.topic .voting li.minus{
+	margin-right:20px
+}
+
+.topic .voting li.plus a{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons.png) no-repeat scroll 0 -90px;
+	float:left;
+	display:block;
+	height:11px;
+	margin-top:3px;
+	text-decoration:none;
+	width:9px
+}
+
+.topic .voting li.plus a:hover{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons.png) no-repeat scroll -40px -90px
+}
+
+.topic .voting li.minus a{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons.png) no-repeat scroll -10px -90px;
+	float:left;
+	display:block;
+	height:11px;
+	margin-top:4px;
+	text-decoration:none;
+	width:9px
+}
+
+.topic .voting li.minus a:hover{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons.png) no-repeat scroll -70px -90px
+}
+
+.topic .voting.voted li.plus a{
+	cursor:default;
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons.png) no-repeat scroll 0 -90px
+}
+
+.topic .voting.voted li.minus a{
+	cursor:default;
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons.png) no-repeat scroll -10px -90px
+}
+
+.topic .voting.plus li.plus a{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons.png) no-repeat scroll -40px -90px
+}
+
+.topic .voting.minus li.minus a{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons.png) no-repeat scroll -70px -90px
+}
+
+.topic .voting.guest li.plus a{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons.png) no-repeat scroll 0 -90px;
+	cursor:default
+}
+
+.topic .voting.guest li.minus a{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons.png) no-repeat scroll -10px -90px;
+	cursor:default
+}
+
+.topic .voting.positive .total{
+	color:#390!important
+}
+
+.topic .voting.negative .total{
+	color:red!important
+}
+
+.topic .voting.minus li.plus a:hover{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons.png) no-repeat scroll 0 -90px
+}
+
+.topic .voting.plus li.minus a:hover{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons.png) no-repeat scroll -10px -90px
+}
+
+.green{
+	color:#629B00
+}
+
+.topic .voting li.comments-total{
+	float:right;
+	margin-right:3px;
+	margin-left:7px
+}
+
+.topic .voting li.comments-total a,.new-comments-list .comments-count{
+	font-size:13px;
+	color:#be1700;
+	padding-left:18px;
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons-sprite.png) -21px -179px no-repeat
+}
+
+.topic .voting li.favorite{
+	position:relative;
+	top:0;
+	left:0;
+	margin-right:15px
+}
+
+.topic .voting li.favorite a{
+	float:left;
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons-sprite.png) no-repeat scroll -44px -156px;
+	padding-left:15px;
+	white-space:nowrap;
+	height:13px;
+	margin-top:2px;
+	display:block;
+	outline-style:none
+}
+
+.topic .voting li.favorite a span{
+	position:relative;
+	top:-3px;
+	font-size:11px;
+	font-weight:700;
+	margin-left:3px
+}
+
+.topic .voting li.favorite a:hover{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons-sprite.png) no-repeat scroll -44px -156px
+}
+
+.topic .voting li.favorite.active span{
+	top:5px
+}
+
+.topic .voting li.favorite.active a{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/active-fav.png) 0 0 no-repeat;
+	height:24px;
+	position:relative;
+	margin-top:-6px
+}
+
+.topic .talk .voting{
+	margin-left:0;
+	padding:0
+}
+
+.topic .talk .voting li.favorite{
+	position:relative;
+	top:0;
+	left:0;
+	margin-right:5px;
+	float:right
+}
+
+.topic .talk .voting li.favorite a{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons-sprite.png) no-repeat scroll -44px -151px;
+	width:24px;
+	height:24px;
+	margin-top:2px;
+	display:block;
+	outline-style:none;
+	line-height:29px
+}
+
+.topic .talk .voting li.favorite a:hover{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons-sprite.png) no-repeat scroll -44px -151px
+}
+
+.topic .talk .voting li.favorite.active{
+	position:relative;
+	top:0;
+	left:0;
+	margin-right:5px;
+	float:right
+}
+
+.topic .talk .voting li.favorite.active a{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/active-fav.png) 100% 0 no-repeat;
+	font-size:11px;
+	line-height:29px;
+	color:#8c8774;
+	position:relative;
+	top:-2px;
+	left:-10px;
+	padding-right:0
+}
+
+.topic .voting li.vkshare{
+	float:right
+}
+
+.topic .content{
+	font-size:15px;
+	line-height:20px;
+	margin-bottom:15px;
+	font-family:'Helvetica Neue',Arial,sans-serif
+}
+
+.topic .content object embed{
+	width:100%
+}
+
+.topic .content img{
+	height:auto;
+	border:1px solid #dacfc4;
+	margin:5px 10px 5px -6px;
+	padding:2px;
+	max-width:100%
+}
+
+.topic .content img[src*="qipsmiles"]{
+	border:none;
+	padding:0;
+	margin:0 4px;
+	position:relative;
+	bottom:-5px
+}
+
+#text_preview img[width="500"]{
+	width:500px;
+	height:auto
+}
+
+#text_preview img[width="780"]{
+	width:780px;
+	height:auto
+}
+
+.topic .content p{
+	margin-bottom:15px
+}
+
+.topic .topic-recipe{
+	overflow:hidden
+}
+
+.topic .topic-recipe .topic-recipe-content{
+	float:right;
+	margin-right:20px;
+	font-size:13px;
+	width:214px
+}
+
+.topic .topic-recipe .topic-recipe-content ul{
+	list-style:none;
+	margin:0
+}
+
+.topic .topic-recipe .topic-recipe-content ul li{
+	border-top:1px solid #dacfc4;
+	padding:8px 0;
+	list-style:none;
+	margin:0
+}
+
+.topic-recipe-content ul li .preparing{
+	font-size:11px;
+	color:#8c8774;
+	display:block;
+	padding:0 0 0 20px;
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons-sprite.png) 0 0 no-repeat
+}
+
+.topic-recipe-content ul li .preparing.time{
+	background-position:-141px -51px
+}
+
+.topic-recipe-content ul li .preparing.difficulty{
+	background-position:-115px -78px
+}
+
+.topic-recipe-content ul li .preparing.type{
+	background-position:-92px -103px
+}
+
+.topic .topic-recipe .topic-recipe-content ul li:first-child{
+	border:none;
+	padding-top:0
+}
+
+.topic .topic-recipe .topic-recipe-img{
+	margin:0 264px 0 0
+}
+
+.topic .topic-recipe .topic-recipe-img img{
+	margin:0;
+	width:100%
+}
+
+.topic-recipe-img #topic-show-avatar{
+	border:1px solid #DACFC4;
+	padding:2px;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	box-sizing:border-box;
+	max-width:100%
+}
+
+.topic .content ul,ol{
+	margin-bottom:15px
+}
+
+.topic .content ul li{
+	list-style:disc;
+	margin-left:5px;
+	list-style-position:inside
+}
+
+.topic .content ol li{
+	list-style:decimal;
+	margin-left:5px;
+	list-style-position:inside
+}
+
+.topic .content dl{
+	margin-bottom:15px
+}
+
+.topic .content dl dt{
+	font-weight:700
+}
+
+.topic .content dl dd{
+	font-style:italic;
+	margin:0 0 5px 20px;
+	color:#555
+}
+
+.topic .content blockquote{
+	font-style:italic;
+	padding:5px 10px;
+	background:#f8f8f8
+}
+
+.topic .content td{
+	padding:5px
+}
+
+.topic .content pre,.comment .content pre{
+	overflow:auto;
+	width:95%;
+	padding:5px 2%;
+	margin-bottom:10px;
+	background:#f8f8f8 url(http://static.cookorama.net/templates/skin/cookorama/images/code.gif);
+	border:1px solid #dce6f0;
+	clear:both
+}
+
+.comment .content blockquote{
+	font-style:italic;
+	padding:5px 10px;
+	background:#fff;
+	border:1px solid #ddd
+}
+
+.topic li.print a:hover{
+	background:none
+}
+
+div.infomessage{
+	background:#e6ebf7 url(http://static.cookorama.net/templates/skin/cookorama/images/info.gif) no-repeat scroll 5px 5px;
+	padding:7px 7px 7px 40px
+}
+
+.topic .talk-date{
+	white-space:nowrap
+}
+
+#pagination{
+	padding-top:10px;
+	text-align:center;
+	position:relative;
+	margin-top:15px
+}
+
+#pagination p{
+	font-size:22px;
+	color:#83a13f
+}
+
+#pagination ul{
+	overflow:hidden;
+	margin:0
+}
+
+#pagination ul li{
+	display:inline-block;
+	margin:0 2px;
+	color:#8c8774;
+	line-height:29px;
+	font-size:18px;
+	text-indent:-1px
+}
+
+#pagination ul li a{
+	line-height:29px;
+	height:29px;
+	width:29px;
+	text-align:center;
+	display:block;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	border-radius:3px
+}
+
+#pagination ul li a:hover{
+	background:#629b00;
+	color:#fff;
+	text-decoration:none
+}
+
+#pagination ul li.active span{
+	line-height:29px;
+	height:29px;
+	width:29px;
+	text-align:center;
+	display:block;
+	border:1px solid #e3dfdc;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	border-radius:3px
+}
+
+#pagination ul li.prev{
+	font-size:18px;
+	color:#948f7d;
+	position:absolute;
+	left:0;
+	top:10px
+}
+
+#pagination ul li.next{
+	font-size:18px;
+	color:#948f7d;
+	position:absolute;
+	right:0;
+	top:10px
+}
+
+#pagination ul li.next a,#pagination ul li.prev a{
+	width:auto;
+	text-decoration:none;
+	background:none!important;
+	color:#629b00!important
+}
+
+#pagination ul li.next a span,#pagination ul li.prev a span{
+	text-decoration:underline
+}
+
+#pagination ul li.next a:hover span,#pagination ul li.prev a:hover span{
+	text-decoration:none
+}
+
+#pagination.onpage{
+	padding-left:0
+}
+
+.nav-line{
+	height:1px;
+	clear:both;
+	border-bottom:1px solid #e5e0de;
+	width:100%;
+	padding:0 9px;
+	position:relative;
+	left:-9px;
+	display:block;
+	margin-top:-2px
+}
+
+.block-nav{
+	font-family:arial,sans-serif;
+	font-weight:400;
+	margin-bottom:10px;
+	margin-bottom:0;
+	position:relative;
+	display:inline-block;
+	padding:0 2px;
+	z-index:1;
+	vertical-align:middle
+}
+
+.block-nav li{
+	font-size:11px;
+	line-height:1!important;
+	float:left;
+	padding:0!important;
+	border:1px solid #dacfc4;
+	cursor:pointer;
+	border-left:none;
+	overflow:visible!important;
+	position:relative;
+	color:#bf1700;
+	width:auto!important;
+	margin:0!important;
+	padding:0!important
+}
+
+.block-nav li:first-child{
+	border-left:1px solid #dacfc4;
+	line-height:1;
+	-webkit-border-radius:5px 0 0 5px;
+	-moz-border-radius:5px 0 0 5px;
+	border-radius:5px 0 0 5px
+}
+
+.block-nav li:first-child a,.block-nav li:first-child span{
+	-webkit-border-radius:5px 0 0 5px;
+	-moz-border-radius:5px 0 0 5px;
+	border-radius:5px 0 0 5px
+}
+
+.block-nav li:last-child{
+	-webkit-border-radius:0 5px 5px 0;
+	-moz-border-radius:0 5px 5px 0;
+	border-radius:0 5px 5px 0
+}
+
+.block-nav li:last-child a,.block-nav li:last-child span{
+	-webkit-border-radius:0 5px 5px 0;
+	-moz-border-radius:0 5px 5px 0;
+	border-radius:0 5px 5px 0
+}
+
+.block-nav li a,.block-nav li span{
+	padding:3px 6px 5px;
+	display:block;
+	border-top:1px solid #fff;
+	background:#f2efed
+}
+
+.block-nav li span{
+	color:#629B00;
+	text-decoration:underline
+}
+
+.block-nav li.active a,.block-nav li.active span{
+	background:#fff;
+	color:#6b6252;
+	text-decoration:none
+}
+
+.block-nav li.active:before{
+	content:'.';
+	text-indent:-9999px;
+	background:url(data:image/png;
+	base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAYAAAD68A/GAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAFpJREFUeNpiePn4zv9///79xwVAciA1TB/fvJj4+uk9BqAYAzoAiYHkQGqYgPwCbIqRFYHUsEDFQYpBdL6otBJYAFkRiM+CZBNcMYhAVoSuEFkxA7IiEAAIMABV2mGWLc3DfgAAAABJRU5ErkJggg==) 0 0 no-repeat;
+	display:block;
+	position:absolute;
+	width:10px;
+	height:6px;
+	bottom:-6px;
+	left:50%;
+	margin-left:-5px
+}
+
+#socicons{
+	margin-bottom:4px
+}
+
+#socicons ul{
+	display:block;
+	margin-left:16px
+}
+
+#socicons ul li{
+	float:left;
+	width:16%;
+	text-align:center
+}
+
+#socicons a{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/social-icons.png) no-repeat scroll 0 0;
+	width:36px;
+	height:36px;
+	display:block;
+	outline-style:none
+}
+
+#socicons a.fb{
+	background-position:0 0
+}
+
+#socicons a.lj{
+	background-position:-36px 0
+}
+
+#socicons a.email{
+	background-position:-72px 0
+}
+
+#socicons a.rss{
+	background-position:-108px 0
+}
+
+#socicons a.twitter{
+	background-position:-144px 0
+}
+
+#socicons a.vk{
+	background-position:-180px 0
+}
+
+#socicons p{
+	clear:both;
+	margin:0
+}
+
+.social-list{
+	font-size:0
+}
+
+.social-list li{
+	display:inline-block;
+	vertical-align:middle;
+	margin-left:10px;
+	font-size:11px
+}
+
+.social-list li:first-child{
+	margin-left:0!important;
+	margin-right:5px
+}
+
+.social-list a{
+	display:block;
+	width:24px;
+	height:24px;
+	background-image:url(http://static.cookorama.net/templates/skin/cookorama/images/icons.png);
+	background-repeat:no-repeat
+}
+
+.social-list .vk{
+	background-position:0 -273px
+}
+
+.social-list .fb{
+	background-position:-30px -273px
+}
+
+.social-list .tw{
+	background-position:-60px -273px
+}
+
+.social-list.small li{
+	margin-left:7px
+}
+
+.social-list.small a{
+	width:16px;
+	height:16px;
+	-webkit-background-size:60px 200px;
+	background-size:60px 200px
+}
+
+.social-list.small .vk{
+	background-position:0 -182px
+}
+
+.social-list.small .fb{
+	background-position:-20px -182px
+}
+
+.social-list.small .tw{
+	background-position:-40px -182px
+}
+
+#header .profile .social-list{
+	float:left;
+	margin-right:44px;
+	margin-top:-3px;
+	padding:0
+}
+
+#header .profile .social-list li{
+	text-align:left
+}
+
+#header .profile .social-list li:first-child{
+	display:block;
+	float:none;
+	margin-right:0;
+	margin-bottom:7px;
+	width:100%
+}
+
+#header .profile .social-list li:first-child + li{
+	margin-left:0
+}
+
+#header .profile.guest .social-list{
+	float:none;
+	font-size:0;
+	padding:0;
+	margin:0
+}
+
+#header .profile.guest .social-list.small{
+	margin:-4px 0 10px
+}
+
+#header .profile.guest .social-list li{
+	font-size:11px;
+	text-align:left;
+	left:auto
+}
+
+#header .profile.guest .social-list li:first-child{
+	width:auto;
+	float:left;
+	margin:0 5px 0 0
+}
+
+#header .profile.guest .social-list li:first-child + li{
+	margin-left:7px
+}
+
+#header .profile.guest .log{
+	margin-left:0
+}
+
+.block{
+	background:#fff;
+	line-height:16px;
+	border:1px solid #e8e2db;
+	margin:0 0 13px;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	border-radius:10px;
+	padding:10px;
+	-webkit-box-shadow:0 1px 1px 0 rgba(163,145,123,.2);
+	-moz-box-shadow:0 1px 1px 0 rgba(163,145,123,.2);
+	box-shadow:0 1px 1px 0 rgba(163,145,123,.2);
+	border-bottom:1px solid #D8CEC3
+}
+
+.block h1{
+	font-size:19px;
+	line-height:18px;
+	margin-bottom:7px
+}
+
+.block .right{
+	text-align:right;
+	padding-top:8px;
+	font-size:11px
+}
+
+.block.bnr{
+	background:none;
+	padding:0;
+	border:none;
+	text-align:center;
+	-webkit-box-shadow:none;
+	-moz-box-shadow:none;
+	box-shadow:none
+}
+
+.block.tree{
+	background:none;
+	padding:0;
+	border:none;
+	-webkit-box-shadow:none;
+	-moz-box-shadow:none;
+	box-shadow:none
+}
+
+.block.tree h1{
+	text-align:center;
+	line-height:1;
+	margin:0 auto;
+	color:#b78244;
+	text-transform:uppercase;
+	font-size:12px;
+	font-weight:700;
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/nav-bg.png) 50% 5px no-repeat;
+	font-family:arial,sans-serif;
+	width:160px
+}
+
+.block.tree h1 span{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/s-bg-top.gif) 0 0 repeat-x;
+	padding:0 5px;
+	color:#b78244
+}
+
+.block.tree h2{
+	text-align:center;
+	line-height:1;
+	margin:0 auto;
+	color:#b78244;
+	text-transform:uppercase;
+	font-size:12px;
+	font-weight:700;
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/nav-bg.png) 50% 5px no-repeat;
+	font-family:arial,sans-serif;
+	width:160px
+}
+
+.block.tree h2 span{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/s-bg-top.gif) 0 0 repeat-x;
+	padding:0 5px;
+	color:#b78244
+}
+
+.block.tree .level0 .end{
+	display:block;
+	cursor:default
+}
+
+.block.photo-prev .gal-nav{
+	text-align:center
+}
+
+.block.photo-prev .gal-nav ul{
+	display:inline-block
+}
+
+.gal-nav ul li{
+	float:left;
+	margin:0 2px
+}
+
+.gal-nav ul li a{
+	display:block;
+	width:7px;
+	height:7px;
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/gal-nav-sprite.png) 100% 100% no-repeat
+}
+
+.gal-nav ul li.active a{
+	background-position:100% 0
+}
+
+.gal-nav ul li.prev{
+	margin-right:5px;
+	position:relative;
+	top:-2px
+}
+
+.gal-nav ul li.prev a{
+	width:6px;
+	height:13px;
+	background-position:0 0
+}
+
+.gal-nav ul li.prev a:hover{
+	background-position:0 -12px
+}
+
+.gal-nav ul li.next{
+	margin-left:5px;
+	position:relative;
+	top:-2px
+}
+
+.gal-nav ul li.next a{
+	width:6px;
+	height:13px;
+	background-position:-7px -13px
+}
+
+.gal-nav ul li.next a:hover{
+	background-position:-7px -1px
+}
+
+.block.photo-prev .gallery-preview{
+	overflow:hidden;
+	margin:10px 0;
+	height:138px
+}
+
+.block.photo-prev .gallery-preview ul{
+	min-width:140px
+}
+
+.block.photo-prev .gallery-preview li{
+	float:left;
+	margin:0 3px 3px 0
+}
+
+.block.photo-prev .gallery-preview li a,.block.photo-prev .gallery-preview li img{
+	display:block;
+	width:60px
+}
+
+.block.photo-prev .gallery-preview li a{
+	padding:2px;
+	border:1px solid #dacfc4
+}
+
+.block.social li{
+	margin-bottom:10px
+}
+
+.block.navigation{
+	font-size:11px;
+	color:#888
+}
+
+.block.navigation ul li{
+	padding-top:10px;
+	padding-bottom:10px;
+	border-bottom:1px dotted #ddd
+}
+
+.block.navigation ul li.last{
+	border:0
+}
+
+.block.navigation .blog{
+	color:#8c8774
+}
+
+.block.ban .cr{
+	text-align:center
+}
+
+.block.ban .cr img{
+	margin:-11px -5px -14px
+}
+
+.block.tags{
+	background:none;
+	border:none;
+	-webkit-box-shadow:none;
+	-moz-box-shadow:none;
+	box-shadow:none
+}
+
+.block.tags ul.cloud{
+	text-align:left
+}
+
+.block.tags ul.cloud li{
+	display:inline;
+	margin-right:5px;
+	line-height:22px
+}
+
+.block.tags ul.cloud li a{
+	color:#8c8774;
+	text-decoration:none;
+	font-size:18px
+}
+
+.block.tags ul.cloud li a:hover{
+	background:#8c8774;
+	color:#fff
+}
+
+.block.tags ul.cloud li a.w1{
+	font-size:11px
+}
+
+.block.tags ul.cloud li a.w2{
+	font-size:12px
+}
+
+.block.tags ul.cloud li a.w3{
+	font-size:14px
+}
+
+.block.tags ul.cloud li a.w4{
+	font-size:16px
+}
+
+.block.tags ul.cloud li a.w5{
+	font-size:18px
+}
+
+.block.tags ul.cloud li a.w6{
+	font-size:20px
+}
+
+.block.tags ul.cloud li a.w7{
+	font-size:22px
+}
+
+.block.tags ul.cloud li a.w8{
+	font-size:24px
+}
+
+.block.tags ul.cloud li a.w9{
+	font-size:26px
+}
+
+.block.tags ul.cloud li a.w10{
+	font-size:28px
+}
+
+.block.blogs ul.list{
+	border-top:1px solid #e9e6e4;
+	padding-top:3px;
+	margin-top:10px
+}
+
+.block.blogs ul.list li{
+	overflow:hidden;
+	border-bottom:1px solid #e9e6e4;
+	padding-bottom:3px;
+	margin-bottom:4px;
+	color:#8c8774;
+	zoom:1
+}
+
+.block.blogs ul.list li.top{
+	font-size:18px;
+	line-height:30px
+}
+
+.block.blogs ul.list li img.blog-avatar{
+	margin-right:5px;
+	vertical-align:middle
+}
+
+.block.blogs ul.list li a{
+	padding-right:50px
+}
+
+.block.blogs ul.list li a.close{
+	padding-right:20px;
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/key.png) no-repeat right
+}
+
+.block.blogs ul.list li .total{
+	float:right;
+	font-weight:700;
+	padding-right:13px
+}
+
+.block.blogs ul.list li .user{
+	padding-right:3px;
+	color:#999;
+	font-weight:700;
+	text-decoration:none;
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons.png) no-repeat scroll 0 -108px;
+	padding-left:13px
+}
+
+.block.blogs ul.list li .user.inactive{
+	color:#cfcfcf
+}
+
+.block .rss-ico{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/rss-ico.png) 0 0 no-repeat;
+	width:12px;
+	height:12px;
+	display:inline-block;
+	vertical-align:middle;
+	text-indent:9999px;
+	overflow:hidden
+}
+
+.block.stream .stream-item{
+	overflow:hidden;
+	padding:0 2px
+}
+
+.block.stream .stream-item .user-avatar{
+	width:24px;
+	float:left;
+	text-align:center;
+	margin-right:6px
+}
+
+.block.stream .stream-item .stream-text{
+	overflow:hidden;
+	position:relative;
+	top:-2px;
+	display:table-cell;
+	vertical-align:middle;
+	height:28px
+}
+
+.block.stream .block-content li{
+	width:100%;
+	padding:10px 9px;
+	margin:0 0 0 -9px;
+	border-bottom:1px solid #e5e0de;
+	overflow:hidden;
+	font-size:11px;
+	line-height:15px
+}
+
+.block.stream a.stream-author{
+	text-decoration:none
+}
+
+.block.stream a.stream-topic{
+	padding-right:5px
+}
+
+.block.stream .stream-comment-icon{
+	background:transparent url(http://static.cookorama.net/templates/skin/cookorama/images/icons.png) no-repeat scroll 2px -146px;
+	padding-left:14px
+}
+
+.block.stream .stream-content span{
+	color:#bf1700
+}
+
+.familiar-list li{
+	overflow:hidden;
+	border-top:1px solid #E5E0DE;
+	border-bottom:none!important
+}
+
+.familiar-list li .over{
+	overflow:hidden
+}
+
+.familiar-list li .block-img{
+	float:left;
+	margin:0 7px 0 0;
+	padding:2px;
+	border:1px solid #dacfc4
+}
+
+.familiar-list li .block-img img{
+	display:block
+}
+
+.block.white{
+	background:#fff!important
+}
+
+.block.white.friend form textarea{
+	height:50px;
+	width:95%
+}
+
+.block.white.friend form label{
+	color:#333
+}
+
+.block.nostyle{
+	background:#fff
+}
+
+.block.options h3{
+	padding-bottom:10px
+}
+
+.block.options li{
+	padding-bottom:5px
+}
+
+.block.actions li{
+	color:#4ccc1b;
+	padding-bottom:3px
+}
+
+.block.actions li.add{
+	color:#4ccc1b;
+	padding-bottom:15px
+}
+
+.block.actions li.add a{
+	color:#4ccc1b
+}
+
+.block.actions li.del{
+	color:#d00;
+	padding-bottom:15px
+}
+
+.block.actions li.del a{
+	color:#d00
+}
+
+.block.contacts strong{
+	color:#8c8774
+}
+
+.block.contacts img{
+	padding:7px;
+	border:1px solid #cec6c3
+}
+
+.block.contacts ul{
+	margin-top:5px
+}
+
+.block.contacts ul li{
+	padding:3px 0 3px 25px
+}
+
+.block.contacts ul li.icq{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons-contacts.gif) no-repeat scroll 0 2px
+}
+
+.block.contacts ul li.jabber{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons-contacts.gif) no-repeat scroll 0 -23px
+}
+
+.block.contacts ul li.skype{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons-contacts.gif) no-repeat scroll 0 -47px
+}
+
+.block.contacts ul li.lj{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons-contacts.gif) no-repeat scroll 0 -73px
+}
+
+.block.contacts ul li.vk{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons-contacts.gif) no-repeat scroll 0 -99px
+}
+
+.block.contacts ul li.email{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons-contacts.gif) no-repeat scroll 0 -122px
+}
+
+.block.contacts ul li.phone{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons-contacts.gif) no-repeat scroll 0 -145px
+}
+
+.block.contacts ul li.twitter{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons-contacts.gif) no-repeat scroll 0 -169px
+}
+
+.block.stat ul.users{
+	font-size:11px;
+	color:#8c8774;
+	width:150px
+}
+
+.block.stat ul.users li{
+	border-bottom:1px solid #eee;
+	padding-bottom:2px
+}
+
+.block.stat ul.users li.last{
+	border-bottom:0
+}
+
+.block.stat .gender{
+	overflow:hidden;
+	padding:0 0 15px
+}
+
+.block.stat .gender ul{
+	font-size:11px;
+	color:#8c8774;
+	width:150px
+}
+
+.block.stat .gender ul li{
+	padding-bottom:2px
+}
+
+.block.stat .gender ul li.last{
+	border-bottom:0
+}
+
+.block.stat .gender ul li .mark{
+	width:8px;
+	height:8px;
+	float:left;
+	margin-top:4px;
+	margin-right:4px;
+	overflow:hidden;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	border-radius:4px
+}
+
+.block.stat .chart{
+	width:160px;
+	margin:0 auto
+}
+
+.block.view ul li{
+	padding-bottom:2px
+}
+
+.block.view ul li a{
+	padding:2px 4px
+}
+
+.block.view ul li.active a{
+	background:#eee;
+	color:#333;
+	font-weight:700;
+	text-decoration:none
+}
+
+.block.view-blogs{
+	margin-top:77px
+}
+
+.block.view-comments{
+	margin-top:98px
+}
+
+.update{
+	background:none repeat scroll 0 0;
+	width:42px;
+	float:right;
+	position:fixed;
+	top:220px;
+	right:0;
+	text-align:center
+}
+
+.update .tl{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/bg_update.gif) no-repeat scroll 0 0;
+	font-size:1px;
+	height:9px
+}
+
+.update .bl{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/bg_update.gif) no-repeat scroll 0 bottom;
+	font-size:1px;
+	height:9px
+}
+
+.update .wrapper{
+	border-left:1px solid #dddede;
+	background:#fafbfb
+}
+
+.update .update-comments{
+	cursor:pointer;
+	vertical-align:top
+}
+
+.update .refresh{
+	background:#fafbfb
+}
+
+.update .new-comments{
+	border-top:1px solid #ececed;
+	color:#3cc600;
+	padding-top:7px;
+	margin-top:3px;
+	cursor:pointer;
+	background:#fafbfb
+}
+
+.comments .comment{
+	position:relative;
+	zoom:1
+}
+
+.comments .comment .comment{
+	padding-left:30px
+}
+
+.comments .header{
+	margin-bottom:20px;
+	color:#8c8774
+}
+
+.comments .header a{
+	font-size:11px;
+	text-decoration:none;
+	border-bottom:1px dashed;
+	position:relative;
+	top:-2px
+}
+
+.comments .header h3{
+	font-size:22px;
+	overflow:hidden
+}
+
+.comments .header .right{
+	float:right;
+	font-size:11px;
+	color:#8c8774;
+	font-size:11px;
+	font-family:Arial,sans-serif
+}
+
+.comments .header .right a{
+	text-decoration:none;
+	border-bottom:1px dashed
+}
+
+.comments .header a.rss{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/rss-ico.png) 0 0 no-repeat;
+	width:12px;
+	height:12px;
+	display:inline-block;
+	vertical-align:top;
+	text-indent:9999px;
+	overflow:hidden;
+	border:none;
+	position:static
+}
+
+*+ html .comments .header a.rss{
+	display:inline;
+	zoom:1
+}
+
+.comments .comment .content{
+	background:#f7f7f7
+}
+
+.comments .comment .content.self{
+	background:#fdf5e6!important
+}
+
+.comments .comment .content.new{
+	background:#e4fbf1!important
+}
+
+.comments .comment .content.del{
+	background:#c5c5c5!important
+}
+
+.comments .comment .content.view{
+	background:#cdf5a6!important
+}
+
+.comment .folding{
+	width:9px;
+	height:9px;
+	float:left;
+	position:absolute;
+	left:-13px;
+	top:17px;
+	cursor:pointer
+}
+
+.comment .folding-open{
+	width:9px;
+	height:9px;
+	float:left;
+	position:absolute;
+	left:-13px;
+	top:17px;
+	cursor:pointer
+}
+
+.comment .folding.off{
+	display:none
+}
+
+.comment .content{
+	margin:0 50px 0 0;
+	padding:0
+}
+
+.comment .preview{
+	margin:0 50px 4px 0;
+	padding:0
+}
+
+.comment span.delete{
+	color:#c5c5c5;
+	font-size:16px
+}
+
+.comment .content .tb{
+	height:7px;
+	overflow:hidden;
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/comment-sprite.png) repeat-x
+}
+
+.comment .content .tl{
+	height:7px;
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/comment-sprite.png) no-repeat left -7px
+}
+
+.comment .content .tr{
+	height:7px;
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/comment-sprite.png) no-repeat right -14px
+}
+
+.comment .content .bb{
+	height:15px;
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/comment-sprite.png) 0 -21px repeat-x;
+	margin-left:24px
+}
+
+.comment .content .bl{
+	height:15px;
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/comment-sprite.png) no-repeat left -36px
+}
+
+.comment .content .br{
+	height:15px;
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/comment-sprite.png) no-repeat right -51px
+}
+
+.comment .content .text{
+	border-left:1px solid #dddede;
+	border-right:1px solid #dddede;
+	padding:5px 25px 5px 10px;
+	overflow:hidden;
+	zoom:1;
+	font-size:12px
+}
+
+.comment .voting{
+	width:48px;
+	height:30px;
+	position:absolute;
+	right:20px;
+	top:8px;
+	z-index:100;
+	overflow:hidden
+}
+
+.comment .voting a.plus{
+	width:9px;
+	height:11px;
+	display:block;
+	overflow:hidden;
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons.png) no-repeat scroll 0 -90px
+}
+
+.comment .voting a.minus{
+	width:9px;
+	height:11px;
+	display:block;
+	position:relative;
+	top:5px;
+	overflow:hidden;
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons.png) no-repeat scroll -10px -90px
+}
+
+.comment .voting .total{
+	float:right;
+	position:relative;
+	top:3px
+}
+
+.comment .voting a.plus:hover{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons.png) no-repeat scroll -40px -90px
+}
+
+.comment .voting a.minus:hover{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons.png) no-repeat scroll -70px -90px
+}
+
+.comment .voting.positive .total{
+	color:#390
+}
+
+.comment .voting.negative .total{
+	color:red
+}
+
+.comment .voting.guest a.plus{
+	width:9px;
+	height:11px;
+	display:block;
+	overflow:hidden;
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons.png) no-repeat scroll 0 -90px
+}
+
+.comment .voting.guest a.minus{
+	width:9px;
+	height:11px;
+	display:block;
+	overflow:hidden;
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons.png) no-repeat scroll -10px -90px
+}
+
+.comment .voting.plus a.plus{
+	width:9px;
+	height:11px;
+	display:block;
+	overflow:hidden;
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons.png) no-repeat scroll -40px -90px
+}
+
+.comment .voting.minus a.minus{
+	width:9px;
+	height:11px;
+	display:block;
+	overflow:hidden;
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons.png) no-repeat scroll -70px -90px
+}
+
+.comment .voting.voted a.plus,.comment .voting.voted a.minus,.comment .voting.guest a.plus,.comment .voting.guest a.minus{
+	cursor:default
+}
+
+.comment .voting.minus a.plus:hover{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons.png) no-repeat scroll 0 -90px
+}
+
+.comment .voting.plus a.minus:hover{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons.png) no-repeat scroll -10px -90px
+}
+
+.comment .info{
+	font-size:11px;
+	line-height:14px;
+	margin-bottom:25px;
+	overflow:hidden;
+	zoom:1
+}
+
+.comment .info p{
+	font-size:10px
+}
+
+.comment .info p a.author{
+	font-size:11px;
+	font-weight:700;
+	text-decoration:none
+}
+
+.comment .info img.avatar{
+	float:left;
+	margin:3px 7px 0 0
+}
+
+.comment .info ul li{
+	float:left;
+	font-size:10px;
+	margin-right:10px
+}
+
+.comment .info ul li.date{
+	color:#8c8774;
+	font-size:10px;
+	padding-right:20px
+}
+
+.comment .info a.imglink{
+	display:block;
+	width:9px;
+	height:11px;
+	text-decoration:none;
+	position:relative;
+	top:3px
+}
+
+.comment .info ul li.goto-comment-parent a{
+	text-decoration:none;
+	border-bottom:1px dotted #79B1D4;
+	font-family:tahoma
+}
+
+.comment .info ul li.goto-comment-child a{
+	text-decoration:none;
+	border-bottom:1px dotted #79B1D4;
+	font-family:tahoma
+}
+
+.comment .info a.link{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons.png) no-repeat scroll -10px -230px
+}
+
+.comment .info a.link:hover{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons.png) no-repeat scroll 0 -230px
+}
+
+.comment .info li.favorite a{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons.png) no-repeat scroll -40px -40px;
+	width:10px;
+	height:8px;
+	margin-top:4px;
+	display:block;
+	outline-style:none
+}
+
+.comment .info li.favorite a:hover{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons.png) no-repeat scroll -50px -40px
+}
+
+.comment .info li.favorite.active a{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons.png) no-repeat scroll -50px -40px
+}
+
+.comment .info a.off{
+	color:#8c8774
+}
+
+.comment .info a.repair{
+	color:#4CCC1B
+}
+
+.comment .info a.delete{
+	color:#BE1700
+}
+
+.comment .comment-topic{
+	font-size:11px;
+	color:#8c8774;
+	padding-bottom:3px;
+	padding-left:2px
+}
+
+.comment .comment-topic a{
+	font-weight:700
+}
+
+.comment .comment-topic a.comment-blog{
+	color:#8c8774
+}
+
+.comment .comment-topic a.comment-total{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons.png) no-repeat scroll -14px -147px;
+	padding-left:10px;
+	margin-left:10px;
+	text-decoration:none;
+	font-weight:400;
+	color:#78c658
+}
+
+.comments.padding-none{
+	padding-left:0
+}
+
+.comments.padding-none .comment .content,.comments.padding-none .comment .info{
+	margin-left:0
+}
+
+.comments.padding-none .voting{
+	top:28px
+}
+
+.reply-title{
+	margin-left:10px
+}
+
+.reply{
+	margin-right:50px;
+	padding:0 6px 20px 0;
+	position:relative
+}
+
+.reply textarea{
+	width:100%;
+	height:70px;
+	padding:2px
+}
+
+.reply textarea.loader{
+	background:#F7F7F7 url(http://static.cookorama.net/templates/skin/cookorama/images/loader.gif) no-repeat center
+}
+
+.poll{
+	margin:0 0 15px!important
+}
+
+.poll li{
+	list-style:none!important
+}
+
+.poll li dl{
+	overflow:hidden
+}
+
+.poll li dl dt{
+	float:left;
+	font-weight:400!important;
+	color:#8c8774;
+	font-size:11px;
+	width:50px
+}
+
+.poll li dl dt span{
+	font-size:12px;
+	color:#333
+}
+
+.poll li dl dd{
+	float:left;
+	font-style:normal!important;
+	width:70%
+}
+
+.poll li dl dd div{
+	margin-top:3px;
+	height:5px;
+	background:#ddd url(http://static.cookorama.net/templates/skin/cookorama/images/poll.png) no-repeat;
+	overflow:hidden
+}
+
+.poll li dl dd div span{
+	display:block;
+	margin-left:10px;
+	height:5px;
+	background:#ddd url(http://static.cookorama.net/templates/skin/cookorama/images/poll.png) no-repeat right top;
+	overflow:hidden
+}
+
+.poll li.most dl dt span{
+	font-weight:700
+}
+
+.poll li.most dl dd div{
+	background:#390 url(http://static.cookorama.net/templates/skin/cookorama/images/poll-most.png) no-repeat!important
+}
+
+.poll li.most dl dd div span{
+	background:#390 url(http://static.cookorama.net/templates/skin/cookorama/images/poll-most.png) no-repeat right top!important
+}
+
+.poll-new{
+	margin:0 0 15px!important
+}
+
+.poll-new li{
+	list-style:none!important;
+	margin-bottom:5px
+}
+
+.poll-new li input{
+	position:relative;
+	top:2px;
+	*top:1px;
+	margin-right:3px
+}
+
+.profile-blog{
+	padding:0 15px 0 0;
+	overflow:hidden;
+	position:relative
+}
+
+.profile-blog img.avatar{
+	float:left;
+	position:absolute;
+	top:4px;
+	left:2px
+}
+
+.profile-blog h1.title{
+	font-size:24px;
+	line-height:30px;
+	color:#8c8774;
+	padding-left:33px
+}
+
+.profile-blog h1.title a.title-link{
+	text-decoration:none;
+	outline:none
+}
+
+.profile-blog h1.title a.title-link span{
+	border-bottom:1px dashed #6C6353;
+	color:#6C6353
+}
+
+.profile-blog h1.title a.inactive span{
+	border-bottom:1px dashed #B0A38D;
+	color:#B0A38D;
+	text-decoration:none
+}
+
+.profile-blog h1.title a.rss{
+	display:inline-block;
+	height:12px;
+	width:12px;
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/rss-ico.png) no-repeat scroll;
+	position:relative;
+	bottom:8px;
+	left:4px
+}
+
+.profile-blog h2.title{
+	font-size:24px;
+	line-height:30px;
+	color:#8c8774;
+	padding-left:33px;
+	margin-bottom:20px
+}
+
+.profile-blog h2.title a.title-link{
+	text-decoration:none;
+	outline:none;
+	font-size:24px;
+	line-height:30px
+}
+
+.profile-blog h2.title a.title-link span{
+	border-bottom:1px dashed #6C6353;
+	color:#6C6353
+}
+
+.profile-blog h2.title a.inactive span{
+	border-bottom:1px dashed #B0A38D;
+	color:#B0A38D;
+	text-decoration:none
+}
+
+.profile-blog h2.title a.rss{
+	display:inline-block;
+	height:12px;
+	width:12px;
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/rss-ico.png) no-repeat scroll;
+	position:relative;
+	bottom:8px;
+	left:4px
+}
+
+.profile-blog .action{
+	overflow:hidden;
+	zoom:1;
+	padding-left:33px
+}
+
+.profile-blog .action li{
+	float:left;
+	margin-right:3px;
+	margin-bottom:20px
+}
+
+.profile-blog .action li a:hover{
+	text-decoration:underline
+}
+
+.profile-blog .action li.join a{
+	text-decoration:none;
+	border-bottom:1px dashed;
+	font-size:11px;
+	position:relative;
+	top:-4px
+}
+
+.profile-blog .action li.join a:hover{
+	text-decoration:none
+}
+
+.profile-blog .action li.edit a{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/edit.gif) no-repeat 0 1px;
+	padding-left:15px;
+	position:relative;
+	top:-4px;
+	margin-left:10px;
+	text-decoration:none;
+	font-size:11px;
+	color:#70aae0
+}
+
+.profile-blog .action li.delete a{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/delete.gif) no-repeat 0 1px;
+	padding-left:15px;
+	margin-left:10px;
+	position:relative;
+	top:-4px;
+	text-decoration:none;
+	font-size:11px;
+	color:red
+}
+
+.profile-blog .voting{
+	float:right;
+	font-size:10px;
+	text-align:center;
+	position:relative;
+	top:-5px;
+	z-index:2
+}
+
+.profile-blog .voting .clear{
+	clear:both;
+	color:#8C8774
+}
+
+.profile-blog .voting .count{
+	position:absolute;
+	top:42px;
+	left:69%;
+	color:#8C8774
+}
+
+.profile-blog .voting .text{
+	position:absolute;
+	top:42px;
+	right:33%;
+	color:#8C8774
+}
+
+.profile-blog .voting .plus{
+	float:left;
+	margin-right:5px
+}
+
+.profile-blog .voting .total{
+	float:left;
+	margin-right:5px;
+	color:#fff;
+	padding:3px 10px;
+	font-size:14px;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	border-radius:3px
+}
+
+.profile-blog .voting .minus{
+	float:left;
+	margin-right:0
+}
+
+.profile-blog .voting a.plus{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons.png) no-repeat scroll 0 -90px;
+	float:left;
+	display:block;
+	height:11px;
+	margin-top:6px;
+	text-decoration:none;
+	width:9px
+}
+
+.profile-blog .voting a.plus:hover{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons.png) no-repeat scroll -40px -90px
+}
+
+.profile-blog .voting a.minus{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons.png) no-repeat scroll -10px -90px;
+	float:left;
+	display:block;
+	height:11px;
+	margin-top:7px;
+	text-decoration:none;
+	width:9px
+}
+
+.profile-blog .voting a.minus:hover{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons.png) no-repeat scroll -70px -90px
+}
+
+.profile-blog .voting.plus a.plus{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons.png) no-repeat scroll -40px -90px
+}
+
+.profile-blog .voting.minus a.minus{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons.png) no-repeat scroll -70px -90px
+}
+
+.profile-blog .voting.guest a.plus{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons.png) no-repeat scroll 0 -90px;
+	cursor:default
+}
+
+.profile-blog .voting.guest a.minus{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons.png) no-repeat scroll -10px -90px;
+	cursor:default
+}
+
+.profile-blog .voting.positive .total{
+	background:#629B00
+}
+
+.profile-blog .voting.negative .total{
+	background:#ff3b3c
+}
+
+.profile-blog .voting.voted a.plus{
+	cursor:default
+}
+
+.profile-blog .voting.voted a.minus{
+	cursor:default
+}
+
+.profile-blog .voting.voted.plus a.minus:hover{
+	cursor:default;
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons.png) no-repeat scroll -10px -90px
+}
+
+.profile-blog .voting.voted.minus a.plus:hover{
+	cursor:default;
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons.png) no-repeat scroll 0 -90px
+}
+
+.profile-blog .about{
+	background:#f5f2ef;
+	margin-bottom:30px;
+	clear:both;
+	border-radius:8px
+}
+
+.profile-blog .about .content{
+	padding:20px 32px 25px;
+	overflow:hidden
+}
+
+.profile-blog .about .content h1{
+	font-size:20px;
+	margin-bottom:10px
+}
+
+.profile-blog .about .content div.item-title{
+	font:18px FontinSansCRBold,'helvetica neue',arial;
+	color:#6c6353;
+	line-height:27px;
+	font-size:20px;
+	margin-bottom:10px
+}
+
+.profile-blog .about .content p{
+	margin-bottom:15px
+}
+
+.profile-blog .about .content p.note{
+	color:#aaa;
+	margin-bottom:25px
+}
+
+.profile-blog .about .content .line{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/footer-bg.gif) repeat-x;
+	height:5px;
+	margin-bottom:20px;
+	clear:both
+}
+
+.profile-blog .about .content .admins{
+	float:left;
+	width:50%
+}
+
+.profile-blog .about .content .moderators{
+	float:left;
+	width:50%
+}
+
+.profile-blog .about .content ul.admin-list{
+	overflow:hidden;
+	text-align:center
+}
+
+.profile-blog .about .content ul.admin-list li{
+	float:left;
+	margin-right:10px;
+	margin-bottom:10px
+}
+
+.profile-blog .about .content ul.admin-list li dt img{
+	width:48px;
+	height:48px
+}
+
+.profile-blog .about .content h1.readers{
+	clear:both;
+	padding-top:10px
+}
+
+.profile-blog .about .content h1.readers a{
+	text-decoration:none;
+	border-bottom:1px dashed #70aae0
+}
+
+.profile-blog .about .content h1.readers a.inactive{
+	border-bottom:1px dashed #aaa;
+	color:#b0b0b0;
+	text-decoration:none
+}
+
+.profile-blog .about .content div.readers{
+	clear:both;
+	padding-top:10px;
+	font:20px FontinSansCRBold,'helvetica neue',arial;
+	color:#6c6353;
+	line-height:27px;
+	margin-bottom:10px
+}
+
+.profile-blog .about .content div.readers a{
+	text-decoration:none;
+	border-bottom:1px dashed #70aae0
+}
+
+.profile-blog .about .content div.readers a.inactive{
+	border-bottom:1px dashed #aaa;
+	color:#b0b0b0;
+	text-decoration:none
+}
+
+.profile-blog .about .content ul.reader-list{
+	overflow:hidden
+}
+
+.profile-blog .about .content ul.reader-list li{
+	float:left;
+	margin-right:15px;
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons-sprite.png) no-repeat scroll 0 -200px;
+	padding-left:14px;
+	margin-bottom:3px
+}
+
+.profile-blog .about .content ul.reader-list li a{
+	text-decoration:none;
+	font-weight:700
+}
+
+.profile-user .voting{
+	float:right;
+	font-size:10px;
+	position:relative;
+	top:-5px;
+	line-height:16px;
+	margin-top:20px
+}
+
+.profile-user .voting .clear{
+	float:left;
+	font-size:11px;
+	color:#8c8774;
+	margin-right:7px
+}
+
+.profile-user .voting .count{
+	display:none;
+	position:absolute;
+	top:46px;
+	left:69%;
+	color:#aaa
+}
+
+.profile-user .voting .text{
+	display:none;
+	position:absolute;
+	top:46px;
+	right:33%;
+	color:#aaa
+}
+
+.profile-user .voting .plus{
+	float:left;
+	margin-right:5px
+}
+
+.profile-user .voting .total{
+	float:left;
+	margin-right:5px;
+	color:#fff;
+	padding:0 4px;
+	line-height:16px;
+	font-size:11px;
+	background:#7cb006;
+	-webkit-border-radius:2px;
+	-moz-border-radius:2px;
+	border-radius:2px
+}
+
+.profile-user .voting .minus{
+	float:left;
+	margin-right:0
+}
+
+.profile-user .voting a.plus{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons.png) no-repeat scroll 0 -90px;
+	float:left;
+	display:block;
+	height:11px;
+	margin-top:2px;
+	text-decoration:none;
+	width:9px
+}
+
+.profile-user .voting a.plus:hover{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons.png) no-repeat scroll -40px -90px
+}
+
+.profile-user .voting a.minus{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons.png) no-repeat scroll -10px -90px;
+	float:left;
+	display:block;
+	height:11px;
+	margin-top:2px;
+	text-decoration:none;
+	width:9px
+}
+
+.profile-user .voting a.minus:hover{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons.png) no-repeat scroll -70px -90px
+}
+
+.profile-user .voting.plus a.plus{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons.png) no-repeat scroll -40px -90px
+}
+
+.profile-user .voting.minus a.minus{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons.png) no-repeat scroll -70px -90px
+}
+
+.profile-user .voting.guest a.plus{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons.png) no-repeat scroll 0 -90px;
+	cursor:default
+}
+
+.profile-user .voting.guest a.minus{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons.png) no-repeat scroll -10px -90px;
+	cursor:default
+}
+
+.profile-user .voting.positive .total{
+	background:#83a13f
+}
+
+.profile-user .voting.negative .total{
+	background:#ff3b3c
+}
+
+.profile-user .voting.voted a.plus{
+	cursor:default
+}
+
+.profile-user .voting.voted a.minus{
+	cursor:default
+}
+
+.profile-user .voting.voted.plus a.minus:hover{
+	cursor:default;
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons.png) no-repeat scroll -10px -90px
+}
+
+.profile-user .voting.voted.minus a.plus:hover{
+	cursor:default;
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons.png) no-repeat scroll 0 -90px
+}
+
+.profile-user .strength{
+	float:right;
+	font-size:10px;
+	text-align:center;
+	position:relative;
+	top:-5px;
+	margin-left:35px;
+	line-height:16px;
+	margin-top:20px
+}
+
+.profile-user .strength .clear{
+	float:left;
+	font-size:11px;
+	color:#8c8774;
+	margin-right:7px
+}
+
+.profile-user .strength .total{
+	float:left;
+	color:#fff;
+	padding:0 4px;
+	font-size:11px;
+	line-height:16px;
+	background:#6c6353;
+	-webkit-border-radius:2px;
+	-moz-border-radius:2px;
+	border-radius:2px
+}
+
+.profile-user h1.title{
+	font-size:19px;
+	padding:0;
+	margin-bottom:15px
+}
+
+.profile-user .name{
+	overflow:hidden;
+	color:#8c8774
+}
+
+.profile-user .name img.avatar{
+	float:left;
+	margin-right:15px
+}
+
+.profile-user .name p.nickname{
+	font-size:17px;
+	margin-top:4px;
+	margin-bottom:2px;
+	color:#6c6353;
+	font-weight:700
+}
+
+.profile-user .name .realname{
+	color:#8c8774
+}
+
+.profile-user .name .position{
+	color:#6c6353;
+	font-size:11px
+}
+
+.profile-user td{
+	vertical-align:top;
+	padding:0 0 10px
+}
+
+.profile-user td.var{
+	color:#6c6353;
+	width:120px;
+	font-size:11px;
+	padding:0 0 10px
+}
+
+.profile-user td.friends{
+	color:#8c8774;
+	margin:0 0 20px
+}
+
+.profile-user ul.friends li{
+	width:48px;
+	margin:0 20px 20px 0;
+	display:inline-block;
+	vertical-align:middle;
+	text-align:center
+}
+
+*+ html .profile-user ul.friends li{
+	display:inline;
+	zoom:1
+}
+
+.profile-user ul.friends li a{
+	text-decoration:none;
+	font-size:11px
+}
+
+.block .bottom-line{
+	border-top:1px solid #e5e0de;
+	text-align:center;
+	font-size:11px;
+	padding:7px 9px 0;
+	width:100%;
+	margin-left:-9px
+}
+
+.block .bottom-line a{
+	line-height:1;
+	text-decoration:none;
+	border-bottom:1px dashed rgba(98,155,0,.5)
+}
+
+.to-hide{
+	overflow:hidden;
+	margin:10px 0!important
+}
+
+.to-hide li{
+	padding:0 0 10px!important;
+	font-size:13px
+}
+
+.to-hide li a{
+	color:#5f829f
+}
+
+.profile-user table td .icon{
+	display:inline-block;
+	width:16px;
+	height:22px;
+	vertical-align:middle;
+	margin-right:5px;
+	position:relative;
+	top:-3px
+}
+
+.profile-user table .icq .icon{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons-contacts.gif) no-repeat scroll 0 2px
+}
+
+.profile-user table .jabber .icon{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons-contacts.gif) no-repeat scroll 0 -23px
+}
+
+.profile-user table .skype .icon{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons-contacts.gif) no-repeat scroll 0 -47px
+}
+
+.profile-user table .lj .icon{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons-contacts.gif) no-repeat scroll 0 -73px
+}
+
+.profile-user table .vk .icon{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons-contacts.gif) no-repeat scroll 0 -99px
+}
+
+.profile-user table .email .icon{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons-contacts.gif) no-repeat scroll 0 -122px
+}
+
+.profile-user table .phone .icon{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons-contacts.gif) no-repeat scroll 0 -145px
+}
+
+.profile-user table .twitter .icon{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/icons-contacts.gif) no-repeat scroll 0 -169px
+}
+
+.people h1{
+	margin-bottom:20px
+}
+
+.people h1 span{
+	color:#629B00
+}
+
+.people table{
+	width:96%;
+	border-collapse:collapse;
+	margin-bottom:20px
+}
+
+.people table thead td{
+	color:#8c8774;
+	font-size:11px;
+	font-weight:400;
+	padding:3px 0 9px
+}
+
+.people table thead td.blog-rating{
+	text-align:right
+}
+
+.people table thead td.strength,.people table thead td.rating{
+	width:80px;
+	text-align:right
+}
+
+.people table thead td.date{
+	width:200px;
+	text-align:left
+}
+
+.people table tbody td{
+	padding:10px 0;
+	font-size:13px;
+	color:#8c8774;
+	border-bottom:1px solid #e8e2db
+}
+
+.people table tbody td.icon{
+	border:none;
+	width:32px;
+	vertical-align:top
+}
+
+.people table tbody td span{
+	color:#83a13f
+}
+
+.people table tbody td.user{
+	overflow:hidden;
+	_height:1%
+}
+
+.people table tbody td.user img{
+	float:left;
+	margin-right:7px;
+	width:24px;
+	height:24px
+}
+
+.people table tbody td.user a.link{
+	color:#629B00;
+	font-weight:700;
+	position:relative;
+	top:1px;
+	font-size:15px
+}
+
+.people table tbody td.strength{
+	color:#70aae0;
+	font-weight:700;
+	text-align:center
+}
+
+.people table tbody td.date{
+	text-align:left
+}
+
+.people table tbody td.rating{
+	text-align:right
+}
+
+.people table tbody td.rating strong{
+	font-size:15px;
+	color:#6c6353
+}
+
+.people li:hover a img{
+	-webkit-box-shadow:0 5px 8px -3px #8E8981,0 5px 0 -4px rgba(0,0,0,0.2);
+	-moz-box-shadow:0 5px 8px -3px #8E8981,0 5px 0 -4px rgba(0,0,0,0.2);
+	box-shadow:0 5px 8px -3px #8E8981,0 5px 0 -4px rgba(0,0,0,0.2)
+}
+
+.people.top-blogs thead td.user{
+	padding-left:0;
+	text-align:left
+}
+
+.people.top-blogs thead td.join-head{
+	width:40px;
+	text-align:center
+}
+
+.people.top-blogs thead td.readers,.people.top-blogs tbody td.readers{
+	width:100px;
+	text-align:center
+}
+
+.people.top-blogs tbody td{
+	padding:6px 0
+}
+
+.people.top-blogs tr:hover .join a{
+	visibility:visible
+}
+
+.people.top-blogs td.rating{
+	text-align:right
+}
+
+.people.top-blogs td.name{
+	overflow:hidden;
+	font-size:11px
+}
+
+.people.top-blogs td.category a{
+	color:#5f829f
+}
+
+.people.top-blogs td.name img{
+	float:left;
+	padding-bottom:5px;
+	margin-right:7px;
+	width:24px;
+	height:24px
+}
+
+.people.top-blogs td.name a.title{
+	font-size:22px;
+	line-height:20px;
+	color:#5f829f
+}
+
+.people.top-blogs td.name a.title:hover{
+	color:#77a822
+}
+
+.people.top-blogs td.name span{
+	color:#8C8774
+}
+
+.people.top-blogs td.name a.title.close{
+	font-size:18px;
+	line-height:14px;
+	padding-right:20px;
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/key.png) no-repeat right 5px
+}
+
+.people.top-blogs td.name a.author{
+	line-height:18px;
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/user-icon.png) no-repeat 0 50%;
+	padding-left:14px;
+	color:#629b00;
+	font-weight:700;
+	text-decoration:none
+}
+
+.people.top-blogs .join{
+	text-align:center;
+	padding-right:20px;
+	padding-left:5px
+}
+
+.people.top-blogs .join a{
+	text-decoration:none;
+	line-height:1;
+	border-bottom:1px dashed;
+	font-size:11px;
+	visibility:hidden
+}
+
+.people.top-blogs .join a.leave{
+	visibility:visible
+}
+
+.people.top-blogs thead td.fav-head{
+	width:40px;
+	text-align:center
+}
+
+.people.top-blogs .fav{
+	text-align:center
+}
+
+.people.top-blogs .fav a{
+	margin:0 auto;
+	display:block;
+	height:10px;
+	width:10px;
+	background:url() no-repeat
+}
+
+.people.top-blogs .fav a:hover{
+	background:url() no-repeat
+}
+
+.people.top-blogs .fav.active a{
+	background:url() no-repeat
+}
+
+.people.talk-table thead td.user{
+	padding-left:10px;
+	width:150px
+}
+
+.people.talk-table .author{
+	margin-left:10px
+}
+
+.people.talk-table .inactive{
+	color:#cfcfcf!important
+}
+
+.people ol{
+	list-style:none
+}
+
+.people ol li{
+	margin:0 40px 40px 0;
+	width:100px;
+	position:relative;
+	text-align:center;
+	display:inline-block
+}
+
+*+ html .people ol li{
+	display:inline;
+	zoom:1
+}
+
+.people ol li .recipes{
+	color:#8c8774
+}
+
+.people ol li .rating{
+	display:block;
+	font-size:11px;
+	color:#8c8774;
+	margin:0 0 5px
+}
+
+.people ol li .rating strong{
+	color:#fff;
+	background:#7cb006;
+	padding:1px 3px;
+	-webkit-border-radius:2px;
+	-moz-border-radius:2px;
+	border-radius:2px
+}
+
+.people ol li .user{
+	display:block;
+	margin:0 0 5px
+}
+
+.people ol li .user img{
+	margin:0 0 5px
+}
+
+.people ol li .user a{
+	font-weight:700;
+	text-decoration:none
+}
+
+.people ol li span.p-counter{
+	content:counter(li) ".";
+	counter-increment:li;
+	position:absolute;
+	top:0;
+	font-weight:700;
+	left:-2em;
+	width:2em;
+	color:#6c6353;
+	font-size:13px;
+	text-align:center;
+	display:none
+}
+
+.topic.top{
+	margin-bottom:10px
+}
+
+.topic.top h1{
+	margin-bottom:10px
+}
+
+.topic.top h1 span{
+	color:#83a13f
+}
+
+.topic.top .block-nav{
+	margin-bottom:5px
+}
+
+.top-topics .topic{
+	padding-left:0!important
+}
+
+a.profiler{
+	margin:2px;
+	padding:4px;
+	text-decoration:none
+}
+
+a.profiler.active{
+	background:#70aae0;
+	color:#fff
+}
+
+.profiler.entries{
+	margin-top:4px
+}
+
+.profiler-table{
+	padding-left:25px
+}
+
+.profiler-table .has-child{
+	background:#e8e8e8
+}
+
+.profiler-table .filter{
+	background:#ffb5c5
+}
+
+.plugins thead td.name{
+	padding-left:32px
+}
+
+.plugins thead td.version,.plugins td.version{
+	width:40px;
+	text-align:center
+}
+
+.plugins thead td.author,.plugins td.author,.plugins tbody td.action{
+	width:120px;
+	text-align:center
+}
+
+.plugins tbody td{
+	padding:7px 0;
+	vertical-align:top
+}
+
+.plugins td.name{
+	overflow:hidden
+}
+
+.plugins td.name img{
+	float:left;
+	padding-bottom:5px;
+	margin-right:7px;
+	width:24px;
+	height:24px
+}
+
+.plugins td.name a.title{
+	font-size:18px;
+	line-height:14px
+}
+
+.plugins td.name a.author{
+	line-height:18px;
+	background:url() no-repeat scroll 0 -108px;
+	padding-left:12px;
+	color:#999;
+	font-weight:700
+}
+
+.plugins td.activate,.plugins td.deactivate{
+	width:120px;
+	text-align:right;
+	vertical-align:top
+}
+
+.plugins td.activate strong{
+	background:#6ec80d;
+	color:#fff;
+	padding:5px 10px
+}
+
+.plugins td.deactivate strong{
+	background:#ff68cf;
+	color:#fff;
+	padding:5px 10px
+}
+
+.plugins td.activate strong a,.plugins td.deactivate strong a{
+	color:#fff;
+	text-decoration:none
+}
+
+#footer .bottom_menu dl{
+	float:left;
+	font-size:1em;
+	width:16%
+}
+
+#footer .bottom_menu dl dt{
+	font-weight:700;
+	margin:0 0 10px
+}
+
+#footer .bottom_menu dl dt b a{
+	color:#629B00
+}
+
+#footer .bottom_menu li{
+	margin:0 0 9px;
+	font-size:11px
+}
+
+#footer .bottom_menu a{
+	color:#8c8774
+}
+
+#footer .right{
+	float:right;
+	text-align:left
+}
+
+.lsCmtTree_visible{
+	display:block
+}
+
+.lsCmtTree_hidden{
+	display:none
+}
+
+.lite-header{
+	padding:30px 20px
+}
+
+.lite-header a{
+	color:#333;
+	font-size:26px;
+	text-decoration:none
+}
+
+.lite-header a span{
+	color:#77D115
+}
+
+.lite-center{
+	margin:0 auto 20px;
+	top:210px;
+	width:380px;
+	padding:30px 0 20px;
+	min-height:340px;
+	color:#6c6353
+}
+
+.lite-center h4{
+	text-align:center;
+	font-size:29px;
+	color:#6c6353;
+	margin:0 0 20px
+}
+
+.lite-center button{
+	font-size:15px;
+	font-weight:700;
+	color:#fff;
+	text-shadow:0 -1px 0 #468004;
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/big-btn.png) 0 0 repeat-x;
+	line-height:28px;
+	border:1px solid #458900;
+	padding:0 10px;
+	margin:0;
+	height:30px;
+	font-family:'Helvetica Neue',Helvetica,Arial,sans-serif
+}
+
+.lite-center button em{
+	font-style:normal
+}
+
+.lite-center h3,.login-popup h3{
+	color:#8C8774;
+	margin-bottom:20px
+}
+
+.lite-center button,.login-popup button{
+	float:right
+}
+
+.lite-center .input-text,.login-popup .input-text{
+	width:270px;
+	font-size:18px;
+	padding:1px 0;
+	border:1px solid #c8bdb0;
+	border-top-color:#a3917b
+}
+
+.lite-center .input-checkbox,.login-popup .input-checkbox{
+	padding-top:7px
+}
+
+.lite-center .input-checkbox input,.login-popup .input-checkbox input{
+	position:relative;
+	top:2px
+}
+
+.lite-center .input-note{
+	display:block;
+	color:#8c8774;
+	font-size:11px;
+	line-height:14px;
+	text-align:center
+}
+
+.lite-center .input-note.open-hdr{
+	font-size:12px;
+	text-align:center;
+	margin:0 0 10px
+}
+
+.login-popup .login-message{
+	color:#000;
+	text-align:center;
+	font-size:15px;
+	margin-bottom:10px;
+	padding:0 60px
+}
+
+.lite-center .opidb{
+	text-align:center
+}
+
+.lite-center .opidb table{
+	width:100%
+}
+
+.lite-center label{
+	font-size:13px;
+	color:#6c6353;
+	line-height:23px
+}
+
+.lite-center select{
+	width:378px;
+	border:1px solid #c8bdb0;
+	padding:6px;
+	border-top:1px solid #a3917b
+}
+
+.lite-center .input-text{
+	width:378px;
+	border:1px solid #c8bdb0;
+	padding:3px 0;
+	border-top:1px solid #a3917b;
+	-webkit-border-radius:2px;
+	-moz-border-radius:2px;
+	border-radius:2px;
+	margin:0 0 5px
+}
+
+.lite-center.error h1{
+	font-size:28px;
+	color:#888
+}
+
+.lite-center.error p{
+	margin-bottom:10px;
+	color:#888
+}
+
+.lite-center.register{
+	position:static;
+	margin:0 auto
+}
+
+.lite-note{
+	overflow:hidden;
+	zoom:1
+}
+
+.lite-note a{
+	float:right;
+	font-size:11px
+}
+
+#window_load_img.login-popup input[type="text"]{
+	padding:5px 2px
+}
+
+.login-popup,.popup{
+	z-index:1000;
+	width:460px;
+	background:#fff url(http://static.cookorama.net/templates/skin/cookorama/images/s-bg-top.gif) 0 0 repeat-x;
+	-webkit-border-radius:15px;
+	-moz-border-radius:15px;
+	border-radius:15px;
+	overflow:hidden;
+	-webkit-box-shadow:0 13px 25px -10px rgba(16,11,3,.7);
+	-moz-box-shadow:0 13px 25px -10px rgba(16,11,3,.7);
+	box-shadow:0 13px 25px -10px rgba(16,11,3,.7)
+}
+
+.login-popup.fb{
+	width:585px
+}
+
+.login-popup.fb .content{
+	padding:0 40px
+}
+
+.login-popup{
+	font-size:12px;
+	color:#8c8774
+}
+
+.login-popup .lite-note,.login-popup p,.login-popup .btns{
+	padding:0 90px
+}
+
+.login-popup .btns .cansel{
+	background:none;
+	border:none;
+	font-size:11px;
+	color:#c52f18;
+	text-decoration:underline;
+	vertical-align:middle;
+	cursor:pointer;
+	padding:0;
+	position:relative;
+	top:-3px
+}
+
+.login-popup p{
+	margin-bottom:15px
+}
+
+.login-popup label{
+	font-size:12px
+}
+
+.login-popup .opidb{
+	text-align:center
+}
+
+.login-popup .opidb table{
+	width:100%
+}
+
+.login-popup .input-note{
+	text-align:center;
+	padding:0 0 15px;
+	display:block
+}
+
+.login-popup h4{
+	font-size:19px;
+	text-align:center;
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/line.png) 0 50% repeat-x
+}
+
+.login-popup h4.with-bg span{
+	background:#fff url(http://static.cookorama.net/templates/skin/cookorama/images/s-bg-top.gif) 0 0 repeat-x
+}
+
+.login-popup h4 span{
+	background:#fff;
+	padding:0 10px
+}
+
+.login-popup .input-text{
+	padding:4px 5px
+}
+
+.login-popup .login-popup-top,.popup-top{
+	position:relative;
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/top-line.png) 0 0 repeat-x;
+	height:20px;
+	-webkit-border-radius:15px 15px 0 0;
+	-moz-border-radius:15px 15px 0 0;
+	border-radius:15px 15px 0 0;
+	margin:0 0 15px
+}
+
+.login-popup .login-popup-bottom{
+	height:40px
+}
+
+.login-popup .close-block,.popup .close-block{
+	position:absolute;
+	top:6px;
+	right:5px;
+	width:18px;
+	height:18px;
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/close.png) no-repeat 0 0
+}
+
+.upload-image p{
+	margin-bottom:12px
+}
+
+.upload-image label{
+	color:#8c8774
+}
+
+.tags-input{
+	width:400px;
+	font-size:18px;
+	padding:4px 4px 6px;
+	border:1px solid #cec6c3;
+	color:#555;
+	background:#fafafa
+}
+
+.tags-input .login-popup h4{
+	font-size:17px
+}
+
+.no-scroll .StickyWinInstance{
+	height:auto
+}
+
+.popup-preview-wrap{
+	position:fixed;
+	overflow-y:scroll;
+	left:0;
+	top:0;
+	bottom:0;
+	right:0;
+	z-index:999
+}
+
+.popup-preview-wrap .StickyWinInstance{
+	top:45px!important
+}
+
+.popup-preview .popup-top{
+	background:transparent
+}
+
+.popup-preview{
+	width:940px
+}
+
+.popup-content-overlay .content{
+	margin:0 auto;
+	width:660px
+}
+
+.popup-content-overlay .content img{
+	max-width:100%;
+	height:auto
+}
+
+button,a.button,input.button,input[type="submit"]{
+	line-height:22px;
+	display:inline-block;
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/btn.png) 0 0 repeat-x;
+	border:1px solid #9b937e;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	border-radius:3px;
+	font-size:13px;
+	font-weight:700;
+	color:#4f4236;
+	text-shadow:0 1px 0 #f0e2bc;
+	text-decoration:none;
+	padding:0 9px;
+	margin:0 5px;
+	width:auto;
+	cursor:pointer;
+	height:24px;
+	font-family:'Helvetica Neue',Arial,sans-serif
+}
+
+button em,a.button em,input.button em,input[type="submit"] em{
+	font-style:normal
+}
+
+.panel_form{
+	width:100%;
+	padding:3px;
+	background-color:#e2dccd;
+	-webkit-border-radius:5px 5px 0 0;
+	-moz-border-radius:5px 5px 0 0;
+	border-radius:5px 5px 0 0;
+	overflow:hidden
+}
+
+.panel_form a.button{
+	border:none;
+	padding:0 2px;
+	line-height:1;
+	height:20px;
+	width:22px;
+	text-align:center;
+	margin:0 2px 0 0;
+	float:left;
+	background-color:#f9f7f6;
+	background-image:-webkit-gradient(linear,left top,left bottom,from(#fff),to(#f2efed));
+	background-image:-webkit-linear-gradient(top,#fff,#f2efed);
+	background-image:-moz-linear-gradient(top,#fff,#f2efed);
+	background-image:-ms-linear-gradient(top,#fff,#f2efed);
+	background-image:-o-linear-gradient(top,#fff,#f2efed);
+	background-image:linear-gradient(to bottom,#fff,#f2efed)
+}
+
+.panel_form a.button img{
+	width:19px;
+	height:20px
+}
+
+#reply-title{
+	width:100%;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	box-sizing:border-box;
+	padding:.5em;
+	margin-bottom:1em;
+	font-size:15px;
+	font-weight:700;
+	color:#DACFC4;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	border-radius:4px
+}
+
+.reply-title-wrapp{
+	margin-right:50px
+}
+
+#form_comment input[type="submit"]{
+	margin-left:0
+}
+
+#form_comment input[name="cancel_comment"]{
+	position:absolute;
+	right:0
+}
+
+#form_comment p{
+	margin-bottom:10px
+}
+
+#form_comment label{
+	font-size:11px
+}
+
+.comment .cmtedit-button.edit{
+	color:#629B00
+}
+
+#system_messages_error{
+	border:1px solid #e4ded6;
+	padding:15px 15px 15px 35px;
+	color:#d22b14;
+	background:#fff url(http://static.cookorama.net/templates/skin/cookorama/images/alert-icon.gif) 13px 17px no-repeat;
+	margin:5px auto 20px;
+	-webkit-box-shadow:0 1px 1px 0 #efece7;
+	-moz-box-shadow:0 1px 1px 0 #efece7;
+	box-shadow:0 1px 1px 0 #efece7;
+	border-radius:5px;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	box-sizing:border-box
+}
+
+#header + #system_messages_error{
+	width:380px;
+	margin:30px auto 20px
+}
+
+#system_messages_notice{
+	border:1px solid #e4ded6;
+	padding:15px 15px 15px 35px;
+	margin:5px auto 20px;
+	color:#3796e6;
+	background:#fff url(http://static.cookorama.net/templates/skin/cookorama/images/notice-icon.gif) 13px 17px no-repeat;
+	-webkit-box-shadow:0 1px 1px 0 #efece7;
+	-moz-box-shadow:0 1px 1px 0 #efece7;
+	box-shadow:0 1px 1px 0 #efece7;
+	border-radius:5px;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	box-sizing:border-box
+}
+
+#header + #system_messages_notice{
+	width:380px;
+	margin:30px auto 20px
+}
+
+.table-blog-users{
+	width:100%;
+	margin-top:20px;
+	margin-bottom:30px
+}
+
+.table-blog-users thead td{
+	background:#f1f1f1;
+	padding:10px;
+	text-align:center;
+	color:#555
+}
+
+.table-blog-users tbody td{
+	background:#fafafa;
+	padding:5px 10px;
+	text-align:center
+}
+
+.table-blog-users tbody td.username{
+	text-align:left
+}
+
+.table-blog-users tbody tr.even td{
+	background:#f5f5f5
+}
+
+.searched-item{
+	background:#fffacd
+}
+
+table.admin_page th{
+	vertical-align:bottom;
+	border:none;
+	border-bottom:solid #B0C1D3 1px;
+	padding:.2em .6em .2em .65em;
+	background:#e2e4e4;
+	font-size:.9em;
+	font-weight:400;
+	color:#6e6e6e
+}
+
+table.admin_page td{
+	padding:6px 8px;
+	border:none;
+	border-right:solid #B0C1D3 1px
+}
+
+table.admin_page tr.colored td{
+	background-color:#EEF6FB
+}
+
+table.admin_page tr.colored_sel td{
+	background-color:#D9FBC2
+}
+
+table.admin_page{
+	font-size:.9em;
+	border:none;
+	margin:20px 0 30px;
+	border-bottom:solid 1px #B0C1D3
+}
+
+table.admin_page td:first-child{
+	border-left:solid #B0C1D3 1px
+}
+
+table.admin_page img{
+	margin:0!important
+}
+
+.hidden{
+	display:none
+}
+
+.page-content{
+	padding-left:40px;
+	padding-right:30px
+}
+
+.page-content .block-nav li.active a{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/nav-block-a-str-content.gif) center top no-repeat!important
+}
+
+.page-content .block-nav li.active{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/nav-block-a-content.gif) repeat-x!important
+}
+
+.stat-performance{
+	padding:20px;
+	background:#f0f7fd;
+	border-top:1px solid #d1e7f9;
+	color:#333
+}
+
+.stat-performance table{
+	margin-top:15px
+}
+
+.stat-performance table td{
+	width:200px;
+	vertical-align:top
+}
+
+.stat-performance h4{
+	font-weight:700;
+	color:#81B2DB
+}
+
+*+ html .menu.to-show{
+	display:inline;
+	zoom:1
+}
+
+#nav .menu{
+	display:block
+}
+
+.menu .sub-menu{
+	position:absolute;
+	left:0;
+	top:30px;
+	white-space:nowrap;
+	min-width:650px
+}
+
+#nav .menu:after{
+	content:".";
+	display:block;
+	clear:both;
+	visibility:hidden;
+	line-height:0;
+	height:0
+}
+
+*+ html #nav .menu{
+	height:1%
+}
+
+.menu{
+	display:none;
+	font-family:arial,sans-serif;
+	font-weight:400;
+	margin-bottom:40px;
+	position:relative;
+	z-index:1;
+	vertical-align:middle
+}
+
+.menu.to-show{
+	display:inline-block;
+	margin-bottom:15px
+}
+
+.menu.menu-topic{
+	margin-bottom:15px
+}
+
+.menu li{
+	font-size:11px;
+	line-height:1!important;
+	float:left;
+	border:1px solid #dacfc4;
+	cursor:pointer;
+	border-left:none;
+	overflow:visible!important;
+	position:relative;
+	color:#bf1700;
+	width:auto!important;
+	margin:0!important;
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/menu-bg.png) 0 0 repeat-x;
+	padding:4px 6px 6px
+}
+
+.menu li li{
+	padding:0;
+	background:transparent
+}
+
+.menu li div{
+	display:inline
+}
+
+.menu li:first-child{
+	border-left:1px solid #dacfc4;
+	line-height:1;
+	-webkit-border-top-left-radius:5px;
+	-moz-border-radius-topleft:5px;
+	border-top-left-radius:5px;
+	-webkit-border-bottom-left-radius:5px;
+	-moz-border-radius-bottomleft:5px;
+	border-bottom-left-radius:5px
+}
+
+.menu li:first-child a,.block-nav li:first-child span{
+	-webkit-border-top-left-radius:5px;
+	-moz-border-radius-topleft:5px;
+	border-top-left-radius:5px;
+	-webkit-border-bottom-left-radius:5px;
+	-moz-border-radius-bottomleft:5px;
+	border-bottom-left-radius:5px
+}
+
+.menu li:last-child{
+	-webkit-border-top-right-radius:5px;
+	-moz-border-radius-topright:5px;
+	border-top-right-radius:5px;
+	-webkit-border-bottom-right-radius:5px;
+	-moz-border-radius-bottomright:5px;
+	border-bottom-right-radius:5px
+}
+
+.menu li:last-child a,.block-nav li:last-child span{
+	-webkit-border-top-right-radius:5px;
+	-moz-border-radius-topright:5px;
+	border-top-right-radius:5px;
+	-webkit-border-bottom-right-radius:5px;
+	-moz-border-radius-bottomright:5px;
+	border-bottom-right-radius:5px
+}
+
+.sub-menu li:first-child div{
+	-webkit-border-top-left-radius:5px;
+	-moz-border-radius-topleft:5px;
+	border-top-left-radius:5px;
+	-webkit-border-bottom-left-radius:5px;
+	-moz-border-radius-bottomleft:5px;
+	border-bottom-left-radius:5px
+}
+
+.sub-menu li:last-child div{
+	-webkit-border-top-right-radius:5px;
+	-moz-border-radius-topright:5px;
+	border-top-right-radius:5px;
+	-webkit-border-bottom-right-radius:5px;
+	-moz-border-radius-bottomright:5px;
+	border-bottom-right-radius:5px
+}
+
+.sub-menu li div{
+	display:block;
+	border-top:1px solid #fff;
+	background:#f2efed;
+	padding:4px 6px 5px;
+	-webkit-border-radius:0;
+	-moz-border-radius:0;
+	border-radius:0
+}
+
+.menu li span{
+	color:#629B00;
+	text-decoration:underline
+}
+
+.menu > li.active,.sub-menu > li.active > div{
+	display:block;
+	background:#fff;
+	color:#6b6252;
+	text-decoration:none
+}
+
+.menu li.active a{
+	color:#6C6353;
+	text-decoration:none
+}
+
+.sub-menu > li.active > div{
+	border-top:1px solid #fff
+}
+
+.menu li.active:before{
+	content:'.';
+	text-indent:-9999px;
+	background:url(data:image/png;
+	base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAYAAAD68A/GAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAFpJREFUeNpiePn4zv9///79xwVAciA1TB/fvJj4+uk9BqAYAzoAiYHkQGqYgPwCbIqRFYHUsEDFQYpBdL6otBJYAFkRiM+CZBNcMYhAVoSuEFkxA7IiEAAIMABV2mGWLc3DfgAAAABJRU5ErkJggg==) 0 0 no-repeat;
+	display:block;
+	position:absolute;
+	width:10px;
+	height:6px;
+	bottom:-6px;
+	left:50%;
+	margin-left:-5px
+}
+
+#blog-menu h1{
+	float:left;
+	padding-right:15px
+}
+
+#blog-menu > .menu{
+	margin-bottom:0;
+	top:4px
+}
+
+.lecBillSmallNote{
+	font-size:10px;
+	padding-bottom:24px;
+	padding-left:79px
+}
+
+.block-lang-switcher li{
+	float:left
+}
+
+.adriverBanner{
+	margin:0 auto;
+	text-align:center
+}
+
+.share-buttons{
+	display:inline-block;
+	margin-top:10px;
+	margin-bottom:18px;
+	padding-bottom:0
+}
+
+.share-buttons > div{
+	float:left;
+	margin-right:10px
+}
+
+.share-buttons .vkontakte{
+	width:104px
+}
+
+.share-buttons .facebook{
+	width:114px
+}
+
+.share-buttons .gplus{
+	width:76px
+}
+
+.share-buttons .twitter{
+	width:95px
+}
+
+.share-buttons .postila{
+	margin-right:28px
+}
+
+.share-buttons .pinterest{
+	margin-right:28px
+}
+
+.top-bnr{
+	background-position:center top;
+	background-repeat:no-repeat;
+	height:90px;
+	width:100%
+}
+
+.copyright a{
+	text-decoration:none;
+	color:#6c6353
+}
+
+.copyright a img{
+	vertical-align:bottom;
+	margin:0 3px 0 0
+}
+
+#content .search .text::-webkit-input-placeholder{
+	color:#BDB7AB;
+	font-style:italic
+}
+
+#content .search .text:-moz-placeholder{
+	color:#BDB7AB;
+	font-style:italic
+}
+
+.add-topic{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/add-icon.png) 0 50% no-repeat;
+	padding-left:19px;
+	margin-left:-19px
+}
+
+.write a.button{
+	font-weight:400
+}
+
+.search-results-list .search{
+	margin-top:20px!important
+}
+
+.search-results-list .topic .topic-recipe{
+	position:relative;
+	min-height:110px
+}
+
+.search-results-list .topic .topic-recipe .topic-recipe-content{
+	float:none;
+	margin:0 0 0 170px;
+	width:auto
+}
+
+.search-results-list .topic-recipe-content ul li .preparing{
+	padding:0;
+	width:20px;
+	text-indent:-9999px;
+	overflow:hidden;
+	display:inline-block;
+	height:20px;
+	vertical-align:middle
+}
+
+.search-results-list .topic .topic-recipe .topic-recipe-content ul{
+	padding:0 0 8px;
+	margin:0 0 8px;
+	border-bottom:1px solid #DACFC4
+}
+
+.search-results-list .topic .topic-recipe .topic-recipe-content ul li{
+	border:none;
+	padding:0;
+	display:inline;
+	margin-right:15px
+}
+
+.search-results-list .topic .topic-recipe .topic-recipe-img{
+	margin:0;
+	width:150px;
+	position:absolute;
+	left:0;
+	top:0
+}
+
+#profile-options{
+	margin:0 0 20px
+}
+
+#profile-options li{
+	display:inline;
+	margin-right:6px
+}
+
+#profile-options li a{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/profile-button.png) 0 0 repeat-x;
+	height:29px;
+	line-height:30px;
+	display:inline-block;
+	padding:0 10px;
+	font-size:15px;
+	font-weight:700;
+	color:#629b00;
+	text-shadow:0 1px 0 #fff;
+	text-decoration:none;
+	border:1px solid #d8cfcb;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	border-radius:10px;
+	-webkit-box-shadow:0 1px 1px 0 #f3f1f0;
+	-moz-box-shadow:0 1px 1px 0 #f3f1f0;
+	box-shadow:0 1px 1px 0 #f3f1f0
+}
+
+*+ html #profile-options li a{
+	display:inline;
+	zoom:1
+}
+
+#add_friend_form{
+	padding:10px 0 30px
+}
+
+#add_friend_form input[type="submit"]{
+	margin-left:0
+}
+
+.profile-user .profile-user-header{
+	margin:0 0 25px;
+	padding:0 0 10px;
+	border-bottom:1px solid #e5e0de
+}
+
+.profile-user .profile-user-lr{
+	overflow:hidden;
+	padding:0 0 20px;
+	border-bottom:1px solid #e5e0de;
+	margin:0 0 25px
+}
+
+.profile-user .profile-user-lr .l{
+	float:left;
+	margin:0 30px 0 0
+}
+
+.profile-user .profile-user-lr .l .date{
+	font-size:11px;
+	color:#6c6353;
+	margin:0 0 2px
+}
+
+.profile-user .profile-user-lr .l img{
+	margin:0 0 10px
+}
+
+.profile-user .profile-user-lr .r{
+	overflow:hidden
+}
+
+#form-left .buttons{
+	padding:10px 20px;
+	background:#f2efed;
+	margin-top:20px;
+	-webkit-border-radius:2px;
+	-moz-border-radius:2px;
+	border-radius:2px;
+	width:100%;
+	margin-left:-20px
+}
+
+#form-left .buttons input.right,.btn-big-green{
+	float:left;
+	height:30px;
+	line-height:29px;
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/green-button.png) 0 0 repeat-x;
+	border:1px solid #458900;
+	border-radius:5px;
+	padding:0 10px;
+	width:auto;
+	cursor:pointer;
+	font-size:15px;
+	font-weight:700;
+	color:#fff;
+	text-shadow:0 -1px 0 #468004;
+	margin-top:0;
+	margin-left:0
+}
+
+#form-left .buttons input{
+	float:right;
+	margin-left:10px;
+	margin-top:3px;
+	margin-right:0
+}
+
+.translated{
+	margin:15px 0
+}
+
+.translated .trigger{
+	text-decoration:none;
+	border-bottom:1px dashed;
+	line-height:1
+}
+
+.translated #topic-translations{
+	padding:8px 13px;
+	border:1px solid #d8cfc6;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	border-radius:10px;
+	position:relative;
+	margin:10px 0 0
+}
+
+.translated #topic-translations li img{
+	margin-right:1px;
+	position:relative;
+	top:2px
+}
+
+.translated #topic-translations:before{
+	content:'';
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/recept-arr-top.png) 0 0 no-repeat;
+	width:12px;
+	height:6px;
+	position:absolute;
+	top:-6px;
+	left:12px
+}
+
+#gallery-list li{
+	overflow:hidden;
+	padding:0 0 13px
+}
+
+#gallery-list li .txt{
+	overflow:hidden;
+	padding:0;
+	display:table-cell;
+	vertical-align:middle;
+	height:45px
+}
+
+#gallery-list li .g-img{
+	width:54px;
+	height:39px;
+	background:#fff;
+	padding:2px;
+	float:left;
+	margin:0 13px 0 0;
+	border:1px solid #d8c8ba
+}
+
+#gallery-list li .g-img .wrp{
+	display:block;
+	background:#fff;
+	padding:2px;
+	border:1px solid #d8c8ba;
+	position:relative;
+	width:54px;
+	height:39px
+}
+
+#gallery-list li .g-img .wrp span{
+	overflow:hidden;
+	width:54px;
+	height:39px;
+	display:block
+}
+
+#gallery-list li .g-img span img{
+	width:54px
+}
+
+#form-right #groups .group select{
+	margin-bottom:5px
+}
+
+.StickyWinInstance{
+	position:absolute!important
+}
+
+#torchin-banner-head{
+	background-color:#6e3009;
+	text-align:center;
+	height:90px
+}
+
+#torchin-banner{
+	background-color:#6e3009;
+	height:360px;
+	text-align:center;
+	clear:both
+}
+
+.portions{
+	overflow:hidden;
+	margin:0 0 20px
+}
+
+.portions input[type="text"]{
+	width:40px;
+	float:left;
+	padding:3px 2px;
+	margin:0 5px 0 0
+}
+
+.portions .btns{
+	float:left
+}
+
+.portions .btns a{
+	display:block;
+	width:23px;
+	height:11px;
+	margin:0 0 1px;
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/pl-btns.png) 0 0 no-repeat
+}
+
+.portions .btns a.btn-minus{
+	background-position:0 100%
+}
+
+.portions label{
+	float:left;
+	line-height:24px;
+	margin:0 10px 0 0
+}
+
+.topic .content .faq-page p{
+	margin:0 0 9px
+}
+
+.faq-page{
+	padding:8px 0 0
+}
+
+.faq-page br{
+	display:none
+}
+
+.faq-page .img-subscr{
+	position:relative;
+	bottom:-4px
+}
+
+.faq-page .admins{
+	margin:0 65px 0 0
+}
+
+.faq-page .admins p{
+	margin:0 0 20px!important
+}
+
+.faq-page .admins-list{
+	overflow:hidden;
+	margin:0;
+	padding:2px 0;
+	margin:-13px 0 0 0
+}
+
+.faq-page .admins-list li{
+	float:left;
+	margin:0 30px 0 0;
+	padding:0
+}
+
+.faq-page .admins-list li img{
+	vertical-align:middle;
+	margin:0 5px 0 0 !important;
+	position:relative;
+	top:-2px
+}
+
+.faq-page .culture{
+	margin:0 0 80px
+}
+
+.faq-page .culture ul li{
+	margin-bottom:20px
+}
+
+.faq-page h1{
+	margin:0 0 40px
+}
+
+.faq-page ul{
+	margin-left:-4px
+}
+
+.faq-page ul li{
+	list-style:none!important;
+	padding:0 0 0 25px;
+	margin:0 0 10px;
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/faq-list.gif) 0 10px no-repeat
+}
+
+.faq-page .img-instr{
+	text-align:center
+}
+
+.faq-page .img-instr .desc{
+	font-size:13px;
+	color:#b0b0b0;
+	display:block;
+	margin:5px 0 0
+}
+
+.faq-page .img-instr .name{
+	font-size:13px;
+	position:relative;
+	top:-16px
+}
+
+.faq-page .rating-colls{
+	overflow:hidden;
+	margin:0 0 90px
+}
+
+.rating-colls .img-instr{
+	margin:3px 0 0
+}
+
+.rating-colls .img-instr .desc{
+	margin:-20px 0 0
+}
+
+.rating-colls .r-coll{
+	float:left;
+	width:260px;
+	margin:0 20px 20px 0
+}
+
+.faq-page .blogs-colls{
+	overflow:hidden;
+	margin:60px 0 25px
+}
+
+.blogs-colls .img-instr{
+	margin:22px 0 0
+}
+
+.blogs-colls .l-coll{
+	margin:0 290px 0 0
+}
+
+.blogs-colls .r-coll{
+	float:right;
+	width:292px
+}
+
+.faq-page .video-instr{
+	padding:0 0 0 30px
+}
+
+.faq-page .video-instr .desc{
+	font-size:13px;
+	color:#b0b0b0;
+	display:block;
+	margin:5px 0 0
+}
+
+.faq-page .video-instr img{
+	margin:0 0 -7px -30px !important
+}
+
+.faq-page .video-instr .name{
+	font-size:24px;
+	text-decoration:none;
+	line-height:26px;
+	border-bottom:1px dotted
+}
+
+.faq-page .video-instr .name:hover{
+	border-color:#fff
+}
+
+.faq-page .recipes-colls{
+	overflow:hidden
+}
+
+.faq-page .recipes-colls .video-instr{
+	margin:0 0 0 -18px
+}
+
+.recipes-colls .l-coll{
+	width:250px;
+	float:left;
+	padding:0 0 30px
+}
+
+.recipes-colls .r-coll{
+	margin:0 19px 0 290px
+}
+
+.faq-page .register-colls{
+	overflow:hidden;
+	margin:0 0 40px
+}
+
+.faq-page .register-colls ul{
+	margin-bottom:20px
+}
+
+.register-colls .l-coll{
+	margin-right:290px
+}
+
+.register-colls .r-coll{
+	width:270px;
+	float:right
+}
+
+.faq-page img{
+	margin:0!important;
+	padding:0!important;
+	border:none!important
+}
+
+#sidebar{
+	min-height:1px
+}
+
+.logocodes h2{
+	font-size:29px;
+	line-height:27px;
+	font-weight:700;
+	margin:0 0 20px
+}
+
+.logocodes .browser-panel{
+	width:675px
+}
+
+.topic .logocodes .browser-panel img{
+	margin:0 0 5px
+}
+
+.logocodes .colls{
+	overflow:hidden;
+	margin:0 0 15px
+}
+
+.logocodes .colls .col{
+	display:inline-block;
+	width:314px;
+	margin:0 37px 40px 0
+}
+
+.logocodes textarea{
+	height:75px;
+	margin:10px 0 0;
+	font-family:monospace
+}
+
+.logocodes .big textarea{
+	height:108px
+}
+
+.topic .logocodes img{
+	padding:0;
+	margin:0;
+	border:none
+}
+
+*+ html .logocodes .colls .col{
+	display:inline;
+	zoom:1
+}
+
+.logocodes br{
+	display:none
+}
+
+#holidays{
+	text-align:left;
+	height:124px;
+	overflow:hidden
+}
+
+#holidays a{
+	margin:0 1% 10px
+}
+
+@media all and (max-width:1100px){
+	#holidays a{
+		margin:0 0 10px 1%
+	}
+
+}
+
+#holidays a:first-child{
+	margin:0 1% 10px 0
+}
+
+#holidays a:last-child{
+	margin:0 0 10px 1%
+}
+
+#holidays a,#holidays a img{
+	display:inline-block;
+	*display:inline;
+	zoom:1
+}
+
+.clear{
+	display:block
+}
+
+.clear:before,.clear:after{
+	content:".";
+	display:block;
+	clear:both;
+	visibility:hidden;
+	line-height:0;
+	height:0
+}
+
+html[xmlns] .clear{
+	display:block
+}
+
+* html .clear{
+	height:1%
+}
+
+.similar_recipes{
+	width:100%;
+	margin:30px 0 0
+}
+
+.similar_recipes ul{
+	display:block;
+	float:left;
+	width:100%;
+	list-style:none;
+	margin:0;
+	font-size:15px
+}
+
+.similar_recipes ul li{
+	display:block;
+	float:left;
+	width:48%;
+	list-style:none;
+	margin:0 0 40px 20px;
+	padding:0
+}
+
+.similar_recipes ul li.even{
+	margin-left:0
+}
+
+.similar_recipes ul li img{
+	float:left;
+	border:solid 2px #fff;
+	outline:solid 1px #e5e0de;
+	margin-right:15px;
+	width:35%;
+	max-width:150px
+}
+
+.similar_recipes ul li a{
+	-ms-word-wrap:break-word;
+	word-wrap:break-word
+}
+
+div.filter-item{
+	margin-top:18px
+}
+
+div.filter-item:first-child{
+	margin-top:0
+}
+
+.topic-recipe-content li a{
+	color:#8c8774
+}
+
+input.filter-button{
+	margin:0
+}
+
+div.similar_recipes h2{
+	font-size:29px;
+	line-height:27px;
+	margin-bottom:20px
+}
+
+.zloy_taburet img{
+	float:left;
+	border:1px solid #c8bdb0;
+	border-top-color:#a3917b;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	border-radius:3px;
+	float:left;
+	border:1px solid #c8bdb0;
+	border-top-color:#a3917b;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	border-radius:3px
+}
+
+.zloy_taburet label{
+	line-height:1.2;
+	display:inline-block;
+	margin:-4px 0 6px
+}
+
+.zloy_taburet input[type="text"]{
+	width:157px!important
+}
+
+.zloy_taburet .kapcha_image{
+	float:left;
+	position:relative;
+	background:#fff
+}
+
+.zloy_taburet .kapcha_image:after,.zloy_taburet .kapcha_image:before{
+	left:201px;
+	border:solid transparent;
+	content:" ";
+	height:0;
+	width:0;
+	position:absolute;
+	pointer-events:none
+}
+
+.zloy_taburet .kapcha_image:after{
+	border-color:rgba(136,183,213,0);
+	border-left-color:#fff;
+	border-width:7px;
+	top:50%;
+	margin-top:8px
+}
+
+.zloy_taburet .kapcha_image:before{
+	border-color:rgba(200,189,176,0);
+	border-left-color:#c8bdb0;
+	border-width:8px;
+	top:50%;
+	margin-top:7px
+}
+
+.zloy_taburet .zloy_taburet_license{
+	float:right;
+	width:160px
+}
+
+.bottom-banner-cnt{
+	margin:0 0 30px;
+	margin-bottom:30px;
+	text-align:center;
+	background:#F2F2F2
+}
+
+#admixer_async_198659755{
+	display:inline-block;
+	vertical-align:top
+}
+
+#admixer_async_198659755 center{
+	text-align:left
+}
+
+.comments .comment .text img{
+	max-width:100%;
+	height:auto
+}
+
+.topic-avatar-wrap{
+	float:left;
+	overflow:hidden;
+	margin-right:15px;
+	width:91px;
+	height:70px
+}
+
+.topic-avatar-wrap img{
+	max-width:100%;
+	max-height:100%
+}
+
+.topic-avatar-form{
+	margin-top:4px
+}
+
+.topic-avatar-form input[type="file"]{
+	margin-right:100px
+}
+
+.topic-avatar-form input{
+	margin-left:0
+}
+
+.topic-avatar-form .remove-avatar-link{
+	display:inline-block;
+	margin-bottom:6px
+}
+
+.topic-avatar-form .form_note{
+	display:inline-block;
+	margin-top:5px
+}
+
+div.panel_form a.celsius{
+	height:15px;
+	padding-top:5px
+}
+
+.label-list span{
+	display:inline-block;
+	width:93px;
+	height:93px
+}
+
+.label-list span.inactive{
+	opacity:.5
+}
+
+.comment-star-one{
+	background:url(/images/achievements/com-3.png) no-repeat
+}
+
+.comment-star-two{
+	background:url(/images/achievements/com-2.png) no-repeat
+}
+
+.comment-star-three{
+	background:url(/images/achievements/com-1.png) no-repeat
+}
+
+.comment-best{
+	background:url(/images/achievements/super-com.png) no-repeat
+}
+
+.topic-star-one{
+	background:url(/images/achievements/kulinar-1.png) no-repeat
+}
+
+.topic-star-two{
+	background:url(/images/achievements/kulinar-2.png) no-repeat
+}
+
+.topic-star-three{
+	background:url(/images/achievements/kulinar-3.png) no-repeat
+}
+
+.topic-chief{
+	background:url(/images/achievements/chef.png) no-repeat
+}
+
+.topic-su{
+	background:url(/images/achievements/suchef.png) no-repeat
+}
+
+.category-ukrainian{
+	background:url(/images/achievements/master-ukr.png) no-repeat
+}
+
+.category-italian{
+	background:url(/images/achievements/master-ita.png) no-repeat
+}
+
+.category-spain{
+	background:url(/images/achievements/master-esp.png) no-repeat
+}
+
+.category-france{
+	background:url(/images/achievements/master-fra.png) no-repeat
+}
+
+.category-greece{
+	background:url(/images/achievements/master-gre.png) no-repeat
+}
+
+.category-salads{
+	background:url(/images/achievements/in-salad.png) no-repeat
+}
+
+.category-first{
+	background:url(/images/achievements/in-pershi.png) no-repeat
+}
+
+.category-second{
+	background:url(/images/achievements/in-drugi.png) no-repeat
+}
+
+.category-snack{
+	background:url(/images/achievements/in-zakuski.png) no-repeat
+}
+
+.category-baking{
+	background:url(/images/achievements/in-bakery.png) no-repeat
+}
+
+.category-drinks{
+	background:url(/images/achievements/in-drinks.png) no-repeat
+}
+
+.category-dessert{
+	background:url(/images/achievements/in-deserts.png) no-repeat
+}
+
+.category-conservation{
+	background:url(/images/achievements/in-jars.png) no-repeat
+}
+
+.category-sauce{
+	background:url(/images/achievements/in-souses.png) no-repeat
+}
+
+.category-contest-participant{
+	background:url(/images/achievements/konk-uch.png) no-repeat
+}
+
+.category-contest-winner{
+	background:url(/images/achievements/konk-winner.png) no-repeat
+}
+
+.custom-photo{
+	background:url(/images/achievements/best-photo.png) no-repeat
+}
+
+.custom-decor{
+	background:url(/images/achievements/best-design.png) no-repeat
+}
+
+.custom-appleflashmob{
+	background:url(/images/achievements/apple_fmob.png) no-repeat
+}
+
+.custom-pumpkinflashmob{
+	background:url(/images/achievements/pumpkin_fmob.png) no-repeat
+}
+
+.custom-egglantflashmob{
+	background:url(/images/achievements/eggplant_fmob.png) no-repeat
+}
+
+.custom-video{
+	background:url(/images/achievements/best-video.png) no-repeat
+}
+
+.custom-picnik_fmob{
+	background:url(/images/achievements/picnik_fmob.png) no-repeat
+}
+
+.custom-egg_fmob{
+	background:url(/images/achievements/egg_fmob.png) no-repeat
+}
+
+.custom-maslyana_fmob{
+	background:url(/images/achievements/maslyana_fmob.png) no-repeat
+}
+
+.custom-sweetbaking_fmob{
+	background:url(/images/achievements/sweetbaking_fmob.png) no-repeat
+}
+
+img.img-noborder{
+	border:none!important;
+	display:block
+}
+
+.no-scroll{
+	height:100%;
+	overflow:hidden
+}
+
+.new-comments-list{
+	margin-left:11px
+}
+
+.new-comments-list .comments-count{
+	margin-left:8px
+}
+
+.new-comments-list > li{
+	position:relative;
+	margin-bottom:20px
+}
+
+.new-comments-list .remove-comment{
+	position:absolute;
+	bottom:4px;
+	left:-24px;
+	padding:17px 10px 0 0;
+	width:14px;
+	height:14px;
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/delete-icon.png) left bottom no-repeat;
+	cursor:pointer;
+	opacity:0
+}
+
+.new-comments-list > li:hover .remove-comment,.new-comments-list .remove-comment:hover{
+	opacity:1
+}
+
+.new-comments-list a{
+	font-size:16px
+}
+
+.new-comments-list .info{
+	font-size:11px;
+	color:#837762
+}
+
+.new-comments-list .comment-link{
+	text-decoration:none;
+	font-size:13px
+}
+
+.new-comments-list .tags{
+	display:inline-block;
+	margin:0 0 0 13px
+}
+
+.new-comments-list .tags a{
+	font-size:11px
+}
+
+.select-comment-options{
+	margin:38px 0 21px
+}
+
+.select-comment-options input,.select-comment-options label{
+	vertical-align:middle
+}
+
+.select-comment-options button{
+	margin-right:22px
+}
+
+.filters-item-1019 > span{
+	display:none!important
+}
+
+.filter-list .filters-item-1019 > ul{
+	margin-left:0
+}
+
+.icon-row{
+	margin:8px 0;
+	font-size:11px;
+	font-weight:700
+}
+
+.icon-row > span{
+	margin-left:12px
+}
+
+.profile .icon-row a{
+	text-decoration:none;
+	color:#be1700
+}
+
+.profile .user-row{
+	margin-right:-46px
+}
+
+.profile .rating-count{
+	display:inline-block;
+	vertical-align:middle;
+	margin-left:6px;
+	min-width:38px
+}
+
+.icon-row .icon{
+	display:inline-block;
+	margin-right:1px;
+	vertical-align:middle;
+	background-image:url(http://static.cookorama.net/templates/skin/cookorama/images/icons.png)
+}
+
+.icon-row .icon-settings{
+	margin:0
+}
+
+.icon-comments{
+	width:14px;
+	height:13px;
+	background-position:-3px -242px
+}
+
+.icon-messages{
+	width:16px;
+	height:12px;
+	background-position:-21px -242px
+}
+
+.icon-settings{
+	width:13px;
+	height:14px;
+	background-position:-41px -242px
+}
+
+.icon-messages-empty{
+	width:16px;
+	height:12px;
+	background-position:-21px -257px
+}
+
+.icon-comments-empty{
+	width:14px;
+	height:13px;
+	background-position:-3px -257px
+}
+
+.block.social{
+	padding:0;
+	text-align:center
+}
+
+#vk_groups,.fb_iframe_widget{
+	margin:20px auto
+}
+
+@media (max-width: 1085px){
+	.fb_iframe_widget{
+		margin-left:-3%
+	}
+
+}
+
+@media (max-width: 1045px){
+	.fb_iframe_widget{
+		margin-left:-10px
+	}
+
+}
+
+#facebook-like-wrap .login-popup-top{
+	margin:0 0 18px
+}
+
+#facebook-like-wrap .login-popup-bottom{
+	height:30px
+}
+
+#facebook-like-wrap .close-block{
+	top:8px;
+	right:9px;
+	width:24px;
+	height:24px;
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/close-big.png) no-repeat 0 0
+}
+
+#facebook-like-wrap .content-header{
+	color:#34312b;
+	font-size:22px;
+	line-height:1.5em;
+	text-align:center
+}
+
+#facebook-like-wrap .content-notice{
+	color:#6c6363;
+	font-size:13px;
+	margin-top:20px;
+	text-align:center
+}
+
+#facebook-like-wrap .content-thanks{
+	margin:26px 0 0;
+	font-size:13px;
+	text-align:center
+}
+
+#facebook-like-wrap .content-thanks a{
+	text-decoration:none;
+	display:inline-block;
+	border-bottom:1px dashed #629b00
+}
+
+#facebook-like-wrap .content-thanks .close-block{
+	position:static;
+	width:auto;
+	height:auto;
+	background:none
+}
+
+#facebook-like-wrap .content-thanks a:hover{
+	border-color:transparent
+}
+
+#facebook-like-wrap .fb_iframe_widget{
+	margin-bottom:0;
+	display:block
+}
+
+#facebook-like-wrap .fb_iframe_widget span{
+	display:block;
+	margin:0 auto
+}
+
+.roar-error-body{
+	position:absolute;
+	font:12px/14px "Lucida Grande",Arial,Helvetica,Verdana,sans-serif;
+	color:#fff;
+	text-align:left;
+	z-index:999
+}
+
+.roar-error{
+	position:absolute;
+	width:300px;
+	cursor:pointer
+}
+
+.roar-error-bg{
+	position:absolute;
+	z-index:1000;
+	width:100%;
+	height:100%;
+	left:0;
+	top:0;
+	background-color:red;
+	-moz-border-radius:10px;
+	-webkit-border-radius:5px;
+	-webkit-box-shadow:0 0 5px rgba(0,0,0,0.5)
+}
+
+.roar-error-body-ugly .roar-error{
+	background-color:#bf0000
+}
+
+.roar-error-body-ugly .roar-error-bg{
+	display:none
+}
+
+.roar-error h3{
+	position:relative;
+	padding:15px 10px 0;
+	margin:0;
+	border:0;
+	font-size:15px;
+	color:#fff;
+	z-index:1002
+}
+
+.roar-error p{
+	position:relative;
+	padding:10px 10px 15px;
+	margin:0;
+	font-size:12px;
+	color:#fff;
+	z-index:1002
+}
+
+.roar-notice-body{
+	position:absolute;
+	font:12px/14px "Lucida Grande",Arial,Helvetica,Verdana,sans-serif;
+	color:#fff;
+	text-align:left;
+	z-index:999
+}
+
+.roar-notice{
+	position:absolute;
+	width:300px;
+	cursor:pointer
+}
+
+.roar-notice-bg{
+	position:absolute;
+	z-index:1000;
+	width:100%;
+	height:100%;
+	left:0;
+	top:0;
+	background-color:#399f2f;
+	-moz-border-radius:10px;
+	-webkit-border-radius:5px;
+	-webkit-box-shadow:0 0 5px rgba(0,0,0,0.5)
+}
+
+.roar-notice-body-ugly .roar-notice{
+	background-color:#399f2f
+}
+
+.roar-notice-body-ugly .roar-notice-bg{
+	display:none
+}
+
+.roar-notice h3{
+	position:relative;
+	padding:15px 10px 0;
+	margin:0;
+	border:0;
+	font-size:15px;
+	color:#fff;
+	z-index:1002
+}
+
+.roar-notice p{
+	position:relative;
+	padding:10px 10px 15px;
+	margin:0;
+	font-size:12px;
+	color:#fff;
+	z-index:1002
+}
+
+.pieChartContainer{
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:12px;
+	line-height:16px;
+	padding:20px 0 0 15px
+}
+
+.pieChartWrapper{
+	float:left;
+	position:relative;
+	padding-right:12px
+}
+
+.pieChartWrapper img{
+	position:absolute;
+	top:0;
+	left:0
+}
+
+.clear{
+	clear:both
+}
+
+ul.autocompleter-choices{
+	position:absolute;
+	margin:0;
+	padding:0;
+	list-style:none;
+	border:1px solid #C8BDB0;
+	background-color:#fff;
+	text-align:left;
+	font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
+	z-index:50;
+	background-color:#fff;
+	color:#333;
+	box-shadow:0 3px 5px -1px rgba(0,0,0,.2)
+}
+
+ul.autocompleter-choices li{
+	position:relative;
+	margin:0;
+	padding:.3em .7em;
+	display:block;
+	float:none!important;
+	cursor:pointer;
+	font-weight:400;
+	white-space:nowrap;
+	font-size:13px;
+	line-height:18px
+}
+
+ul.autocompleter-choices li.autocompleter-selected{
+	background-color:#629B00;
+	color:#fff
+}
+
+ul.autocompleter-choices span.autocompleter-queried{
+	display:inline;
+	float:none;
+	font-weight:700;
+	margin:0;
+	padding:0
+}
+
+ul.autocompleter-choices li.autocompleter-selected span.autocompleter-queried{
+	color:#fff
+}
+
+input.autocompleter-loading{
+	background-image:url();
+	background-repeat:no-repeat;
+	background-position:right 50%
+}
+
+.str{
+	color:#080
+}
+
+.kwd{
+	color:#008
+}
+
+.com{
+	color:#800
+}
+
+.typ{
+	color:#606
+}
+
+.lit{
+	color:#066
+}
+
+.pun{
+	color:#660
+}
+
+.pln{
+	color:#000
+}
+
+.tag{
+	color:#008
+}
+
+.atn{
+	color:#606
+}
+
+.atv{
+	color:#080
+}
+
+.dec{
+	color:#606
+}
+
+pre.prettyprint{
+	padding:2px;
+	border:1px solid #888
+}
+
+@media print{
+	.str{
+		color:#060
+	}
+
+	.kwd{
+		color:#006;
+		font-weight:700
+	}
+
+	.com{
+		color:#600;
+		font-style:italic
+	}
+
+	.typ{
+		color:#404;
+		font-weight:700
+	}
+
+	.lit{
+		color:#044
+	}
+
+	.pun{
+		color:#440
+	}
+
+	.pln{
+		color:#000
+	}
+
+	.tag{
+		color:#006;
+		font-weight:700
+	}
+
+	.atn{
+		color:#404
+	}
+
+	.atv{
+		color:#060
+	}
+
+}
+
+.vlaCalendarPicker{
+	position:absolute;
+	z-index:999;
+	margin-top:-5px;
+	margin-left:-2px;
+	display:none
+}
+
+.vlaCalendarPicker .pickerBackground{
+	background:transparent url(http://static.cookorama.net/templates/skin/cookorama/images/datepicker/calendar_background.png) no-repeat top center;
+	padding:16px;
+	height:130px;
+	width:166px;
+	overflow:hidden
+}
+
+*html .vlaCalendarPicker .pickerBackground{
+	background-image:url(http://static.cookorama.net/templates/skin/cookorama/images/datepicker/calendar_background.gif)
+}
+
+.vlaCalendar,.vlaCalendar table{
+	font-family:calibri,arial!important;
+	color:#000;
+	font-size:12px!important
+}
+
+.vlaCalendar{
+	display:block;
+	width:164px;
+	line-height:14px!important
+}
+
+.vlaCalendar .container,.vlaCalendar .container div{
+	width:164px;
+	height:130px;
+	text-align:left;
+	position:absolute;
+	overflow:hidden
+}
+
+.vlaCalendar span.indication{
+	display:block;
+	text-align:center
+}
+
+.vlaCalendar table{
+	margin-top:8px;
+	text-align:right;
+	border-collapse:collapse;
+	background-color:#fff
+}
+
+.vlaCalendar .picker td{
+	cursor:pointer
+}
+
+.vlaCalendar .label:hover{
+	color:#06c;
+	cursor:pointer
+}
+
+.vlaCalendar .noHover:hover{
+	color:#000;
+	cursor:default
+}
+
+.vlaCalendar .arrowLeft,.vlaCalendar .arrowRight{
+	background:transparent url(http://static.cookorama.net/templates/skin/cookorama/images/datepicker/arrowleft.gif) no-repeat center;
+	height:12px;
+	width:10px;
+	cursor:pointer
+}
+
+.vlaCalendar .arrowLeft{
+	margin-left:5px;
+	float:left
+}
+
+.vlaCalendar .arrowLeft:hover{
+	background-image:url(http://static.cookorama.net/templates/skin/cookorama/images/datepicker/arrowleft_hover.gif)
+}
+
+.vlaCalendar .arrowRight{
+	margin-right:5px;
+	float:right;
+	background-image:url(http://static.cookorama.net/templates/skin/cookorama/images/datepicker/arrowright.gif)
+}
+
+.vlaCalendar .arrowRight:hover{
+	background-image:url(http://static.cookorama.net/templates/skin/cookorama/images/datepicker/arrowright_hover.gif)
+}
+
+.vlaCalendar .month th{
+	text-align:center;
+	font-weight:400;
+	width:24px;
+	padding-bottom:1px;
+	border-bottom:1px solid #f5f5f5
+}
+
+.vlaCalendar .month td{
+	padding-right:3px;
+	height:15px
+}
+
+.vlaCalendar .month tr.firstRow td{
+	padding-top:2px
+}
+
+.vlaCalendar .month td:hover{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/datepicker/day_hover.gif) bottom no-repeat;
+	color:#06c
+}
+
+.vlaCalendar .month td.selected{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/datepicker/day_selected.gif) bottom no-repeat;
+	color:#06c
+}
+
+.vlaCalendar .month td.selected:hover{
+	background-image:url(http://static.cookorama.net/templates/skin/cookorama/images/datepicker/day_selected_hover.gif)
+}
+
+.vlaCalendar .month td.outsideDay{
+	color:#a8a8a8
+}
+
+.vlaCalendar .month td.outsideDay:hover{
+	color:#b1c5fc
+}
+
+.vlaCalendar .year{
+	margin-left:2px
+}
+
+.vlaCalendar .year td{
+	width:40px;
+	height:35px;
+	text-align:center;
+	cursor:pointer
+}
+
+.vlaCalendar .year td:hover{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/datepicker/month_hover.gif) center no-repeat;
+	color:#06c
+}
+
+.vlaCalendar .year td.selected{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/datepicker/month_selected.gif) center no-repeat
+}
+
+.vlaCalendar .year td.selected:hover{
+	background-image:url(http://static.cookorama.net/templates/skin/cookorama/images/datepicker/month_selected_hover.gif)
+}
+
+.vlaCalendar .year td.current{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/datepicker/month_current.gif) center no-repeat;
+	color:#06c
+}
+
+.vlaCalendar .year td.current:hover{
+	background-image:url(http://static.cookorama.net/templates/skin/cookorama/images/datepicker/month_current_hover.gif)
+}
+
+.vlaCalendar .year td.selectedcurrent{
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/datepicker/month_selectedcurrent.gif) center no-repeat
+}
+
+.vlaCalendar .year td.selectedcurrent:hover{
+	background-image:url(http://static.cookorama.net/templates/skin/cookorama/images/datepicker/month_selectedcurrent_hover.gif)
+}
+
+.vlaCalendar .year td.outsideYear{
+	color:#a8a8a8
+}
+
+.vlaCalendar .year td.outsideYear:hover{
+	color:#b1c5fc
+}
+
+#PluginFacebook{
+	padding:10px 50px
+}
+
+#PluginFacebook a[target="_blank"]{
+	background:url(http://static.cookorama.net/plugins/facebook/templates/skin/default/images/external-small.png) no-repeat right;
+	padding-right:16px
+}
+
+#PluginFacebook h1,#PluginFacebook h2{
+	margin:25px 0 10px
+}
+
+#PluginFacebook h1{
+	font-size:1.7em
+}
+
+#PluginFacebook h2{
+	font-size:1.5em
+}
+
+#PluginFacebook #wizard ul.test-list{
+	font-size:1.2em;
+	margin-left:3em
+}
+
+#PluginFacebook #wizard ul.test-list li{
+	background:url(http://static.cookorama.net/plugins/facebook/templates/skin/default/images/clock.png) no-repeat;
+	padding-left:20px;
+	height:30px
+}
+
+#PluginFacebook #wizard ul.test-list li.test-stage-active{
+	font-weight:700;
+	background:url(http://static.cookorama.net/plugins/facebook/templates/skin/default/images/loader.gif) no-repeat
+}
+
+#PluginFacebook #wizard ul.test-list li.test-stage-complete{
+	color:green;
+	background:url(http://static.cookorama.net/plugins/facebook/templates/skin/default/images/accept_blue.png) no-repeat
+}
+
+#PluginFacebook #wizard ul.test-list li.test-stage-error{
+	color:#000;
+	background:url(http://static.cookorama.net/plugins/facebook/templates/skin/default/images/stop_round.png) no-repeat
+}
+
+#PluginFacebook #wizard .step-data{
+	padding:40px
+}
+
+#PluginFacebook #wizard .step-data .note{
+	font-size:80%;
+	color:#666
+}
+
+#PluginFacebook #wizard .step-data label{
+	width:160px;
+	display:block;
+	text-align:right;
+	height:20px;
+	line-height:20px;
+	float:left;
+	padding-right:5px
+}
+
+#PluginFacebook #wizard .step-data input.wide{
+	width:270px
+}
+
+#PluginFacebook #wizard .step-data p{
+	padding:3px;
+	margin:3px
+}
+
+#PluginFacebook #wizard #page-selector{
+	display:none
+}
+
+#PluginFacebook #wizard #page-selector select{
+	width:350px
+}
+
+#PluginFacebook #wizard #page-selector #page_select_rights{
+	width:24px;
+	height:22px
+}
+
+#PluginFacebook #wizard #page-selector #page_select_rights.perm{
+	background:#6f6;
+	background:url(http://static.cookorama.net/plugins/facebook/templates/skin/default/images/perm.png) no-repeat 3px 1px
+}
+
+#PluginFacebook #wizard #page-selector #page_select_rights.noperm{
+	background:#f33;
+	background:url(http://static.cookorama.net/plugins/facebook/templates/skin/default/images/noperm.png) no-repeat 3px 1px
+}
+
+#PluginFacebook #wizard #page-selector #page_select_rights.check{
+	background:url(http://static.cookorama.net/plugins/facebook/templates/skin/default/images/magnifier.png) no-repeat 3px 1px
+}
+
+#PluginFacebook #wizard #page_permissions_warn{
+	display:none;
+	line-height:14px;
+	border:1px solid red;
+	padding:10px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	-khtml-border-radius:5px;
+	border-radius:5px;
+	background:#fcc
+}
+
+#PluginFacebook ul.features{
+	margin-left:25px
+}
+
+#PluginFacebook ul.features li{
+	font-size:1em;
+	list-style:circle;
+	margin:7px 0
+}
+
+#PluginFacebook ul.info li{
+	float:left;
+	padding:0 5px
+}
+
+#PluginFacebook ul.info li.facebook_status_published{
+	background:url(http://static.cookorama.net/plugins/facebook/templates/skin/default/images/facebook_ok.png) no-repeat;
+	padding-left:25px
+}
+
+#PluginFacebook ul.info li.facebook_status_blocked{
+	background:url(http://static.cookorama.net/plugins/facebook/templates/skin/default/images/stop_round.png) no-repeat;
+	padding-left:25px;
+	color:#ff8c00
+}
+
+table.money tr td{
+	padding:10px;
+	vertical-align:top
+}
+
+#form-left{
+	margin-right:270px
+}
+
+.profile-user.add-tp{
+	padding:0 20px
+}
+
+.profile-user.add-tp .text-editor{
+	margin-bottom:13px
+}
+
+.profile-user.add-tp .req{
+	color:#d11900
+}
+
+.profile-user.add-tp textarea{
+	height:312px
+}
+
+.profile-user.add-tp h1{
+	margin-left:-20px;
+	line-height:22px
+}
+
+#form-right{
+	float:right;
+	width:240px
+}
+
+#form-right h2{
+	margin:0 0 15px
+}
+
+#form-right .add-text-block{
+	margin:0 0 45px;
+	color:#6d6d6d
+}
+
+#form-right .image-suggest{
+	width:16px;
+	height:12px;
+	background:url(http://static.cookorama.net/plugins/treeblogs/templates/skin/cookorama/images/gal-icon.png) 0 0 no-repeat;
+	display:inline-block;
+	vertical-align:middle
+}
+
+*+ html #form-right .image-suggest{
+	display:inline;
+	zoom:1
+}
+
+#form-right .addGroup{
+	display:inline-block;
+	text-decoration:none;
+	line-height:20px;
+	padding:0 0 0 20px;
+	background:url(http://static.cookorama.net/plugins/treeblogs/templates/skin/cookorama/images/add-icon.png) 0 2px no-repeat;
+	height:18px;
+	font-size:13px;
+	border:none
+}
+
+#form-right .addGroup span{
+	border-bottom:1px dashed;
+	line-height:1
+}
+
+*+ html #form-right .addGroup{
+	display:inline;
+	zoom:1
+}
+
+#form-right #groups{
+	margin:0 0 10px
+}
+
+#groups .group{
+	position:relative;
+	padding:20px 0 0!important;
+	margin:20px 0 0;
+	border-top:1px solid #e5e0de!important
+}
+
+#groups .group#g0{
+	margin:0;
+	padding:0!important;
+	border:none!important
+}
+
+#groups .group a.delgroup{
+	width:14px;
+	height:14px;
+	background:url(http://static.cookorama.net/plugins/treeblogs/templates/skin/cookorama/images/delete-icon.png) 0 0 no-repeat;
+	position:absolute;
+	right:-20px;
+	top:26px;
+	text-indent:-9999px
+}
+
+#groups .group-span{
+	font-size:13px;
+	color:#8c8774;
+	display:block;
+	padding:0 0 5px 20px;
+	background:url(http://static.cookorama.net/plugins/treeblogs/templates/skin/cookorama/images/cat-ico.png) 0 50% no-repeat
+}
+
+#form-right #way{
+	margin:25px 0 60px
+}
+
+#way .way{
+	font-size:13px;
+	color:#8c8774;
+	display:block;
+	padding:0 0 5px 20px;
+	background:url(http://static.cookorama.net/plugins/treeblogs/templates/skin/cookorama/images/icons-sprite.png) -92px -103px no-repeat
+}
+
+#form-right #difficulty{
+	margin:25px 0
+}
+
+#difficulty .difficulty{
+	font-size:13px;
+	color:#8c8774;
+	display:block;
+	padding:0 0 5px 20px;
+	background:url(http://static.cookorama.net/plugins/treeblogs/templates/skin/cookorama/images/icons-sprite.png) -115px -78px no-repeat
+}
+
+#form-right #speed{
+	margin:30px 0 25px
+}
+
+#speed .speed{
+	font-size:13px;
+	color:#8c8774;
+	display:block;
+	padding:0 0 5px 20px;
+	background:url(http://static.cookorama.net/plugins/treeblogs/templates/skin/cookorama/images/icons-sprite.png) -141px -51px no-repeat
+}
+
+.hide-extended-settings{
+	display:inline-block;
+	border-bottom:1px dashed;
+	line-height:1;
+	text-decoration:none;
+	margin:5px 0 10px
+}
+
+#select-topic-lang label{
+	display:block
+}
+
+#extended-settings-topic p{
+	margin:0 0 15px
+}
+
+.panel_form .note{
+	float:right;
+	margin:4px 5px 0 0;
+	font-size:11px;
+	color:#333
+}
+
+.sortThemes{
+	font-size:12px;
+	position:relative;
+	padding-left:40px;
+	padding-right:30px;
+	overflow:hidden
+}
+
+.sortThemes a{
+	float:left;
+	color:#67abc2;
+	padding:0 5px;
+	height:16px;
+	margin-right:9px;
+	text-decoration:none;
+	border:1px solid #67abc2;
+	border-radius:2px;
+	-moz-border-radius:2px;
+	-webkit-border-radius:2px;
+	position:relative;
+	behavior:url();
+	background:#fff;
+	margin-bottom:5px
+}
+
+.sortThemes a:hover{
+	border-color:#2d6071
+}
+
+.sortThemes a.active{
+	border:1px solid #2C7284;
+	background:none repeat scroll 0 0 #E1E7E8
+}
+
+.sortThemes a.active:hover{
+	border-color:#67ABC2
+}
+
+div .group{
+	border:1px solid orange;
+	padding:5px 5px 2px;
+	margin:5px 0 0
+}
+
+ul.treeblogs{
+	list-style:none outside none;
+	overflow:hidden
+}
+
+ul.treeblogs li{
+	float:left;
+	margin-right:3px
+}
+
+.menutree{
+	margin:0 0 30px
+}
+
+.menutree ul.regular{
+	display:none
+}
+
+.menutree ul.active{
+	display:block
+}
+
+ul li.level2{
+	margin-left:20px!important
+}
+
+ul li.level1{
+	margin-left:20px!important
+}
+
+.menutree li{
+	margin:11px 0
+}
+
+.menutree li ul{
+	margin:20px 0
+}
+
+.menutree .level0 > a{
+	font-size:15px;
+	color:#5f829f
+}
+
+.menutree .level1 > a:not(.green){
+	font-size:13px;
+	border:none;
+	color:#629B00;
+	text-decoration:underline
+}
+
+.menutree .level1 > a:hover{
+	text-decoration:none
+}
+
+.menutree .level2 > a{
+	font-size:13px
+}
+
+.menutree a.active{
+	color:#6c6353;
+	font-weight:700
+}
+
+.menutree div{
+	cursor:pointer;
+	float:left;
+	width:13px;
+	height:13px;
+	margin:2px 0 0;
+	padding-right:2px;
+	height:15px
+}
+
+.menutree div.regular{
+	background:url(http://static.cookorama.net/plugins/treeblogs/templates/skin/cookorama/images/nav-icons.png) 0 -13px no-repeat
+}
+
+.menutree div.active{
+	background:url(http://static.cookorama.net/plugins/treeblogs/templates/skin/cookorama/images/nav-icons.png) 0 0 no-repeat
+}
+
+.menutree div.end{
+	background:none;
+	display:none
+}
+
+.menutree .level2 div.end{
+	display:none
+}
+
+.dashed{
+	text-decoration:none;
+	border-bottom:1px dashed
+}
+
+.block.treeblogs{
+	background:none;
+	border:none;
+	padding:58px 0 20px 10px;
+	-webkit-box-shadow:none;
+	-moz-box-shadow:none;
+	box-shadow:none
+}
+
+.block.treeblogs h1{
+	font-size:16px;
+	margin:0 0 18px
+}
+
+.active-blogs{
+	color:#6C6353;
+	font-weight:700
+}
+
+.blue{
+	font-weight:700;
+	color:#5F829F
+}
+
+#select-topic-lang input{
+	position:relative;
+	top:1px
+}
+
+#select-topic-lang label{
+	margin:0 0 6px
+}
+
+#select-topic-lang .ico{
+	width:16px;
+	height:11px;
+	line-height:11px;
+	background:url(http://static.cookorama.net/plugins/treeblogs/templates/skin/cookorama/images/lang.png) 0 0 no-repeat;
+	display:inline-block;
+	vertical-align:middle;
+	margin:0 5px 0 0;
+	position:relative;
+	top:-2px
+}
+
+#select-topic-lang .ico.ukrainian{
+	background-position:0 0
+}
+
+#select-topic-lang .ico.russian{
+	background-position:0 -11px
+}
+
+#select-topic-lang .ico.english{
+	background-position:0 -22px
+}
+
+.menutree li.hide_until{
+	display:none
+}
+
+.menutree li.hide_until.show_until{
+	display:block
+}
+
+.menutree li.show_more{
+	background:url(http://static.cookorama.net/plugins/treeblogs/templates/skin/cookorama/images/show_more_shadow.png) 0 0 no-repeat;
+	padding:20px 0 0 12px;
+	margin:-17px 0 35px 23px
+}
+
+.menutree li.show_more a{
+	font-size:12px;
+	color:#d47d00;
+	border-bottom:dashed 1px #d47d00;
+	text-decoration:none;
+	font-style:italic;
+	display:inline;
+	float:left
+}
+
+.menutree li.show_more a.hide_more{
+	display:none
+}
+
+.menutree li.show_more a:hover{
+	border:0 none;
+	margin-bottom:1px
+}
+
+.add-ingridient-form{
+	border-bottom:1px dashed;
+	line-height:1;
+	text-decoration:none
+}
+
+#ingridient-forms-holder{
+	margin:0 0 20px
+}
+
+#ingridient-forms-holder .ingridient-form{
+	margin:0 0 7px
+}
+
+#ingridient-forms-holder .ingridient-form fieldset{
+	border:none;
+	padding:0
+}
+
+a.add-ingridient-form{
+	display:inline-block;
+	text-decoration:none;
+	line-height:20px;
+	padding:0 0 0 20px;
+	background:url(http://static.cookorama.net/plugins/ingridient/templates/skin/default/images/add-icon.png) 0 2px no-repeat;
+	height:18px;
+	font-size:13px;
+	border:none;
+	margin-top:4px;
+	margin-left:-18px
+}
+
+a.add-ingridient-form span{
+	border-bottom:1px dashed;
+	line-height:1
+}
+
+*+ html a.add-ingridient-form{
+	display:inline;
+	zoom:1
+}
+
+.ingridients-header{
+	overflow:hidden;
+	font-size:10px;
+	color:#8c8774;
+	margin:0 0 7px;
+	padding:0 0 0 66%
+}
+
+.ingridients-header .col1{
+	float:left;
+	width:65%;
+	margin-right:1%
+}
+
+.ingridients-header .col2{
+	width:46%;
+	float:left;
+	margin-right:1%
+}
+
+.ingridients-header .col3{
+	float:left;
+	width:18%
+}
+
+.ingridient-form{
+	display:inline-block;
+	width:100%;
+	position:relative
+}
+
+.ingridient-form input[type="text"]{
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	padding:2px 2px 2px 3px;
+	text-indent:1px;
+	line-height:17px
+}
+
+.ingridient-form .close{
+	width:14px;
+	height:14px;
+	background:url(http://static.cookorama.net/plugins/ingridient/templates/skin/default/images/delete-icon.png) 0 0 no-repeat;
+	position:absolute;
+	right:-23px;
+	top:5px;
+	text-indent:-9999px
+}
+
+.ingridient-form .ingridient-name{
+	float:left;
+	width:65%;
+	margin-right:1%
+}
+
+.ingridient-form .ingridient-value{
+	width:15%;
+	float:left;
+	margin-right:1%
+}
+
+.ingridient-form select{
+	float:left;
+	width:18%
+}
+
+.ingridient-form label{
+	display:none
+}
+
+*+ html .ingridient-form{
+	display:inline;
+	zoom:1
+}
+
+.topic-ingridients-table{
+	margin:0 0 25px;
+	font-size:13px
+}
+
+.topic-ingridients-table .portions-row td{
+	padding:8px 9px;
+	border-top:1px solid #dacfc4
+}
+
+.topic-ingridients-table .empty td{
+	padding:15px 0
+}
+
+.topic-ingridients-table .ingridient-group-title td{
+	font-weight:700;
+	font-style:italic;
+	font-family:Georgia,serif;
+	border-bottom:1px solid #dacfc4;
+	padding:4px 0!important;
+	line-height:15px
+}
+
+.topic-ingridients-table table td{
+	padding:10px 0 0;
+	font-size:13px;
+	line-height:1;
+	vertical-align:bottom
+}
+
+.topic-ingridients-table table td .dot{
+	background:url(http://static.cookorama.net/plugins/ingridient/templates/skin/default/images/dots.png) 0 100% repeat-x;
+	margin-right:2px;
+	line-height:16px;
+	padding-right:10px
+}
+
+.topic-ingridients-table table td .dot span{
+	background:#fff
+}
+
+.topic-ingridients-table table td .dot i{
+	color:#8c8372
+}
+
+.topic-ingridients-table table tr:first-child td:first-child{
+	-webkit-border-radius:10px 0 0 0;
+	-moz-border-radius:10px 0 0;
+	border-radius:10px 0 0 0
+}
+
+.topic-ingridients-table table tr:first-child td:last-child{
+	-webkit-border-radius:0 10px 0 0;
+	-moz-border-radius:0 10px 0 0;
+	border-radius:0 10px 0 0
+}
+
+.topic-ingridients-table table tr td:first-child{
+	width:240px;
+	padding-left:9px
+}
+
+a.add-ingridient-form-group{
+	display:inline-block;
+	vertical-align:top;
+	padding:5px;
+	border:1px solid #dacfc4;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+	background:url(data:image/gif;
+	base64,R0lGODlhCAAIAJECAP///2KbAP///wAAACH5BAEAAAIALAAAAAAIAAgAAAIQlBOmgnv5kJwUWGSBao6LAgA7) 5px 5px no-repeat;
+	float:left
+}
+
+*+ html a.add-ingridient-form-group{
+	display:inline;
+	zoom:1
+}
+
+#ingridient-forms-holder{
+	font-size:0;
+	line-height:0
+}
+
+#ingridient-forms-holder .add-ingridient-form-group{
+	width:8px;
+	height:8px;
+	margin:4px 0 0 5px
+}
+
+#ingridient-group-selector{
+	display:inline-block;
+	position:relative;
+	top:1px
+}
+
+*+ html #ingridient-group-selector{
+	display:inline;
+	zoom:1
+}
+
+#ingridient-group-selector li{
+	float:left;
+	font-size:15px;
+	color:#6c6353;
+	padding:5px 10px 6px;
+	-webkit-border-radius:5px 5px 0 0;
+	-moz-border-radius:5px 5px 0 0;
+	border-radius:5px 5px 0 0;
+	background:#fff;
+	border:1px solid #dacfc4;
+	line-height:18px;
+	margin:0 1px 0 0;
+	cursor:pointer;
+	display:block;
+	text-align:center;
+	position:relative
+}
+
+#ingridient-group-selector li span{
+	min-width:80px;
+	display:inline-block
+}
+
+*+ html #ingridient-group-selector li span{
+	display:inline;
+	zoom:1
+}
+
+#ingridient-group-selector li.active{
+	background:#f2efed;
+	border-bottom-color:#f2efed;
+	-webkit-box-shadow:inset 0 1px 0 #fff;
+	box-shadow:inset 0 1px 0 #fff
+}
+
+#ingridient-forms-holder .ingridient-group{
+	padding:10px 40px 10px 25px;
+	background:#f2efed;
+	border:1px solid #dacfc4;
+	-webkit-border-radius:0 3px 3px 3px;
+	-moz-border-radius:0 3px 3px;
+	border-radius:0 3px 3px 3px;
+	line-height:1
+}
+
+#ingridient-forms-holder .ingridient-group .group-name{
+	margin:0 0 -9px;
+	padding:2px;
+	width:178px;
+	line-height:17px;
+	display:block
+}
+
+#ingridient-group-selector li .close{
+	display:inline-block;
+	vertical-align:top;
+	width:14px;
+	height:14px;
+	background:url(http://static.cookorama.net/plugins/ingridient/templates/skin/default/images/delete-icon.png) 0 0 no-repeat;
+	text-indent:-9999px;
+	margin:2px 0 0
+}
+
+*+ html #ingridient-group-selector li .close{
+	display:inline;
+	zoom:1
+}
+
+.ingridient-group a.delete-tab{
+	display:inline-block;
+	vertical-align:top;
+	width:14px;
+	height:14px;
+	background:url(http://static.cookorama.net/plugins/ingridient/templates/skin/default/images/delete-icon.png) 0 0 no-repeat;
+	text-indent:-9999px;
+	margin:0 0 0 10px;
+	position:relative;
+	top:5px
+}
+
+*+ html .ingridient-group a.delete-tab{
+	display:inline;
+	zoom:1
+}
+
+.group-name.unchanged{
+	color:#A9A9A9
+}
+
+.fixed-ingridients{
+	background:#ede6e2;
+	box-shadow:0 0 45px 0 rgba(139,127,115,0.6),0 0 10px 0 rgba(139,127,115,0.2),0 1px 5px rgba(139,127,115,0.1),0 1px 0 rgba(139,127,115,0.1);
+	left:0;
+	position:fixed;
+	top:0;
+	width:100%;
+	z-index:1000;
+	max-height:100%;
+	overflow:auto
+}
+
+.fixed-ingridients .topic-ingridients-table table td .dot span{
+	background:#ede6e2
+}
+
+.fixed-ingridients.opened .topic-ingridients-table{
+	display:block
+}
+
+.fixed-ingridients .topic-ingridients-table{
+	display:none;
+	margin:15px auto 0;
+	width:320px
+}
+
+#show-fixed-ingridients{
+	font-family:FontinSansCRBold,'helvetica neue',arial;
+	line-height:1;
+	margin:0;
+	text-align:center;
+	padding:10px 0 15px
+}
+
+#show-fixed-ingridients a{
+	color:#6C6353;
+	font-size:19px;
+	text-decoration:none
+}
+
+#show-fixed-ingridients a .icon{
+	background:url(http://static.cookorama.net/plugins/ingridient/templates/skin/default/images/fix-icons.png) no-repeat scroll 0 0 transparent;
+	display:inline-block;
+	height:9px;
+	margin-left:7px;
+	position:relative;
+	top:-1px;
+	width:7px
+}
+
+.fixed-ingridients.opened #show-fixed-ingridients a .icon{
+	background-position:0 100%
+}
+
+* + html #show-fixed-ingridients a .icon{
+	display:inline
+}
+
+#show-fixed-ingridients{
+	cursor:pointer
+}
+
+.parts_search_form{
+	white-space:nowrap;
+	float:right
+}
+
+.parts_search_form input[type='submit']{
+	float:right
+}
+
+.parts_search_form input[type='text']{
+	float:left;
+	padding:3px
+}
+
+input[name='merge']{
+	float:left
+}
+
+.parts_add_link{
+	float:left;
+	margin:3px 0 0 75px
+}
+
+.ingredient .dot a{
+	color:#8c8774
+}
+
+.ingredient-group{
+	position:relative;
+	margin-bottom:22px
+}
+
+.ingredient-group h2{
+	position:relative;
+	display:inline-block;
+	padding-right:9px;
+	background:url(/templates/skin/cookorama/images/s-bg-bottom.gif);
+	z-index:2
+}
+
+.ingredient-group .ingridients-title{
+	margin-bottom:16px
+}
+
+.ingredient-group .ingridients-title:before{
+	content:"";
+	position:absolute;
+	top:9px;
+	width:100%;
+	border-top:solid 1px #dacfc3;
+	z-index:1
+}
+
+.ingridients-list{
+	overflow:hidden;
+	padding-left:16px
+}
+
+.ingridients-list li{
+	position:relative;
+	margin-right:45px;
+	width:90px;
+	text-align:center;
+	display:inline-block;
+	vertical-align:top;
+	margin-bottom:28px
+}
+
+.ingridients-list .overlay-cnt{
+	display:none;
+	position:absolute;
+	top:0;
+	right:0;
+	border-radius:50%;
+	width:90px;
+	height:90px;
+	background:url(/templates/skin/cookorama/images/plus.png) #629b00 24px 25px no-repeat;
+	background-color:rgba(98,155,0,.7)
+}
+
+.chosen-ingridients .ingridients-list .overlay-cnt{
+	background:url(/templates/skin/cookorama/images/plus.png) #d02d21 24px -43px no-repeat;
+	background-color:rgba(208,45,33,.7)
+}
+
+.ingridients-list .img-cnt{
+	display:inline-block;
+	margin-bottom:1px;
+	width:90px;
+	height:90px;
+	border-radius:50%;
+	-webkit-box-shadow:inset 0 0 0 1px rgba(0,0,0,.12);
+	box-shadow:inset 0 0 0 1px rgba(0,0,0,.12);
+	background-position:center center
+}
+
+.ingridients-list li div{
+	text-decoration:none;
+	outline:solid 0 transparent;
+	color:#629b00;
+	cursor:pointer
+}
+
+.ingridients-list li div:hover .overlay-cnt{
+	display:block
+}
+
+.search-in-category{
+	margin-bottom:30px
+}
+
+.search-in-category h3{
+	margin-bottom:13px
+}
+
+.search-in-category ul{
+	overflow:hidden
+}
+
+.search-in-category ul li{
+	display:inline-block;
+	width:49%;
+	vertical-align:top;
+	margin-bottom:6px;
+	overflow:hidden
+}
+
+.search-in-category input{
+	float:left;
+	margin:3px 7px 0 0;
+	margin-left:7px
+}
+
+.search-in-category label{
+	display:block;
+	margin-left:27px;
+	color:#8c8775
+}
+
+.chosen-ingridients{
+	border:solid 1px #dacfc3;
+	border-radius:6px;
+	margin-bottom:10px;
+	padding:7px 0 7px 11px;
+	text-align:center
+}
+
+.chosen-ingridients h3{
+	margin-bottom:14px;
+	text-align:left
+}
+
+.chosen-ingridients .ingridients-list{
+	padding-left:8px
+}
+
+.chosen-ingridients .ingridients-list li{
+	margin:0 18px 12px 0
+}
+
+.chosen-ingridients .ingridients-list .name{
+	display:none
+}
+
+.chosen-ingridients .clear-ingridients{
+	display:inline-block;
+	margin-top:8px;
+	padding-left:16px;
+	color:#629b00;
+	text-decoration:none;
+	text-transform:lowercase;
+	background:url(/templates/skin/cookorama/images/delete.gif) no-repeat left center
+}
+
+.chosen-ingridients .placeholder{
+	padding:58px 42px 93px;
+	color:#8c8775
+}
+
+.search-filter .btn-big-green{
+	width:100%
+}
+
+input.search-input{
+	margin-bottom:25px;
+	width:100%;
+	height:30px;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	padding:0 9px;
+	border:solid 1px #c8bdb0;
+	border-top-color:#a3917b
+}
+
+.btn-clear-text{
+	background:url(/templates/skin/cookorama/images/delete.gif) no-repeat left center;
+	width:32px;
+	height:30px;
+	position:absolute;
+	right:-13px;
+	cursor:pointer
+}
+
+.hide{
+	display:none!important
+}
+
+.qipsmiles-list{
+	display:block;
+	background:#eee;
+	margin:0;
+	padding:0
+}
+
+.qipsmiles-hide{
+	display:none
+}
+
+img.smile{
+	border:none
+}
+
+#block_facebook #facebook_recs{
+	display:none
+}
+
+#block_facebook #plugin_author{
+	text-align:right;
+	color:silver;
+	font-size:10px
+}

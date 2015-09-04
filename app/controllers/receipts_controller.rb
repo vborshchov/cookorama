@@ -3,12 +3,10 @@ class ReceiptsController < ApplicationController
 
   def index
     @receipts = []
-    @page.css('script, .topic-user-info, #ingridient-header, .share-buttons, .action, .topic .tags:not(.top-tags)').remove # remove all unneeded content
-    # @page.css('.topic .tags:not(.top-tags)').remove
-    @page.css('a').map { |a| a['href'] = "/receipts/?link=" + a['href'].to_s}
-    @page.css('.ingredients a').map{|a| a['href'] = "#"}
-    @page.css('.topic').each_with_index do |t, index|
-      t.css('.voting-border').remove
+    @page.css("script, .topic-user-info, #ingridient-header, .share-buttons, .action, div[id^='div-gpt-ad'], .content>.clear>a").remove # remove all unneeded content
+    @page.css("a").map { |a| a["href"] = "/receipts/?link=" + a["href"].to_s}
+    @page.css(".topic").each_with_index do |t, index|
+      t.css(".voting-border").remove
       t[:id] = "to-top" if index == 0
       @receipts << t.to_html
     end
@@ -55,8 +53,11 @@ class ReceiptsController < ApplicationController
       #         else
       #           "http://cookorama.net"
       #         end
+      puts link
+      link = URI::escape(link)
+      puts link
       @page = Nokogiri::HTML(open(link))
-      @title = @page.css('.title span').text
+      @title = @page.css(".title span").text
     end
 
 end

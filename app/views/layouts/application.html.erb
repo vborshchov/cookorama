@@ -21,7 +21,26 @@
           </section>
 
           <section class="middle tab-bar-section">
-            <h1 class="title"><%= content_for?(:title) ? yield(:title) : (link_to "Cookorama.net", root_path) %></h1>
+            <h1 class="title left"><%= content_for?(:title) ? yield(:title) : (link_to "Cookorama.net", root_path) %></h1>
+            <div class='right'>
+              <div class="row">
+                <div class='columns small-1 middle-1 large-1'><%= yield(:add_to_favourite) if content_for?(:add_to_favourite) %></div>
+                <div class='columns small-10 middle-10 large-10'>
+                  <ul class="hide-for-small-only">
+                    <li class="has-form">
+                      <div class="row collapse">
+                        <div class="large-9 small-10 columns">
+                          <input type="text" placeholder="вареники">
+                        </div>
+                        <div class="large-3 small-2 columns">
+                          <a href="#" class="info button tiny expand">Пошук</a>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </section>
 
           <section class="right-small">
@@ -44,8 +63,9 @@
           </ul>
         </aside>
 
-        <section class="main-section">
+        <section class="main-section topic">
           <%= yield %>
+          <div class="bottom"></div>
         </section>
 
         <a class="exit-off-canvas"></a>

@@ -438,7 +438,7 @@ $include-html-global-classes: $include-html-classes;
 // $include-html-button-classes: $include-html-classes;
 
 // We use these to build padding for buttons.
-// $button-tny: rem-calc(10);
+$button-tny: rem-calc(10.65);
 // $button-sml: rem-calc(14);
 // $button-med: rem-calc(16);
 // $button-lrg: rem-calc(18);
@@ -1206,7 +1206,7 @@ $include-html-global-classes: $include-html-classes;
 // $split-button-active-bg-tint: rgba(0,0,0,0.1);
 
 // We use these to control tiny split buttons
-// $split-button-padding-tny: $button-pip-tny * 10;
+// $split-button-padding-tny: $button-pip-tny * 11;
 // $split-button-span-width-tny: $button-pip-tny * 6;
 // $split-button-pip-size-tny: $button-pip-tny;
 // $split-button-pip-top-tny: $button-pip-tny * 2;

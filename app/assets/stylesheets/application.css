@@ -34,7 +34,23 @@ body,html{
     display: none;
 }
 
+.main-section {
+  padding: 1em 0.5em 4em 0.5em;
+}
+
 .bottom {
   height: 4em;
   width: 100%;
+}
+
+li.has-form {
+  margin-top: 0.25rem;
+}
+
+.fi-heart {
+  color: grey;
+  cursor: pointer;
+}
+.heart {
+  color:red;
 }

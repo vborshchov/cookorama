@@ -1,0 +1,10 @@
+<% content_for :add_to_favourite do%>
+  <i class="fi-heart"></i>
+<% end %>
+<h2><%= @receipt.title %></h2>
+<%= render inline: @receipt.top_tags %>
+<%= render inline: @receipt.img %> <br>
+<%= render inline: @receipt.tags %>
+<!-- <h4>Інгредіенти</h4> -->
+<%= render inline: @receipt.ingredients %>
+<%= render inline: @receipt.content %>

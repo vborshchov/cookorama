@@ -239,7 +239,7 @@
 	padding:0 5px 0 0
 }
 
-.write a.button{
+/*.write a.button{
 	display:block;
 	width:124px;
 	height:32px;
@@ -258,14 +258,14 @@
 	text-align:left;
 	border:none;
 	font-family:FontinSansCRBold,Arial,sans-serif
-}
+}*/
 
 .block.about-block{
 	color:#6b6252
 }
 
 .block.about-block a.join{
-	background:url(http://static.cookorama.net/plugins/blocks/templates/skin/cookorama/images/profile-button.png) 0 0 repeat-x;
+	background:/*url(http://static.cookorama.net/plugins/blocks/templates/skin/cookorama/images/profile-button.png) 0 0 repeat-x*/;
 	height:29px;
 	line-height:30px;
 	display:inline-block;
@@ -712,13 +712,13 @@ form .note{
 	font-size:11px
 }
 
-form .buttons{
+/*form .buttons{
 	overflow:hidden
-}
+}*/
 
-form .buttons input[type="submit"]{
+/*form .buttons input[type="submit"]{
 	margin-left:0
-}
+}*/
 
 form .right{
 	float:right;
@@ -744,13 +744,13 @@ form .panel_form select{
 	margin-right:8px
 }
 
-form .panel_form a.button{
+/*form .panel_form a.button{
 	display:inline-block;
 	float:left;
 	line-height:12px;
 	padding:0;
 	margin:2px 2px 0 0
-}
+}*/
 
 div .group{
 	border:none!important;
@@ -1033,20 +1033,20 @@ input{
 #nav .write a div{
 	padding:0 0 0 22px;
 	float:left;
-	background:url(http://static.cookorama.net/templates/skin/cookorama/images/main-buttons-sprite.png) left -48px no-repeat
+	background:/*url(http://static.cookorama.net/templates/skin/cookorama/images/main-buttons-sprite.png) left -48px no-repeat*/
 }
 
 #nav .write a div div{
 	padding:0 6px 0 0;
 	float:left;
-	background:url(http://static.cookorama.net/templates/skin/cookorama/images/main-buttons-sprite.png) right -24px no-repeat
+	background:/*url(http://static.cookorama.net/templates/skin/cookorama/images/main-buttons-sprite.png) right -24px no-repeat*/
 }
 
 #nav .write a div div div{
 	padding:3px 0 0;
 	height:21px;
 	float:left;
-	background:url(http://static.cookorama.net/templates/skin/cookorama/images/main-buttons-sprite.png) 0 top repeat-x
+	background:/*url(http://static.cookorama.net/templates/skin/cookorama/images/main-buttons-sprite.png) 0 top repeat-x*/
 }
 
 #nav .write a:hover div div div{
@@ -1098,10 +1098,10 @@ input{
 	border-radius:2px
 }
 
-#content .search .button{
+/*#content .search .button{
 	margin:0;
 	height:24px
-}
+}*/
 
 #nav .rss{
 	float:right;
@@ -4646,7 +4646,7 @@ a.profiler.active{
 	margin:0 0 20px
 }
 
-.lite-center button{
+/*.lite-center button{
 	font-size:15px;
 	font-weight:700;
 	color:#fff;
@@ -4658,20 +4658,20 @@ a.profiler.active{
 	margin:0;
 	height:30px;
 	font-family:'Helvetica Neue',Helvetica,Arial,sans-serif
-}
+}*/
 
-.lite-center button em{
+/*.lite-center button em{
 	font-style:normal
-}
+}*/
 
 .lite-center h3,.login-popup h3{
 	color:#8C8774;
 	margin-bottom:20px
 }
 
-.lite-center button,.login-popup button{
+/*.lite-center button,.login-popup button{
 	float:right
-}
+}*/
 
 .lite-center .input-text,.login-popup .input-text{
 	width:270px;
@@ -4937,7 +4937,7 @@ a.profiler.active{
 	height:auto
 }
 
-button,a.button,input.button,input[type="submit"]{
+/*button,a.button,input.button,input[type="submit"]{
 	line-height:22px;
 	display:inline-block;
 	background:url(http://static.cookorama.net/templates/skin/cookorama/images/btn.png) 0 0 repeat-x;
@@ -4956,11 +4956,11 @@ button,a.button,input.button,input[type="submit"]{
 	cursor:pointer;
 	height:24px;
 	font-family:'Helvetica Neue',Arial,sans-serif
-}
+}*/
 
-button em,a.button em,input.button em,input[type="submit"] em{
+/*button em,a.button em,input.button em,input[type="submit"] em{
 	font-style:normal
-}
+}*/
 
 .panel_form{
 	width:100%;
@@ -4972,7 +4972,7 @@ button em,a.button em,input.button em,input[type="submit"] em{
 	overflow:hidden
 }
 
-.panel_form a.button{
+/*.panel_form a.button{
 	border:none;
 	padding:0 2px;
 	line-height:1;
@@ -4988,12 +4988,12 @@ button em,a.button em,input.button em,input[type="submit"] em{
 	background-image:-ms-linear-gradient(top,#fff,#f2efed);
 	background-image:-o-linear-gradient(top,#fff,#f2efed);
 	background-image:linear-gradient(to bottom,#fff,#f2efed)
-}
+}*/
 
-.panel_form a.button img{
+/*.panel_form a.button img{
 	width:19px;
 	height:20px
-}
+}*/
 
 #reply-title{
 	width:100%;
@@ -5032,9 +5032,9 @@ button em,a.button em,input.button em,input[type="submit"] em{
 	font-size:11px
 }
 
-.comment .cmtedit-button.edit{
+/*.comment .cmtedit-button.edit{
 	color:#629B00
-}
+}*/
 
 #system_messages_error{
 	border:1px solid #e4ded6;
@@ -5387,41 +5387,41 @@ table.admin_page img{
 	text-align:center
 }
 
-.share-buttons{
+/*.share-buttons{
 	display:inline-block;
 	margin-top:10px;
 	margin-bottom:18px;
 	padding-bottom:0
-}
+}*/
 
-.share-buttons > div{
+/*.share-buttons > div{
 	float:left;
 	margin-right:10px
-}
+}*/
 
-.share-buttons .vkontakte{
+/*.share-buttons .vkontakte{
 	width:104px
-}
+}*/
 
-.share-buttons .facebook{
+/*.share-buttons .facebook{
 	width:114px
-}
+}*/
 
-.share-buttons .gplus{
+/*.share-buttons .gplus{
 	width:76px
-}
+}*/
 
-.share-buttons .twitter{
+/*.share-buttons .twitter{
 	width:95px
-}
+}*/
 
-.share-buttons .postila{
+/*.share-buttons .postila{
 	margin-right:28px
-}
+}*/
 
-.share-buttons .pinterest{
+/*.share-buttons .pinterest{
 	margin-right:28px
-}
+}*/
 
 .top-bnr{
 	background-position:center top;
@@ -5456,9 +5456,9 @@ table.admin_page img{
 	margin-left:-19px
 }
 
-.write a.button{
+/*.write a.button{
 	font-weight:400
-}
+}*/
 
 .search-results-list .search{
 	margin-top:20px!important
@@ -5516,7 +5516,7 @@ table.admin_page img{
 }
 
 #profile-options li a{
-	background:url(http://static.cookorama.net/templates/skin/cookorama/images/profile-button.png) 0 0 repeat-x;
+	background:/*url(http://static.cookorama.net/templates/skin/cookorama/images/profile-button.png) 0 0 repeat-x*/;
 	height:29px;
 	line-height:30px;
 	display:inline-block;
@@ -5580,7 +5580,7 @@ table.admin_page img{
 	overflow:hidden
 }
 
-#form-left .buttons{
+/*#form-left .buttons{
 	padding:10px 20px;
 	background:#f2efed;
 	margin-top:20px;
@@ -5589,9 +5589,9 @@ table.admin_page img{
 	border-radius:2px;
 	width:100%;
 	margin-left:-20px
-}
+}*/
 
-#form-left .buttons input.right,.btn-big-green{
+/*#form-left .buttons input.right,.btn-big-green{
 	float:left;
 	height:30px;
 	line-height:29px;
@@ -5607,14 +5607,14 @@ table.admin_page img{
 	text-shadow:0 -1px 0 #468004;
 	margin-top:0;
 	margin-left:0
-}
+}*/
 
-#form-left .buttons input{
+/*#form-left .buttons input{
 	float:right;
 	margin-left:10px;
 	margin-top:3px;
 	margin-right:0
-}
+}*/
 
 .translated{
 	margin:15px 0
@@ -6101,9 +6101,9 @@ div.filter-item:first-child{
 	color:#8c8774
 }
 
-input.filter-button{
+/*input.filter-button{
 	margin:0
-}
+}*/
 
 div.similar_recipes h2{
 	font-size:29px;
@@ -6454,9 +6454,9 @@ img.img-noborder{
 	vertical-align:middle
 }
 
-.select-comment-options button{
+/*.select-comment-options button{
 	margin-right:22px
-}
+}*/
 
 .filters-item-1019 > span{
 	display:none!important

@@ -1,6 +1,11 @@
 <% content_for :add_to_favourite do%>
   <i class="fi-heart"></i>
 <% end %>
+
+<% content_for :right_menu do%>
+  <%= render inline: @ingredients %>
+<% end %>
+
 <h2><%= @receipt.title %></h2>
 <%= render inline: @receipt.top_tags %>
 <%= render inline: @receipt.img %> <br>

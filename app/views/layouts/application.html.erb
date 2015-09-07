@@ -57,6 +57,17 @@
 
         <aside class="right-off-canvas-menu">
           <ul class="off-canvas-list">
+            <li class='show-for-small-only'><label>Пошук по сайту</label></li>
+              <li class='has-form show-for-small-only'>
+                <div class='row collapse'>
+                  <div class='large-9 small-10 columns'>
+                    <input type='text' placeholder='вареники'>
+                  </div>
+                  <div class='large-3 small-2 columns'>
+                    <a href='#' class='info button tiny expand'>Пошук</a>
+                  </div>
+                </div>
+              </li>
             <% if content_for? :right_menu %>
               <%= yield :right_menu %>
             <% end %>

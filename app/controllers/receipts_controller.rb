@@ -15,20 +15,6 @@ class ReceiptsController < ApplicationController
     @right_menu =  if @page.css('.topic-ingridients-table').empty?
                     right_menu = Nokogiri::HTML::DocumentFragment.parse(@page.css('#block-best-topics').to_s)
                     (
-
-                        "<li class='show-for-small-only'><label>Пошук по сайту</label></li>" +
-
-                          "<li class='has-form show-for-small-only'>
-                            <div class='row collapse'>
-                              <div class='large-9 small-10 columns'>
-                                <input type='text' placeholder='вареники'>
-                              </div>
-                              <div class='large-3 small-2 columns'>
-                                <a href='#' class='info button tiny expand'>Пошук</a>
-                              </div>
-                            </div>
-                          </li>" +
-
                         "<li><label>Найкращі рецепти</label></li>" +
                         "<ul class='tabs' data-tab>
                           <li class='tab-title active'><a href='#panel1'>#{right_menu.css('.tabs li:nth-child(1)').text}</a></li>
@@ -59,22 +45,21 @@ class ReceiptsController < ApplicationController
 
   def show
     @page.css('#view-topic .content .clear').remove
-    title       = @page.css('h1.title').text
-    img         = @page.css('#topic-show-avatar').to_html.html_safe
-    top_tags    = @page.css('.topic ul.tags.top-tags').to_html.html_safe
-    tags        = @page.css('#view-topic ul.tags')[1].to_html.html_safe
-    ingredients = @page.css('table.ingredients').to_html.html_safe
-    content     = @page.css('#view-topic .content').to_html.html_safe
+    title        = @page.css('h1.title').text
+    img          = @page.css('#topic-show-avatar').to_html.html_safe
+    top_tags     = @page.css('.topic ul.tags.top-tags').to_html.html_safe
+    tags         = @page.css('#view-topic ul.tags')[1].to_html.html_safe
+    @ingredients = @page.css('table.ingredients').to_html.html_safe
+    content      = @page.css('#view-topic .content').to_html.html_safe
     @receipt = Receipt.new(
       title:       title,
       img:         img,
       top_tags:    top_tags,
       tags:        tags,
-      ingredients: ingredients,
+      ingredients: @ingredients,
       content:     content
     )
   end
-
 
   def tag
 

@@ -3,6 +3,7 @@
 <% end %>
 
 <% content_for :right_menu do%>
+  <li><label>Інгредієнти</label></li>
   <%= render inline: @ingredients %>
 <% end %>
 
@@ -10,6 +11,6 @@
 <%= render inline: @receipt.top_tags %>
 <%= render inline: @receipt.img %> <br>
 <%= render inline: @receipt.tags %>
-<!-- <h4>Інгредіенти</h4> -->
+<h5>Інгредієнти</h5>
 <%= render inline: @receipt.ingredients %>
 <%= render inline: @receipt.content %>

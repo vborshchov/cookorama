@@ -25,17 +25,13 @@
             <div class='right'>
               <div class="row">
                 <div class='columns small-1 middle-1 large-1'><%= yield(:add_to_favourite) if content_for?(:add_to_favourite) %></div>
-                <div class='columns small-10 middle-10 large-10'>
+                <div class='columns small-11 middle-11 large-11'>
                   <ul class="hide-for-small-only">
                     <li class="has-form">
-                      <div class="row collapse">
-                        <div class="large-9 small-10 columns">
-                          <input type="text" placeholder="вареники">
-                        </div>
-                        <div class="large-3 small-2 columns">
-                          <a href="#" class="info button tiny expand">Пошук</a>
-                        </div>
-                      </div>
+                      <%= form_tag "/receipts/search", method: :get do%>
+                        <%= hidden_field_tag "link", "http://cookorama.net/uk/search/topics/"%>
+                        <%= search_field_tag "q", nil, placeholder: "вареники"%>
+                      <% end %>
                     </li>
                   </ul>
                 </div>
@@ -58,15 +54,11 @@
         <aside class="right-off-canvas-menu">
           <ul class="off-canvas-list">
             <li class='show-for-small-only'><label>Пошук по сайту</label></li>
-              <li class='has-form show-for-small-only'>
-                <div class='row collapse'>
-                  <div class='large-9 small-10 columns'>
-                    <input type='text' placeholder='вареники'>
-                  </div>
-                  <div class='large-3 small-2 columns'>
-                    <a href='#' class='info button tiny expand'>Пошук</a>
-                  </div>
-                </div>
+              <li class='has-form show-for-small-only has-form'>
+                <%= form_tag "/receipts/search", method: :get do%>
+                  <%= hidden_field_tag "link", "http://cookorama.net/uk/search/topics/"%>
+                  <%= search_field_tag "q", nil, placeholder: "вареники"%>
+                <% end %>
               </li>
             <% if content_for? :right_menu %>
               <%= yield :right_menu %>

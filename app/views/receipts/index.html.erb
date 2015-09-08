@@ -6,8 +6,6 @@
   <%= render inline: @right_menu %>
 <% end %>
 
-<% @receipts.each do |r| %>
-  <%= render inline: r %>
-<% end %>
+<%= render 'receipt' %>
 
 <%= render inline: @pagination %>

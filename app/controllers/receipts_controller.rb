@@ -12,10 +12,12 @@ class ReceiptsController < ApplicationController
     @pagination = @page.css('#pagination').to_html
 
     # right menu
-    @right_menu =  if @page.css('.topic-ingridients-table').empty?
-                    right_menu = Nokogiri::HTML::DocumentFragment.parse(@page.css('#block-best-topics').to_s)
-                    (
-                        "<li><label>Найкращі рецепти</label></li>" +
+    right_menu = Nokogiri::HTML::DocumentFragment.parse(@page.css('#block-best-topics').to_s)
+    right_menu.css('.best-item-r a:nth-child(2) ,.best-item-r a:nth-child(3)').remove
+    puts "*****************************"
+    right_menu.css('.best-item-r').each {|node| puts node.content}
+    puts "*****************************"
+    @right_menu = (   "<li><label>Найкращі рецепти</label></li>" +
                         "<ul class='tabs' data-tab>
                           <li class='tab-title active'><a href='#panel1'>#{right_menu.css('.tabs li:nth-child(1)').text}</a></li>
                           <li class='tab-title'><a href='#panel2'>#{right_menu.css('.tabs li:nth-child(2)').text}</a></li>
@@ -34,13 +36,6 @@ class ReceiptsController < ApplicationController
                           </div>
                         </div>"
                     ).html_safe
-                  else
-                    right_menu = Nokogiri::HTML::DocumentFragment.parse(@page.css('.topic-ingridients-table').to_s)
-                    ( "<li><label>Інгредієнти</label></li>" +
-                      "#{right_menu.css('.ingredients').to_html}"
-                    ).html_safe
-                  end
-
   end
 
   def show
@@ -59,6 +54,25 @@ class ReceiptsController < ApplicationController
       ingredients: @ingredients,
       content:     content
     )
+  end
+
+  def search
+    @receipts = []
+    link = URI::escape("#{params[:link]}?q=#{params[:q]}")
+    page = Nokogiri::HTML(open(link))
+    page.css(".topic a").map do |a|
+      if a["href"] =~ /\.html\z/
+        a["href"] = "/receipts/show?link=" + a["href"].to_s
+      else
+        a["href"] = "/receipts/?link=" + a["href"].to_s
+      end
+    end
+    page.css("#pagination a").map {|a| a["href"] = "/receipts/search?link=" + a["href"].to_s[/.+(?=\?)/] + "&q=" + "#{params[:q]}" }
+    page.css(".topic").each do |topic|
+      topic.css(".voting-border, .action").remove
+      @receipts << topic.to_html.html_safe
+    end
+    @pagination = page.css('#pagination').to_html
   end
 
   def tag
@@ -86,7 +100,7 @@ class ReceiptsController < ApplicationController
       #         end
       link = URI::escape(link)
       @page = Nokogiri::HTML(open(link))
-      @page.css("a").map do |a|
+      @page.css(".topic a").map do |a|
         if a["href"] =~ /\.html\z/
           a["href"] = "/receipts/show?link=" + a["href"].to_s
         else

@@ -54,3 +54,11 @@ li.has-form {
 .heart {
   color:red;
 }
+
+.best-item-r {
+  visibility: hidden;
+}
+
+.best-item-r a {
+  visibility: visible;
+}

@@ -1,4 +1,9 @@
-<h1>Результати пошуку: <span><%= params[:q] %></span></h1>
+<% content_for :right_menu do%>
+  <li><label>Додати фільтр пошуку</label></li>
+  <%= render inline: @right_sidebar.to_html %>
+<% end %>
 
+<h1>Результати пошуку: <span><%= params[:q] %></span></h1>
+<p><%= @quantity %></p>
 <%= render 'receipt' %>
-<%= render inline: @pagination %>
+<%= render inline: @pagination.to_html %>

@@ -1,6 +1,10 @@
 <% content_for :right_menu do%>
+  <% unless @selected_filters.empty? %>
+    <li><label>Вибрані фільтри</label></li>
+    <%= render inline: @selected_filters.to_html %>
+  <% end %>
   <li><label>Додати фільтр пошуку</label></li>
-  <%= render inline: @right_sidebar.to_html %>
+  <%= render inline: @right_menu.to_html %>
 <% end %>
 
 <h1>Результати пошуку: <span><%= params[:q] %></span></h1>

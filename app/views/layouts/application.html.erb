@@ -8,7 +8,7 @@
 
     <%= stylesheet_link_tag    "application" %>
     <%= javascript_include_tag "vendor/modernizr" %>
-    <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag "application", 'data-turbolinks-track' => false %>
     <%= csrf_meta_tags %>
   </head>
 
@@ -30,7 +30,7 @@
                     <li class="has-form">
                       <%= form_tag "/receipts/search", method: :get do%>
                         <%= hidden_field_tag "link", "http://cookorama.net/uk/search/topics/"%>
-                        <%= search_field_tag "q", nil, placeholder: "вареники"%>
+                        <%= search_field_tag "q", params[:q], placeholder: "наприклад: вареники"%>
                       <% end %>
                     </li>
                   </ul>
@@ -57,7 +57,7 @@
               <li class='has-form show-for-small-only has-form'>
                 <%= form_tag "/receipts/search", method: :get do%>
                   <%= hidden_field_tag "link", "http://cookorama.net/uk/search/topics/"%>
-                  <%= search_field_tag "q", nil, placeholder: "вареники"%>
+                  <%= search_field_tag "q", params[:q], placeholder: "наприклад: вареники"%>
                 <% end %>
               </li>
             <% if content_for? :right_menu %>

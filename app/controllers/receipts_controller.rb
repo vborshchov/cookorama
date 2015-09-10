@@ -42,27 +42,23 @@ class ReceiptsController < ApplicationController
     @right_menu = @page.css('#sidebar')
     @right_menu.css("script, .cl .cr h2").remove
     @selected_filters = @right_menu.css(".block-filter-selected").remove
-    # @right_menu.css(".filter-list ul li").each do |li|
-    #   filters = "&filters[blog][]=#{li.css('a input')[0]['value']}"
-    #   unless li.css("ul").empty?
-    #     values = []
-    #     li.css('ul input').each do |input|
-    #       values << input["value"]
-    #     end
-    #     values.join("&filters[blog][]=")
-    #     filters += "&filters[blog][]=" + values.join("&filters[blog][]=")
-    #   end
-    #   li.css("a")[0]["href"] = "#{receipts_search_path}?q=#{params[:q]}&link=#{params[:link]}#{filters}"
-    # end
+    if @selected_filters.css("a span")[1] && @selected_filters.css("a span")[1].text =~ /відмінити/
+      @selected_filters.css("a")[0]["href"] = "#{receipts_search_path}?link=#{@selected_filters.css('a')[0]['href'].gsub('?', '&')}"
+    end
+    # right sideabr filters
     @right_menu.css(".filter-list ul li").each do |li|
-      unless li.css("ul").empty?
-        params.merge("filters" => "blog")
-        puts params
+      link_parameters = {}
+      link_parameters[:filters] = {"blog": []}
+      link_parameters[:filters][:blog] << li.css('a input')[0]['value']
+      unless li.css("ul").length == 0
         li.css('ul input').each do |input|
-          input["value"]
+          link_parameters[:filters][:blog] << input["value"]
         end
       end
-      li.css("a")[0]["href"] = [receipts_search_path, params.except("controller", "action").to_query].join("?")
+      if params[:filters]
+        link_parameters[:filters][:blog] |= params[:filters][:blog]
+      end
+      li.css("a")[0]["href"] = [receipts_search_path, params.merge(link_parameters).except("controller", "action").to_query].join("?")
     end
 
   end

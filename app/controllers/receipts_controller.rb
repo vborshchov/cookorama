@@ -4,8 +4,76 @@ class ReceiptsController < ApplicationController
 
   def index
     @page.css("script, .topic-user-info, #ingridient-header, .share-buttons, .action, div[id^='div-gpt-ad'], .content>.clear>a").remove # remove all unneeded content
-    @right_menu = @page.css("#block-best-topics")
-    @right_menu.css(".best-item-r a:nth-child(2) ,.best-item-r a:nth-child(3)").remove
+    case params[:link]
+      when params[:link] && /\/index\/|\/blog\//
+        @right_menu = @page.css("#block-best-topics")
+        @right_menu.css(".best-item-r a:nth-child(2) ,.best-item-r a:nth-child(3)").remove
+        @right_menu = "<li><label>Найкращі рецепти</label></li>
+                       <ul class='tabs' data-tab>
+                         <li class='tab-title active'><a href='#panel1'>#{@right_menu.css('.tabs li:nth-child(1)').text }</a></li>
+                         <li class='tab-title'><a href='#panel2'>#{@right_menu.css('.tabs li:nth-child(2)').text }</a></li>
+                         <li class='tab-title'><a href='#panel3'>#{@right_menu.css('.tabs li:nth-child(3)').text }</a></li>
+                       </ul>
+                       <div class='tabs-content'>
+                         <div class='content active' id='panel1'>
+                           #{@right_menu.css('.topics-week').to_html.html_safe }
+                         </div>
+                         <div class='content' id='panel2'>
+                           #{@right_menu.css('.topics-month').to_html.html_safe }
+                         </div>
+                         <div class='content' id='panel3'>
+                           #{@right_menu.css('.topics-total').to_html.html_safe }
+                         </div>
+                       </div>".html_safe
+      when /\/tag\//
+        @right_menu = @page.css('.block.tags').to_html.html_safe
+      when /\/filter\//
+        @right_menu = "<form action='http://cookorama.net/uk/filter/' method='get'>
+                        <div id='speed' class='filter-item'>
+                            <span class='speed'>Швидкість приготування</span>
+                            <select name='blog[]' id='speed-select'>
+                                <option selected='></option>
+                                                <option value='987'>Дуже швидко (до 30 хвилин)</option>
+                                                <option value='988'>Швидко (до 1 години)</option>
+                                                <option value='989'>Нормально (до 3 годин)</option>
+                                                <option value='990'>Довго (до 1 дня)</option>
+                                                <option value='991'>Дуже довго (понад 1 дня)</option>
+                                        </select>
+                        </div>
+
+                        <div id='difficulty' class='filter-item'>
+                            <span class='difficulty'>Складність приготування</span>
+                            <select name='blog[]' id='speed-difficulty'>
+                                <option selected='></option>
+                                                <option selected=' value='983'>Легко</option>
+                                                <option value='984'>Нормально</option>
+                                                <option value='985'>Важко</option>
+                                        </select>
+                        </div>
+
+                        <div id='way' class='filter-item'>
+                            <span class='way'>Спосіб приготування</span>
+                            <select name='blog[]' id='speed-way'>
+                                <option selected='></option>
+                                                <option value='413'>Готуємо в горшочках</option>
+                                                <option value='178'>Кулінарія в мікрохвильовці</option>
+                                                <option value='35'>Страви для гриля, барбекю та мангалу</option>
+                                                <option value='3133'>Рецепти для мультиварки</option>
+                                                <option value='1031'>Без спеціального приготування</option>
+                                                <option value='1027'>Рецепти для плити</option>
+                                                <option value='1001'>Рецепти для духовки</option>
+                                                <option value='1000'>Рецепти для пароварки</option>
+                                                <option value='999'>Рецепти для хлібопічки</option>
+                                                <option value='3520'>Рецепти для аерогрилю</option>
+                                        </select>
+                        </div>
+                        <br>
+                        <input value='Фільтрувати' class='left filter-button' type='submit'>
+                    </form>".html_safe
+      else
+        @right_menu = @page.css('#sidebar')
+    end
+
   end
 
   def show
@@ -59,6 +127,10 @@ class ReceiptsController < ApplicationController
 
   private
 
+    def set_right_menu
+
+    end
+
     def set_receipts
       @receipts = []
       @page.css(".topic").each do |topic|
@@ -86,7 +158,7 @@ class ReceiptsController < ApplicationController
         link_for_parse = URI.escape(URI.unescape(link_for_parse))
         @page = Nokogiri::HTML(open(link_for_parse))
       end
-      @page.css(".topic a, .best-item a, #pagination a").map do |a|
+      @page.css(".topic a, .best-item a, #pagination a, .cloud a").map do |a|
         if a["href"] =~ /\.html\z/ && a["href"] =~ /\Ahttp:\/\/cookorama\.net/
           a["href"] = "#{receipts_show_path}?link=" + a["href"]
         else

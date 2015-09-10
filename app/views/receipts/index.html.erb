@@ -3,24 +3,8 @@
 <% end %>
 
 <% content_for :right_menu do%>
-  <li><label>Найкращі рецепти</label></li>
-  <ul class="tabs" data-tab>
-    <li class="tab-title active"><a href="#panel1"><%= @right_menu.css(".tabs li:nth-child(1)").text %></a></li>
-    <li class="tab-title"><a href="#panel2"><%= @right_menu.css(".tabs li:nth-child(2)").text %></a></li>
-    <li class="tab-title"><a href="#panel3"><%= @right_menu.css(".tabs li:nth-child(3)").text %></a></li>
-  </ul>
-  <div class="tabs-content">
-    <div class="content active" id="panel1">
-      <%= @right_menu.css(".topics-week").to_html.html_safe %>
-    </div>
-    <div class="content" id="panel2">
-      <%= @right_menu.css(".topics-month").to_html.html_safe %>
-    </div>
-    <div class="content" id="panel3">
-      <%= @right_menu.css(".topics-total").to_html.html_safe %>
-    </div>
-  </div>
+  <%= render text: @right_menu %>
 <% end %>
 
 <%= render "receipt" %>
-<%= render 'pagination' %>
+<%= render "pagination" %>

@@ -63,10 +63,13 @@ class ReceiptsController < ApplicationController
       @receipts = []
       @page.css(".topic").each do |topic|
         topic.css(".voting-border, .action").remove
-        topic.css(".topic-recipe")[0]["class"] = "topic-recipe row"
-        topic.css(".topic-recipe-content")[0]["class"] = "topic-recipe-content column small-6"
-        topic.css(".topic-recipe-img")[0]["class"] = "topic-recipe-img column small-6"
-        topic.css(".topic-recipe").children.last.add_next_sibling(topic.css(".topic-recipe-content"))
+        if topic.css(".topic-recipe")[0]
+          topic.css(".topic-recipe")[0].name = "ul"
+          topic.css(".topic-recipe")[0]["class"] = "topic-recipe small-block-grid-1 medium-block-grid-2"
+          topic.css(".topic-recipe-content")[0].name = "li"
+          topic.css(".topic-recipe-img")[0].name = "li"
+          topic.css(".topic-recipe").children.last.add_next_sibling(topic.css(".topic-recipe-content"))
+        end
         @receipts << topic.to_html.html_safe
       end
     end

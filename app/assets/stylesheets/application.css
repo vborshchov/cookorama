@@ -67,6 +67,18 @@ li.has-form {
   margin:0;
 }
 
+.topic .content ul li {
+  margin-left: 0px;
+}
+
 .main-section h1 {
   margin-left: 1rem;
+}
+
+ul, ol, dl {
+  font-size: 0.77rem;
+}
+
+#pagination ul li a {
+    width: 1.1rem;
 }

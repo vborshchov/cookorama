@@ -1,17 +1,9 @@
 class ReceiptsController < ApplicationController
   before_filter :set_page, only:[:index, :show, :search]
+  before_filter :set_receipts, only:[:index, :search]
 
   def index
-    @receipts = []
     @page.css("script, .topic-user-info, #ingridient-header, .share-buttons, .action, div[id^='div-gpt-ad'], .content>.clear>a").remove # remove all unneeded content
-    @page.css(".topic").each do |topic|
-      topic.css(".voting-border").remove
-      topic.css(".topic-recipe")[0]["class"] = "topic-recipe row"
-      topic.css(".topic-recipe-content")[0]["class"] = "topic-recipe-content column small-6"
-      topic.css(".topic-recipe-img")[0]["class"] = "topic-recipe-img column small-6"
-      topic.css(".topic-recipe").children.last.add_next_sibling(topic.css(".topic-recipe-content"))
-      @receipts << topic.to_html
-    end
     @right_menu = @page.css("#block-best-topics")
     @right_menu.css(".best-item-r a:nth-child(2) ,.best-item-r a:nth-child(3)").remove
   end
@@ -36,16 +28,7 @@ class ReceiptsController < ApplicationController
   end
 
   def search
-    @receipts = []
     @page.css('#pagination a').map {|a| a["href"] = a["href"].gsub("/receipts?", "/receipts/search?")}
-    @page.css(".topic").each do |topic|
-      topic.css(".voting-border, .action").remove
-      topic.css(".topic-recipe")[0]["class"] = "topic-recipe row"
-      topic.css(".topic-recipe-content")[0]["class"] = "topic-recipe-content column small-6"
-      topic.css(".topic-recipe-img")[0]["class"] = "topic-recipe-img column small-6"
-      topic.css(".topic-recipe").children.last.add_next_sibling(topic.css(".topic-recipe-content"))
-      @receipts << topic.to_html.html_safe
-    end
     @quantity = @page.css('#content .block-nav li:first').text
     @right_menu = @page.css('#sidebar')
     @right_menu.css("script, .cl .cr h2").remove
@@ -75,6 +58,18 @@ class ReceiptsController < ApplicationController
 
 
   private
+
+    def set_receipts
+      @receipts = []
+      @page.css(".topic").each do |topic|
+        topic.css(".voting-border, .action").remove
+        topic.css(".topic-recipe")[0]["class"] = "topic-recipe row"
+        topic.css(".topic-recipe-content")[0]["class"] = "topic-recipe-content column small-6"
+        topic.css(".topic-recipe-img")[0]["class"] = "topic-recipe-img column small-6"
+        topic.css(".topic-recipe").children.last.add_next_sibling(topic.css(".topic-recipe-content"))
+        @receipts << topic.to_html.html_safe
+      end
+    end
 
     def set_page
       link = params[:link] =~ /\Ahttp:\/\/cookorama\.net/ && params[:link] || "http://cookorama.net"

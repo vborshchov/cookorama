@@ -62,3 +62,11 @@ li.has-form {
 .best-item-r a {
   visibility: visible;
 }
+
+.topic .topic-recipe .topic-recipe-img{
+  margin:0;
+}
+
+.main-section h1 {
+  margin-left: 1rem;
+}

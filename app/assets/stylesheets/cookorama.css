@@ -1927,10 +1927,10 @@ input{
 }
 
 .topic .topic-recipe .topic-recipe-content{
-	float:right;
-	margin-right:20px;
+	/*float:right;*/
+	/*margin-right:20px;*/
 	font-size:13px;
-	width:214px
+	/*width:214px*/
 }
 
 .topic .topic-recipe .topic-recipe-content ul{

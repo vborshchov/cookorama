@@ -7,7 +7,9 @@
   <%= render inline: @right_menu.to_html %>
 <% end %>
 
-<h1>Результати пошуку: <span><%= params[:q] %></span></h1>
-<p><%= @quantity %></p>
+<h1>Результати пошуку: <span><%= params[:q] %></span>
+  <p><%= @quantity %></p>
+</h1>
+
 <%= render 'receipt' %>
-<%= render inline: @pagination.to_html %>
+<%= render 'pagination' %>

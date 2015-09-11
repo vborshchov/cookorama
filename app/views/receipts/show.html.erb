@@ -14,3 +14,10 @@
 <h5>Інгредієнти</h5>
 <%= render inline: @receipt.ingredients %>
 <%= render inline: @receipt.content %>
+
+
+<div class="row">
+  <div class="comments columns small-12 middle-11 large-10">
+    <%= render inline: @comments.to_html.html_safe %>
+  </div>
+</div>

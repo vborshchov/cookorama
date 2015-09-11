@@ -42,6 +42,9 @@ class ReceiptsController < ApplicationController
       ingredients: @ingredients,
       content:     content
     )
+    @comments = @page.css(".comments>div[id^=comment_id_], .comments .header h3")
+    @comments.css("a").each{|a| a["href"]="#"}
+    @comments.css(".info ul li:nth-child(n+2)").remove
   end
 
   def search
@@ -70,7 +73,6 @@ class ReceiptsController < ApplicationController
       end
       li.css("a")[0]["href"] = [receipts_search_path, params.merge(link_parameters).except("controller", "action").to_query].join("?")
     end
-
   end
 
   def tag

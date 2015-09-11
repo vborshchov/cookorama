@@ -1,0 +1,11 @@
+<% @receipts.each do |receipt|%>
+  <li><%= render inline: receipt %></li>
+<% end %>
+
+<% content_for :right_menu do%>
+  <%= render text: @right_menu %>
+<% end %>
+
+<% content_for :pagination do%>
+  <%= render inline: @pagination.to_html %>
+<% end %>

@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
   # resources :receipts
-  get 'receipts/show' => 'receipts#show'
-  # get 'receipts/tag' => 'receipts#tag'
-  get 'receipts/search' => 'receipts#search'
+  get 'receipts/show'
+  get 'receipts/tag'
+  get 'receipts/filter'
+  get 'receipts/search'
   get 'receipts' => 'receipts#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

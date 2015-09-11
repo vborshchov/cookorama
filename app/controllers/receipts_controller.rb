@@ -78,9 +78,9 @@ class ReceiptsController < ApplicationController
   end
 
   def filter
-    @selected_filters = []
-    @page.css("form option").each do |opt|
-      @selected_filters << opt.text if opt["selected"] && opt["value"]
+    @selected_filters = {}
+    @page.css("form .filter-item").each do |filter|
+      filter.css("option").each {|opt| @selected_filters["#{filter['id']}"] = opt.text if (opt["selected"] && opt["value"] }
     end
     @page.css('#sidebar form')[0].add_child("<input name='link' value='http://cookorama.net/uk/filter/' type='hidden'>")
     @right_menu = @page.css('#sidebar form')[0]["action"] = "#{receipts_filter_path}"

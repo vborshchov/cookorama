@@ -3,18 +3,24 @@
   <div class="topic-recipe">
     <div class="topic-recipe-content">
       <ul>
-        <li>
-          <span class="preparing time">Швидкість приготування:</span>
-          <a href="#"><%= @selected_filters["speed"]%></a>
-        </li>
-        <li>
-          <span class="preparing difficulty">Складність приготування:</span>
-          <a href="#"><%= @selected_filters["difficulty"]%></a>
-        </li>
-        <li>
-          <span class="preparing type">Спосіб приготування:</span>
-          <a href="#"><%= @selected_filters["way"]%></a>
-        </li>
+        <% if @selected_filters["speed"] %>
+          <li>
+            <span class="preparing time">Швидкість приготування:</span>
+            <a href="#"><%= @selected_filters["speed"]%></a>
+          </li>
+        <% end %>
+        <% if @selected_filters["difficulty"] %>
+          <li>
+            <span class="preparing difficulty">Складність приготування:</span>
+            <a href="#"><%= @selected_filters["difficulty"]%></a>
+          </li>
+        <% end %>
+        <% if @selected_filters["way"]%>
+          <li>
+            <span class="preparing type">Спосіб приготування:</span>
+            <a href="#"><%= @selected_filters["way"]%></a>
+          </li>
+        <% end %>
       </ul>
     </div>
   </div>

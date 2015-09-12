@@ -47,3 +47,4 @@ gem 'quiet_assets', group: :development
 gem 'nokogiri', '~> 1.6.6.2'
 gem 'foundation-rails'
 gem 'foundation-icons-sass-rails'
+gem 'mechanize'

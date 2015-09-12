@@ -1,0 +1,69 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ *= require foundation_and_overrides
+
+ */
+
+.main-section { margin: 4em 0.5em 0 0.5em; }
+
+li.has-form { margin-top: 0.25rem; }
+
+.fi-heart {
+  color: grey;
+  cursor: pointer;
+}
+.heart { color:red; }
+
+.best-item-r { visibility: hidden; }
+
+.best-item-r a { visibility: visible; }
+
+.topic .topic-recipe .topic-recipe-img{ margin:0; }
+
+.topic .content ul li { margin-left: 0px; }
+
+.main-section h1 { margin-left: 1rem; }
+
+ul, ol, dl { font-size: 0.77rem; }
+
+#pagination ul li a { width: 1.1rem; }
+
+/***** START Fixed top nav bar by David's Govea *****/
+.off-canvas-fixed {
+  -webkit-transition: -webkit-transform 500ms ease;
+  transition: transform 500ms ease;
+}
+
+.move-right > .off-canvas-fixed, .move-left > .off-canvas-fixed {
+  height: 100%;
+  -webkit-transform: translate3d(15.625rem, 0, 0);
+  transform: translate3d(15.625rem, 0, 0);
+}
+
+.move-left > .off-canvas-fixed {
+  height: 100%;
+  -webkit-transform: translate3d(-15.625rem, 0, 0);
+  transform: translate3d(-15.625rem, 0, 0);
+}
+
+.left-off-canvas-menu {
+  -webkit-transform: none;
+  transform: none;
+  margin-left: -15.625rem;
+  /* vh UNITS NICER THAN JS LISTENER */
+  /* height: 100vh; */
+  /* (BUT LESS SUPPORTED) */
+}
+/***** END Fixed top nav bar *****/

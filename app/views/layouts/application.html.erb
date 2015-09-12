@@ -13,8 +13,8 @@
   </head>
 
   <body>
-    <div class="off-canvas-wrap fixed" data-offcanvas>
-      <div class="inner-wrap">
+    <div class="off-canvas-wrap" data-offcanvas>
+      <div class="fixed off-canvas-fixed">
         <nav class="tab-bar">
           <section class="left-small">
             <a class="left-off-canvas-toggle menu-icon"><span></span></a>
@@ -65,19 +65,19 @@
             <% end %>
           </ul>
         </aside>
+      </div>
 
+      <div class="inner-wrap">
         <section class="main-section topic">
-          <!-- <div class="row"> -->
+            <% if content_for? :pagination %>
+              <%= yield :pagination %>
+            <% end %>
             <ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-3">
               <%= yield %>
             </ul>
             <% if content_for? :pagination %>
               <%= yield :pagination %>
             <% end %>
-          <!-- </div> -->
-          <!-- <div class="row"> -->
-            <div class="bottom"></div>
-          <!-- </div> -->
         </section>
         <a class="exit-off-canvas"></a>
       </div>

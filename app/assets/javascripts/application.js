@@ -22,6 +22,18 @@ var ready;
 ready = function() {
 
   $(document).foundation();
+  var left_menu = $('.left-off-canvas-menu');
+  var right_menu = $('.right-off-canvas-menu');
+
+  $(document).on('resize', function() {
+    // Beware with resize handlers...
+    //  Throttle & consolidate #perfmatters
+    left_menu.height($(this).height());
+    right_menu.height($(this).height());
+  });
+
+  // Initialize height
+  $(document).trigger('resize');
 
 };
 

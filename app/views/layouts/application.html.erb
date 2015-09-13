@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title><%= content_for?(:title) ? yield(:title) : "Cookorama.net" %></title>
 
     <%= stylesheet_link_tag    "application" %>
@@ -17,7 +16,7 @@
       <div class="fixed off-canvas-fixed">
         <nav class="tab-bar">
           <section class="left-small">
-            <a class="left-off-canvas-toggle menu-icon"><span></span></a>
+            <a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
           </section>
 
           <section class="middle tab-bar-section">
@@ -40,7 +39,7 @@
           </section>
 
           <section class="right-small">
-            <a class="right-off-canvas-toggle menu-icon" ><span></span></a>
+            <a class="right-off-canvas-toggle menu-icon" href="#"><span></span></a>
           </section>
         </nav>
 
@@ -80,8 +79,9 @@
               <%= yield :pagination %>
             <% end %>
         </section>
-        <a class="exit-off-canvas"></a>
+        <a class="exit-off-canvas" href="#"></a>
       </div>
+      <!-- <a class="exit-off-canvas" href="#"></a> -->
     </div>
   </body>
 </html>

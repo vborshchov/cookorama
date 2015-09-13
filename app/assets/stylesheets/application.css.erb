@@ -39,6 +39,7 @@ li.has-form { margin-top: 0.25rem; }
 ul, ol, dl { font-size: 0.77rem; }
 
 #pagination ul li a { width: 1.1rem; }
+ul.off-canvas-list .cloud li a{ border-bottom:none; }
 
 /***** START Fixed top nav bar by David's Govea *****/
 .off-canvas-fixed {
@@ -46,7 +47,7 @@ ul, ol, dl { font-size: 0.77rem; }
   transition: transform 500ms ease;
 }
 
-.move-right > .off-canvas-fixed, .move-left > .off-canvas-fixed {
+.move-right > .off-canvas-fixed {
   height: 100%;
   -webkit-transform: translate3d(15.625rem, 0, 0);
   transform: translate3d(15.625rem, 0, 0);
@@ -63,7 +64,16 @@ ul, ol, dl { font-size: 0.77rem; }
   transform: none;
   margin-left: -15.625rem;
   /* vh UNITS NICER THAN JS LISTENER */
-   height: 100vh;
+  height: 100vh;
+  /* (BUT LESS SUPPORTED) */
+}
+
+.right-off-canvas-menu {
+  -webkit-transform: none;
+  transform: none;
+  margin-right: -15.625rem;
+  /* vh UNITS NICER THAN JS LISTENER */
+  height: 100vh;
   /* (BUT LESS SUPPORTED) */
 }
 /***** END Fixed top nav bar *****/
@@ -126,4 +136,4 @@ a.cd-top {
   }
 }
 
-/***** END Back to top button *****/
+/***** END Back to top button ****

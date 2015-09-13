@@ -118,7 +118,8 @@ class ReceiptsController < ApplicationController
         link_for_parse = URI.unescape(link_for_parse)
         puts link_for_parse.gsub!("search/topics/", "search/comments/")
         link_for_parse = URI.escape(URI.unescape(link_for_parse))
-        @page = Nokogiri::HTML(open(link_for_parse))
+        @page = agent.get(link_for_parse)
+        # @page = Nokogiri::HTML(open(link_for_parse))
       end
       @page.search(".topic a, .best-item a, #pagination a, .cloud a").map do |a|
         if a["href"] =~ /\.html\z/ && a["href"] =~ /\Ahttp:\/\/cookorama\.net/

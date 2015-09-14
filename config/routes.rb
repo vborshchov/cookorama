@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  get 'users/new'
+  #get 'users/new'
+  get '/signup' => 'users#new'
 
   get 'receipts/show'
   get 'receipts/tag'

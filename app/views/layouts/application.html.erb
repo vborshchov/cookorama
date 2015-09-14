@@ -26,24 +26,30 @@
             <h1 class="title left"><%= content_for?(:title) ? yield(:title) : (link_to "Cookorama.net", root_path) %></h1>
             <div class='right'>
               <div class="row">
-                <%= yield(:add_to_favourite) if content_for?(:add_to_favourite) %>
-                
-                <li class="has-form hide-for-small-only columns small-9 middle-9 large-9">
-                  <%= form_tag "/receipts/search", method: :get do%>
-                    <%= hidden_field_tag "link", "http://cookorama.net/uk/search/topics/"%>
-                    <%= search_field_tag "q", params[:q], placeholder: "наприклад: вареники"%>
-                  <% end %>
-                </li>
-                
-                <a href="#" data-options="align:bottom" data-dropdown="drop" class="button tiny columns small-1 middle-1 large-1"><i class="fi-torsos-male-female small"></i></a>
-                <ul id="drop" class="tiny f-dropdown" data-dropdown-content>
-                  <li>
-                    <%= link_to "Вхід", users_new_path%>
-                  </li>
-                  <li>
-                    <%= link_to "Зареєструватися", users_new_path%>
-                  </li>
-                </ul>
+
+                  <div class="columns small-1 middle-1 large-1"><%= yield(:add_to_favourite) if content_for?(:add_to_favourite) %></div>
+
+                  <div class="columns small-1 middle-1 large-1">
+                    <a href="#" data-dropdown="drop" class=""><i class="fi-torsos-male-female middle"></i></a>
+                  </div>
+                    <ul id="drop" class="middle f-dropdown" data-dropdown-content>
+                      <li>
+                        <%= link_to "Вхід", signup_path%>
+                      </li>
+                      <li>
+                        <%= link_to "Зареєструватися", signup_path%>
+                      </li>
+                    </ul>
+
+                  <div class="columns small-9 middle-9 large-9">
+                    <li class="has-form hide-for-small-only">
+                      <%= form_tag "/receipts/search", method: :get do%>
+                        <%= hidden_field_tag "link", "http://cookorama.net/uk/search/topics/"%>
+                        <%= search_field_tag "q", params[:q], placeholder: "наприклад: вареники"%>
+                      <% end %>
+                    </li>
+                  </div>
+
               </div>
             </div>
           </section>
@@ -62,21 +68,13 @@
 
         <aside class="right-off-canvas-menu">
           <ul class="off-canvas-list">
-            <ul class="button-group show-for-small-only stack-for-small">
-              <li>
-                <%= link_to "Вхід", users_new_path, class: "button tiny"%>
-              </li>
-              <li>
-                <%= link_to "Зареєструватися", users_new_path, class: "button tiny"%>
-              </li>
-            </ul>
             <li class='show-for-small-only'><label>Пошук по сайту</label></li>
-              <li class='has-form show-for-small-only has-form'>
-                <%= form_tag "/receipts/search", method: :get do%>
-                  <%= hidden_field_tag "link", "http://cookorama.net/uk/search/topics/"%>
-                  <%= search_field_tag "q", params[:q], placeholder: "наприклад: вареники"%>
-                <% end %>
-              </li>
+            <li class='has-form show-for-small-only has-form'>
+              <%= form_tag "/receipts/search", method: :get do%>
+                <%= hidden_field_tag "link", "http://cookorama.net/uk/search/topics/"%>
+                <%= search_field_tag "q", params[:q], placeholder: "наприклад: вареники"%>
+              <% end %>
+            </li>
             <% if content_for? :right_menu %>
               <%= yield :right_menu %>
             <% end %>

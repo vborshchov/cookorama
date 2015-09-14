@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  # resources :receipts
+  get 'users/new'
+
   get 'receipts/show'
   get 'receipts/tag'
   get 'receipts/filter'

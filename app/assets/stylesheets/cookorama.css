@@ -6912,9 +6912,9 @@ pre.prettyprint{
 	overflow:hidden
 }
 
-*html .vlaCalendarPicker .pickerBackground{
+/**html .vlaCalendarPicker .pickerBackground{
 	background-image:url(http://static.cookorama.net/templates/skin/cookorama/images/datepicker/calendar_background.gif)
-}
+}*/
 
 .vlaCalendar,.vlaCalendar table{
 	font-family:calibri,arial!important;

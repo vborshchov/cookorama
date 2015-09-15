@@ -1,3 +1,29 @@
 <% provide(:title, 'Sign up') %>
 <h1>Users#new</h1>
 <p>Find me in app/views/users/new.html.erb</p>
+
+<div class="row middle">
+    <%= form_for(@user, html:{data:{abide: true}}) do |f| %>
+      <div class="name-field columns medium-10 medium-offset-1 large-8 large-offset-2">
+        <%= f.label :name %>
+        <%= f.text_field :name %>
+      </div>
+      <div class="email-field columns medium-10 medium-offset-1 large-8 large-offset-2">
+        <%= f.label :email %>
+        <%= f.text_field :email %>
+        <small class="error">An email address is required.</small>
+      </div>
+      <div class="password-field columns medium-10 medium-offset-1 large-8 large-offset-2">
+        <%= f.label :password %>
+        <%= f.password_field :password, required: true %>
+        <small class="error">Your password must match the requirements</small>
+      </div>
+      <div class="password-confirmation-field columns medium-10 medium-offset-1 large-8 large-offset-2">
+        <%= f.label :password_confirmation, "Confirmation" %>
+        <%= f.password_field :password_confirmation, data: {equalto: "user_password"}%>
+      </div>
+      <div class="columns medium-10 medium-offset-1 large-8 large-offset-2">
+        <%= f.submit "Create my account", class: "button medium" %>
+      </div>
+    <% end %>
+</div>

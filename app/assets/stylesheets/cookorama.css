@@ -1561,8 +1561,7 @@ input{
 }
 
 .topic .voting li.vt-block .vt-block-counter:before{
-	background:url(data:image/gif;
-	base64,R0lGODlhBQAHALMAAPv7+sC9srGtoMG+s+Pi3erp5uLh3Ono5a6qnf///wAAAAAAAAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAAFAAcAAAQSMMkSJjKp3AQElgdCSEk4gkMEADs=) 0 0 no-repeat;
+	background:url(data:image/gif; base64,R0lGODlhBQAHALMAAPv7+sC9srGtoMG+s+Pi3erp5uLh3Ono5a6qnf///wAAAAAAAAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAAFAAcAAAQSMMkSJjKp3AQElgdCSEk4gkMEADs=) 0 0 no-repeat;
 	content:'.';
 	text-indent:-9999px;
 	position:absolute;

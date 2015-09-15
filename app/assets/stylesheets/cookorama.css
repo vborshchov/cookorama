@@ -1030,28 +1030,28 @@ input{
 	text-decoration:none
 }
 
-#nav .write a div{
+/*#nav .write a div{
 	padding:0 0 0 22px;
 	float:left;
-	background:/*url(http://static.cookorama.net/templates/skin/cookorama/images/main-buttons-sprite.png) left -48px no-repeat*/
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/main-buttons-sprite.png) left -48px no-repeat
 }
 
 #nav .write a div div{
 	padding:0 6px 0 0;
 	float:left;
-	background:/*url(http://static.cookorama.net/templates/skin/cookorama/images/main-buttons-sprite.png) right -24px no-repeat*/
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/main-buttons-sprite.png) right -24px no-repeat
 }
 
 #nav .write a div div div{
 	padding:3px 0 0;
 	height:21px;
 	float:left;
-	background:/*url(http://static.cookorama.net/templates/skin/cookorama/images/main-buttons-sprite.png) 0 top repeat-x*/
+	background:url(http://static.cookorama.net/templates/skin/cookorama/images/main-buttons-sprite.png) 0 top repeat-x
 }
 
 #nav .write a:hover div div div{
 	color:#ece6ca
-}
+}*/
 
 #content .search{
 	margin:0 0 15px
@@ -5516,7 +5516,7 @@ table.admin_page img{
 }
 
 #profile-options li a{
-	background:/*url(http://static.cookorama.net/templates/skin/cookorama/images/profile-button.png) 0 0 repeat-x*/;
+	/*background:url(http://static.cookorama.net/templates/skin/cookorama/images/profile-button.png) 0 0 repeat-x;*/
 	height:29px;
 	line-height:30px;
 	display:inline-block;
@@ -5616,7 +5616,7 @@ table.admin_page img{
 	margin-right:0
 }*/
 
-.translated{
+/*.translated{
 	margin:15px 0
 }
 
@@ -5650,7 +5650,7 @@ table.admin_page img{
 	position:absolute;
 	top:-6px;
 	left:12px
-}
+}*/
 
 #gallery-list li{
 	overflow:hidden;

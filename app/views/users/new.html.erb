@@ -1,10 +1,8 @@
-<% provide(:title, 'Sign up') %>
-<h1>Users#new</h1>
-<p>Find me in app/views/users/new.html.erb</p>
-
+<% provide(:title, 'Реєстрація') %>
+<h2 class="panel">Реєстрація через електронну пошту</h2>
 <div class="row">
     <%= form_for(@user, html:{data:{abide: true}}) do |f| %>
-      <div class="columns medium-8 medium-offset-2 large-6 large-offset-3">
+      <div class="panel columns medium-8 medium-offset-2 large-6 large-offset-3">
         <div class="name-field">
           <%= f.label :name, "Ім'я користувача:" %>
           <%= f.text_field :name, required: "true", pattern: "^[a-zA-Z0-9]{3,20}$" %>
@@ -12,7 +10,7 @@
         </div>
         <div class="email-field">
           <%= f.label :email, "електропошта:" %>
-          <%= f.text_field :email %>
+          <%= f.text_field :email, required: "true", pattern: "email" %>
           <small class="error">Для перевірки реєстрації та з метою безпеки нам потрібна адреса вашої електронної пошти.</small>
         </div>
         <div class="password-field">

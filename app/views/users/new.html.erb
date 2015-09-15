@@ -2,28 +2,30 @@
 <h1>Users#new</h1>
 <p>Find me in app/views/users/new.html.erb</p>
 
-<div class="row middle">
+<div class="row">
     <%= form_for(@user, html:{data:{abide: true}}) do |f| %>
-      <div class="name-field columns medium-10 medium-offset-1 large-8 large-offset-2">
-        <%= f.label :name %>
-        <%= f.text_field :name %>
-      </div>
-      <div class="email-field columns medium-10 medium-offset-1 large-8 large-offset-2">
-        <%= f.label :email %>
-        <%= f.text_field :email %>
-        <small class="error">An email address is required.</small>
-      </div>
-      <div class="password-field columns medium-10 medium-offset-1 large-8 large-offset-2">
-        <%= f.label :password %>
-        <%= f.password_field :password, required: true %>
-        <small class="error">Your password must match the requirements</small>
-      </div>
-      <div class="password-confirmation-field columns medium-10 medium-offset-1 large-8 large-offset-2">
-        <%= f.label :password_confirmation, "Confirmation" %>
-        <%= f.password_field :password_confirmation, data: {equalto: "user_password"}%>
-      </div>
-      <div class="columns medium-10 medium-offset-1 large-8 large-offset-2">
-        <%= f.submit "Create my account", class: "button medium" %>
+      <div class="columns medium-8 medium-offset-2 large-6 large-offset-3">
+        <div class="name-field">
+          <%= f.label :name, "Ім'я користувача:" %>
+          <%= f.text_field :name, required: "true", pattern: "^[a-zA-Z0-9]{3,20}$" %>
+          <small class="error">Може складатися лише з літер (A-Z a-z), цифр (0-9). Знак підкреслення (_) краще не використовувати. Довжина імені не може бути менше 3 і більше 20 символів.</small>
+        </div>
+        <div class="email-field">
+          <%= f.label :email, "електропошта:" %>
+          <%= f.text_field :email %>
+          <small class="error">Для перевірки реєстрації та з метою безпеки нам потрібна адреса вашої електронної пошти.</small>
+        </div>
+        <div class="password-field">
+          <%= f.label :password, "Пароль:"  %>
+          <%= f.password_field :password, required: true %>
+          <small class="error">Має містити не менше 5 символів і не може співпадати з логіном. Не використовуйте прості паролі, будьте розумні</small>
+        </div>
+        <div class="password-confirmation-field">
+          <%= f.label :password_confirmation, "Повторіть пароль:" %>
+          <%= f.password_field :password_confirmation, data: {equalto: "user_password"}%>
+          <small class="error">Підтвердження не співпадає з паролем</small>
+        </div>
+        <%= f.submit "Зареєструватися", class: "button small expand" %>
       </div>
     <% end %>
 </div>

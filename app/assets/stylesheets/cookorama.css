@@ -1526,7 +1526,7 @@ input{
 	color:#5f829f
 }
 
-.topic .voting{
+/*.topic .voting{
 	margin-left:5px;
 	padding:5px 0 0
 }
@@ -1609,7 +1609,7 @@ input{
 	display:block;
 	width:12px;
 	height:6px
-}
+}*/
 
 .vt-block .vt-block-counter .bubble .user-list li{
 	display:inline;
@@ -2160,7 +2160,7 @@ div.infomessage{
 	margin-top:-2px
 }
 
-.block-nav{
+/*.block-nav{
 	font-family:arial,sans-serif;
 	font-weight:400;
 	margin-bottom:10px;
@@ -2355,7 +2355,7 @@ div.infomessage{
 
 .social-list.small .tw{
 	background-position:-40px -182px
-}
+}*/
 
 #header .profile .social-list{
 	float:left;
@@ -5347,7 +5347,7 @@ table.admin_page img{
 	border-top:1px solid #fff
 }
 
-.menu li.active:before{
+/*.menu li.active:before{
 	content:'.';
 	text-indent:-9999px;
 	background:url(data:image/png;
@@ -5359,7 +5359,7 @@ table.admin_page img{
 	bottom:-6px;
 	left:50%;
 	margin-left:-5px
-}
+}*/
 
 #blog-menu h1{
 	float:left;
@@ -7797,7 +7797,7 @@ a.add-ingridient-form span{
 	padding-left:9px
 }
 
-a.add-ingridient-form-group{
+/*a.add-ingridient-form-group{
 	display:inline-block;
 	vertical-align:top;
 	padding:5px;
@@ -7808,7 +7808,7 @@ a.add-ingridient-form-group{
 	background:url(data:image/gif;
 	base64,R0lGODlhCAAIAJECAP///2KbAP///wAAACH5BAEAAAIALAAAAAAIAAgAAAIQlBOmgnv5kJwUWGSBao6LAgA7) 5px 5px no-repeat;
 	float:left
-}
+}*/
 
 *+ html a.add-ingridient-form-group{
 	display:inline;

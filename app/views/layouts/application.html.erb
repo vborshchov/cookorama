@@ -86,14 +86,21 @@
         <section class="main-section topic">
           <!-- <div class="row"> -->
             <ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-3">
+              <% flash.each do |key, value| %>
+                <div data-alert class="alert-box <%= key %>">
+                  <%= value %>
+                  <a href="#" class="close">&times;</a>
+                </div>
+              <% end %>
               <%= yield %>
+              <%= debug(params) if Rails.env.development? %>
             </ul>
             <% if content_for? :pagination %>
               <%= yield :pagination %>
             <% end %>
           <!-- </div> -->
           <!-- <div class="row"> -->
-            <div class="bottom"></div>
+          <div class="bottom"></div>
           <!-- </div> -->
         </section>
         <a class="exit-off-canvas"></a>

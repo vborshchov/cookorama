@@ -1,0 +1,11 @@
+<% if @user.errors.any? %>
+  <div data-alert class="alert-box alert">
+    The form contains <%= pluralize(@user.errors.count, "error") %>.
+    <ul class="panel">
+    <% @user.errors.full_messages.each do |msg| %>
+      <li>* <%= msg %></li>
+    <% end %>
+    </ul>
+    <a href="#" class="close">&times;</a>
+  </div>
+<% end %>

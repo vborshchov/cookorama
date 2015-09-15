@@ -29,16 +29,12 @@
 
                   <div class="columns small-1 middle-1 large-1"><%= yield(:add_to_favourite) if content_for?(:add_to_favourite) %></div>
 
-                  <div class="columns small-1 middle-1 large-1">
+                  <div class="columns small-1 middle-1 large-1 hide-for-small-only">
                     <a href="#" data-dropdown="drop" class=""><i class="fi-torsos-male-female middle"></i></a>
                   </div>
                     <ul id="drop" class="middle f-dropdown" data-dropdown-content>
-                      <li>
-                        <%= link_to "Вхід", signup_path%>
-                      </li>
-                      <li>
-                        <%= link_to "Зареєструватися", signup_path%>
-                      </li>
+                      <li><%= link_to "Вхід", signup_path%></li>
+                      <li><%= link_to "Зареєструватися", signup_path%></li>
                     </ul>
 
                   <div class="columns small-9 middle-9 large-9">
@@ -68,6 +64,12 @@
 
         <aside class="right-off-canvas-menu">
           <ul class="off-canvas-list">
+            <li class="show-for-small-only">
+              <ul class="stack-for-small round secondary button-group">
+                <li><%= link_to "Вхід", signup_path%></li>
+                <li><%= link_to "Зареєструватися", signup_path%></li>
+              </ul>
+            </li>
             <li class='show-for-small-only'><label>Пошук по сайту</label></li>
             <li class='has-form show-for-small-only has-form'>
               <%= form_tag "/receipts/search", method: :get do%>

@@ -265,7 +265,7 @@
 }
 
 .block.about-block a.join{
-	background:/*url(http://static.cookorama.net/plugins/blocks/templates/skin/cookorama/images/profile-button.png) 0 0 repeat-x*/;
+	/*background:url(http://static.cookorama.net/plugins/blocks/templates/skin/cookorama/images/profile-button.png) 0 0 repeat-x;*/
 	height:29px;
 	line-height:30px;
 	display:inline-block;

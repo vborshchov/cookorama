@@ -46,6 +46,7 @@ class ReceiptsController < ApplicationController
     @comments.search("a").each{|a| a["href"]="#"}
     @comments.search(".info ul li:nth-child(n+2)").remove
     @is_favorite = @page.search(".voting .favorite").first[:class]
+    @id = @page.search(".voting .favorite a").first[:onclick].match(/\d+/)
   end
 
   def search
@@ -91,18 +92,15 @@ class ReceiptsController < ApplicationController
   end
 
   def toggle_favorite
-    type = @page.search(".voting .favorite").first[:class] =~ /active/ ? "0" : "1"
-    @id = @page.search(".voting .favorite a")[0][:onclick].match(/\d+/) unless params[:id]
     $agent.post("http://cookorama.net/include/ajax/topicFavourite.php?JsHttpRequest=14424838680402-xml",
       {
-        "type": type,
-        "idTopic": @id,
+        "type": params[:active],
+        "idTopic": params[:id],
         "security_ls_key": "0615666d9e39d12529e2daf383e4b97c",
         " family[name]": "hash",
       }
     )
   end
-
   private
 
     def set_receipts
@@ -111,8 +109,8 @@ class ReceiptsController < ApplicationController
         voting_border = topic.search(".voting-border").first
         voting_border.css(".author a")[0]["href"] = "#"
         id = topic.search(".voting .favorite a").first[:onclick].match(/\d+/)
-        # voting_border.css("active")[0]["class"]
-        voting_border.add_child("<a href='#{receipts_toggle_favorite_path(id: id)}' data-remote='true' id='#{id}'><i class='fi-heart #{voting_border.css('li.favorite')[0]['class']}'></i></a>")
+        is_active = @page.search(".voting .favorite").first[:class] =~ /active/ ? "0" : "1"
+        voting_border.add_child("<a href='#{receipts_toggle_favorite_path(id: id, active: is_active)}' data-remote='true' id='#{id}'><i class='fi-heart #{voting_border.css('li.favorite')[0]['class']}'></i></a>")
         if topic.search(".topic-recipe")[0]
           topic.search(".topic-recipe")[0].name = "ul"
           topic.search(".topic-recipe")[0]["class"] = "topic-recipe small-block-grid-1 medium-block-grid-2"
@@ -155,6 +153,7 @@ class ReceiptsController < ApplicationController
       @title = @page.search(".title span").text
       @pagination = @page.search('#pagination')
       session[:user] = @page.search("ul li.user-row .author").text
+      @is_active = @page.search(".topic .voting .favorite").first[:class] =~ /active/ ? "0" : "1"
     end
 
 end

@@ -1,6 +1,6 @@
 <% content_for :add_to_favourite do%>
   <!-- <#%= link_to raw("<i class='fi-heart #{@is_favorite.to_s}></i>"), receipts_toggle_favorite_path(link: params[:link]), remote: "true"%> -->
-  <%= link_to raw("<i class='fi-heart #{@is_favorite}'></i>"), receipts_toggle_favorite_path(link: params[:link]), remote: "true"%>
+  <%= link_to raw("<i class='fi-heart #{@is_favorite}'></i>"), receipts_toggle_favorite_path(id: @id, active: @is_active), remote: "true", id: @id%>
 <% end %>
 
 <% content_for :right_menu do%>

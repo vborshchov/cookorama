@@ -1,1 +1,2 @@
-$("#<%= @id %> .fi-heart").toggleClass("active")
+var id = <%= params[:id] %>
+$("#"+id+" .fi-heart").toggleClass("active");

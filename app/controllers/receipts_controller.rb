@@ -110,7 +110,7 @@ class ReceiptsController < ApplicationController
         voting_border.css(".author a")[0]["href"] = "#"
         id = topic.search(".voting .favorite a").first[:onclick].match(/\d+/)
         is_active = @page.search(".voting .favorite").first[:class] =~ /active/ ? "0" : "1"
-        voting_border.add_child("<a href='#{receipts_toggle_favorite_path(id: id, active: is_active)}' data-remote='true' id='#{id}'><i class='fi-heart #{voting_border.css('li.favorite')[0]['class']}'></i></a>")
+        topic.search(".voting-border .voting").first.add_child("<a href='#{receipts_toggle_favorite_path(id: id, active: is_active)}' data-remote='true' id='#{id}'><i class='fi-heart #{voting_border.css('li.favorite')[0]['class']}'></i></a>") unless session[:user].blank?
         if topic.search(".topic-recipe")[0]
           topic.search(".topic-recipe")[0].name = "ul"
           topic.search(".topic-recipe")[0]["class"] = "topic-recipe small-block-grid-1 medium-block-grid-2"

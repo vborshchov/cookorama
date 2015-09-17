@@ -1,11 +1,15 @@
 Rails.application.routes.draw do
   resources :users
+  resources :sessions, only: [:new, :create, :destroy]
   get '/signup' => 'users#new'
+  get '/signin' => 'sessions#new'
+  delete '/signout' => 'sessions#destroy'
 
   get 'receipts/show'
   get 'receipts/tag'
   get 'receipts/filter'
   get 'receipts/search'
+  get 'receipts/toggle_favorite'
   get 'receipts' => 'receipts#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -1,5 +1,5 @@
 class ReceiptsController < ApplicationController
-  before_filter :set_page, only:[:index, :show, :search, :tag, :filter]
+  before_filter :set_page, only:[:index, :show, :search, :tag, :filter, :toggle_favorite]
   before_filter :set_receipts, only:[:index, :search, :tag, :filter]
 
   def index
@@ -45,6 +45,7 @@ class ReceiptsController < ApplicationController
     @comments = @page.search(".comments>div[id^=comment_id_], .comments .header h3")
     @comments.search("a").each{|a| a["href"]="#"}
     @comments.search(".info ul li:nth-child(n+2)").remove
+    @is_favorite = @page.search(".voting .favorite").first[:class]
   end
 
   def search
@@ -89,12 +90,29 @@ class ReceiptsController < ApplicationController
     @right_menu = @page.search('#sidebar form').to_html.html_safe
   end
 
+  def toggle_favorite
+    type = @page.search(".voting .favorite").first[:class] =~ /active/ ? "0" : "1"
+    @id = @page.search(".voting .favorite a")[0][:onclick].match(/\d+/) unless params[:id]
+    $agent.post("http://cookorama.net/include/ajax/topicFavourite.php?JsHttpRequest=14424838680402-xml",
+      {
+        "type": type,
+        "idTopic": @id,
+        "security_ls_key": "0615666d9e39d12529e2daf383e4b97c",
+        " family[name]": "hash",
+      }
+    )
+  end
+
   private
 
     def set_receipts
       @receipts = []
       @page.search(".topic").each do |topic|
-        topic.search(".voting-border, .action").remove
+        voting_border = topic.search(".voting-border").first
+        voting_border.css(".author a")[0]["href"] = "#"
+        id = topic.search(".voting .favorite a").first[:onclick].match(/\d+/)
+        # voting_border.css("active")[0]["class"]
+        voting_border.add_child("<a href='#{receipts_toggle_favorite_path(id: id)}' data-remote='true' id='#{id}'><i class='fi-heart #{voting_border.css('li.favorite')[0]['class']}'></i></a>")
         if topic.search(".topic-recipe")[0]
           topic.search(".topic-recipe")[0].name = "ul"
           topic.search(".topic-recipe")[0]["class"] = "topic-recipe small-block-grid-1 medium-block-grid-2"
@@ -102,6 +120,7 @@ class ReceiptsController < ApplicationController
           topic.search(".topic-recipe-img")[0].name = "li"
           topic.search(".topic-recipe").children.last.add_next_sibling(topic.search(".topic-recipe-content"))
         end
+        topic.search(".voting-border .vt-block, li.favorite, .action").remove
         @receipts << topic.to_html.html_safe
       end
     end
@@ -110,19 +129,17 @@ class ReceiptsController < ApplicationController
       link = params[:link] =~ /\Ahttp:\/\/cookorama\.net/ && params[:link] || "http://cookorama.net"
       link_for_parse = "#{link}?#{params.reject{|e| e =~ /link|controller|action/ }.to_query}"
       link_for_parse = URI.escape(URI.unescape(link_for_parse))
+      agent = $agent ? $agent : Mechanize.new
       begin
-        agent = Mechanize.new
         @page = agent.get(link_for_parse)
-        # @page = Nokogiri::HTML(open(link_for_parse))
       rescue
         link_for_parse = URI.unescape(link_for_parse)
         puts link_for_parse.gsub!("search/topics/", "search/comments/")
         link_for_parse = URI.escape(URI.unescape(link_for_parse))
         @page = agent.get(link_for_parse)
-        # @page = Nokogiri::HTML(open(link_for_parse))
       end
       @page.search(".topic a, .best-item a, #pagination a, .cloud a").map do |a|
-        if a["href"] =~ /\.html\z/ && a["href"] =~ /\Ahttp:\/\/cookorama\.net/
+        if a["href"] =~ /\.html/ && a["href"] =~ /\Ahttp:\/\/cookorama\.net/
           a["href"] = "#{receipts_show_path}?link=" + a["href"]
         else
           case a["href"]
@@ -137,6 +154,7 @@ class ReceiptsController < ApplicationController
       end
       @title = @page.search(".title span").text
       @pagination = @page.search('#pagination')
+      session[:user] = @page.search("ul li.user-row .author").text
     end
 
 end

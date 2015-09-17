@@ -6,11 +6,11 @@
 ready = undefined
 
 ready = ->
-  $('.fi-heart').click ->
-    $(this).toggleClass("heart")
-    # alert("Додано до улюблених")
-    return
-  return
+  # $('.fi-heart').click ->
+  #   $(this).toggleClass("heart")
+  #   alert("Додано до улюблених")
+  #   return
+  # return
 
 
 $(document).ready ready

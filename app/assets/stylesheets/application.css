@@ -51,7 +51,7 @@ li.has-form {
   color: grey;
   cursor: pointer;
 }
-.heart {
+.favorite.active {
   color:red;
 }
 

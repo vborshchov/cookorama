@@ -1,0 +1,20 @@
+<% provide(:title, "Вхід") %>
+<!-- <h1>Вхід</h1> -->
+<div class="row">
+    <%= form_for(:session, url: sessions_path, html:{data:{abide: true}}) do |f| %>
+      <div class="panel columns medium-8 medium-offset-2 large-6 large-offset-3">
+        <div class="email-field">
+          <%= f.label :email, "Eлектронна пошта:" %>
+          <%= f.text_field :email, required: "true", pattern: "email" %>
+          <small class="error">Будь-ласка введіть адресу електронної пошти у вірному форматі.</small>
+        </div>
+        <div class="password-field">
+          <%= f.label :password, "Пароль:" %>
+          <%= f.password_field :password, required: true %>
+          <small class="error">Має містити не менше 5 символів.</small>
+        </div>
+        <%= f.submit "Увійти", class: "button small expand" %>
+        <p class="columns">Новий користувач? <%= link_to "Зареєструватися!", signup_path %></p>
+      </div>
+    <% end %>
+</div>

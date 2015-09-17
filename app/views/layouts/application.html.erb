@@ -27,14 +27,19 @@
             <div class='right'>
               <div class="row">
 
-                  <div class="columns small-1 middle-1 large-1"><%= yield(:add_to_favourite) if content_for?(:add_to_favourite) %></div>
+                  <div class="columns small-1 middle-1 large-1"><%= yield(:add_to_favourite) if content_for?(:add_to_favourite) && !session[:user].blank?%></div>
 
                   <div class="columns small-1 middle-1 large-1 hide-for-small-only">
                     <a href="#" data-dropdown="drop" class=""><i class="fi-torsos-male-female middle"></i></a>
                   </div>
                     <ul id="drop" class="middle f-dropdown" data-dropdown-content>
-                      <li><%= link_to "Вхід", signup_path%></li>
-                      <li><%= link_to "Зареєструватися", signup_path%></li>
+                      <% if session[:user].blank? %>
+                        <li><%= link_to "Вхід", signin_path%></li>
+                        <!-- <li><#%= link_to "Зареєструватися", signup_path%></li> -->
+                      <% else %>
+                        <li><label><%= session[:user] %></label></li>
+                        <li><%= link_to "Вихід", signout_path, method: "delete"%></li>
+                      <% end %>
                     </ul>
 
                   <div class="columns small-9 middle-9 large-9">
@@ -66,8 +71,13 @@
           <ul class="off-canvas-list">
             <li class="show-for-small-only">
               <ul class="stack-for-small round secondary button-group">
-                <li><%= link_to "Вхід", signup_path%></li>
-                <li><%= link_to "Зареєструватися", signup_path%></li>
+                <% if session[:user].blank? %>
+                  <li><%= link_to "Вхід", signin_path%></li>
+                  <!-- <li><#%= link_to "Зареєструватися", signup_path%></li> -->
+                <% else %>
+                  <li><label><%= session[:user] %></label></li>
+                  <li><%= link_to "Вихід", signout_path, method: "delete"%></li>
+                <% end %>
               </ul>
             </li>
             <li class='show-for-small-only'><label>Пошук по сайту</label></li>
@@ -92,6 +102,7 @@
                   <a href="#" class="close">&times;</a>
                 </div>
               <% end %>
+              <h1><%= session[:user] %></h1>
               <%= yield %>
               <%= debug(params) if Rails.env.development? %>
             </ul>
